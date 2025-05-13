@@ -1,0 +1,3037 @@
+{
+    "project_structure": [
+        {
+            "directory": ".",
+            "files": [
+                "PRIVACY-POLICY.md",
+                "init.sh",
+                "build.ps1",
+                "THIRD-PARTY-NOTICES.md",
+                ".gitattributes",
+                "build.cmd",
+                "vs2022.vsconfig",
+                "init.ps1",
+                ".gitignore",
+                "LICENSE.md",
+                "global.json",
+                "CONTRIBUTING.md",
+                "EXTENSIONS-TERM-AND-CONDITIONS.md",
+                "README.md",
+                "crowdin.yml",
+                "nuget.config",
+                "CODE-OF-CONDUCT.md",
+                "init.cmd",
+                "build.sh"
+            ]
+        },
+        {
+            "directory": "src",
+            "files": [
+                "Directory.Build.targets",
+                "Directory.Packages.props",
+                "DevToys-Windows.sln",
+                "DevToys-MacOS.sln",
+                "DevToys-Linux.sln",
+                "Build.sln",
+                "Environment.props",
+                ".editorconfig",
+                "DevToys-Windows.lutconfig",
+                "Directory.Build.props",
+                "spellcheckerexclusion.dic"
+            ]
+        },
+        {
+            "directory": "src/generators",
+            "files": [
+                "Directory.Build.targets",
+                "Directory.Build.props"
+            ]
+        },
+        {
+            "directory": "src/generators/ResxHelperGenerator",
+            "files": [
+                "ResxHelperGenerator.csproj",
+                "CultureHelperGenerator.cs"
+            ]
+        },
+        {
+            "directory": "src/app",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests",
+            "files": [
+                "ConsoleOutputMonitor.cs",
+                "Usings.cs",
+                "TestParallelizationDisabled.cs",
+                "MefBasedTest.cs",
+                "DevToys.UnitTests.csproj"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Mocks",
+            "files": [
+                "MockIFileStorage.cs",
+                "MockILogger.cs",
+                "MockISettingsStorage.cs",
+                "MockIDisposable.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Mocks/Tools",
+            "files": [
+                "MockResourceManagerAssemblyIdentifier.cs",
+                "MockGuiToolGroup.cs",
+                "MockToolResource.resx",
+                "MockToolResource.Designer.cs",
+                "MockIGuiTool.cs",
+                "MockDataTypeDetector.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Tool",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Tool/GUI",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Tool/GUI/Components",
+            "files": [
+                "UIElementWithChildrenTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/BuiltInDataTypeDetectors",
+            "files": [
+                "Base64TextDataTypeDetectorTests.cs",
+                "GZipDataTypeDetectorTests.cs",
+                "XmlDataTypeDetectorTests.cs",
+                "JsonDataTypeDetectorTests.cs",
+                "JsonArrayDataTypeDetectorTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/Components",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/Components/NavBar",
+            "files": [
+                "NavBarStateTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/Core",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/Core/Helpers",
+            "files": [
+                "CssBuilderTests.cs",
+                "StyleBuilderTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Blazor/Core/Extensions",
+            "files": [
+                "IJSRuntimeExtensionsTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Api",
+            "files": []
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Api/Core",
+            "files": [
+                "ObservableHashSetTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Api/Core/Threading",
+            "files": [
+                "DisposableSemaphoreTests.cs",
+                "AsyncLazyTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Core",
+            "files": [
+                "AppHelperTests.cs",
+                "ExtensionOrdererTests.cs",
+                "OneOfParserTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/tests/DevToys.UnitTests/Core/Tools",
+            "files": [
+                "SmartDetectionServiceTests.cs",
+                "GuiToolProviderTests.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev",
+            "files": [
+                "Directory.Build.targets",
+                "Directory.Build.props"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux",
+            "files": [
+                "Program.cs",
+                "MainWindow.cs",
+                "LinuxProgram.cs",
+                "DevToys.Linux.csproj"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux/Strings/Other",
+            "files": [
+                "Other.de-DE.resx",
+                "Other.resx",
+                "Other.fi-FI.resx",
+                "Other.bn-BD.resx",
+                "Other.kw-GB.resx",
+                "Other.tr-TR.resx",
+                "Other.hi-IN.resx",
+                "Other.hu-HU.resx",
+                "Other.nl-NL.resx",
+                "Other.ro-RO.resx",
+                "Other.el-GR.resx",
+                "Other.ka-GE.resx",
+                "Other.kn-IN.resx",
+                "Other.fa-IR.resx",
+                "Other.id-ID.resx",
+                "Other.fr-FR.resx",
+                "Other.zh-Hans.resx",
+                "Other.be-BY.resx",
+                "Other.ja-JP.resx",
+                "Other.pt-BR.resx",
+                "Other.sv-SE.resx",
+                "Other.Designer.cs",
+                "Other.sr-SP.resx",
+                "Other.ru-RU.resx",
+                "Other.it-IT.resx",
+                "Other.es-AR.resx",
+                "Other.af-ZA.resx",
+                "Other.is-IS.resx",
+                "Other.uk-UA.resx",
+                "Other.zh-Hant.resx",
+                "Other.da-DK.resx",
+                "Other.ar-SA.resx",
+                "Other.nb.resx",
+                "Other.en-GB.resx",
+                "Other.he-IL.resx",
+                "Other.ca-ES.resx",
+                "Other.vi-VN.resx",
+                "Other.ko-KR.resx",
+                "Other.cs-CZ.resx",
+                "Other.ta-IN.resx",
+                "Other.pl-PL.resx",
+                "Other.pt-PT.resx",
+                "Other.te-IN.resx",
+                "Other.es-ES.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux/Components",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux/Components/BlazorWebView",
+            "files": [
+                "RootComponent.cs",
+                "RootComponentsCollection.cs",
+                "UrlLoadingStrategy.cs",
+                "BlazorWebView.cs",
+                "StaticContentHotReloadManager.cs",
+                "BlazorWebViewManager.cs",
+                "UrlLoadingEventArgs.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Linux/Core",
+            "files": [
+                "ThemeListener.cs",
+                "FontProvider.cs",
+                "SettingsStorage.cs",
+                "Clipboard.cs",
+                "Constants.cs",
+                "FileStorage.cs",
+                "WindowService.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS",
+            "files": [
+                "Info.plist",
+                "Program.cs",
+                "AppDelegate.cs",
+                "Entitlements.plist",
+                "DevToys.MacOS.csproj"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Strings/AppMenuBar",
+            "files": [
+                "AppMenuBar.hi-IN.resx",
+                "AppMenuBar.fi-FI.resx",
+                "AppMenuBar.sr-SP.resx",
+                "AppMenuBar.sv-SE.resx",
+                "AppMenuBar.ro-RO.resx",
+                "AppMenuBar.ru-RU.resx",
+                "AppMenuBar.bn-BD.resx",
+                "AppMenuBar.vi-VN.resx",
+                "AppMenuBar.kw-GB.resx",
+                "AppMenuBar.is-IS.resx",
+                "AppMenuBar.be-BY.resx",
+                "AppMenuBar.de-DE.resx",
+                "AppMenuBar.ca-ES.resx",
+                "AppMenuBar.es-AR.resx",
+                "AppMenuBar.ko-KR.resx",
+                "AppMenuBar.nb.resx",
+                "AppMenuBar.pl-PL.resx",
+                "AppMenuBar.tr-TR.resx",
+                "AppMenuBar.nl-NL.resx",
+                "AppMenuBar.fr-FR.resx",
+                "AppMenuBar.Designer.cs",
+                "AppMenuBar.te-IN.resx",
+                "AppMenuBar.af-ZA.resx",
+                "AppMenuBar.ka-GE.resx",
+                "AppMenuBar.ta-IN.resx",
+                "AppMenuBar.es-ES.resx",
+                "AppMenuBar.en-GB.resx",
+                "AppMenuBar.zh-Hans.resx",
+                "AppMenuBar.pt-PT.resx",
+                "AppMenuBar.cs-CZ.resx",
+                "AppMenuBar.pt-BR.resx",
+                "AppMenuBar.resx",
+                "AppMenuBar.he-IL.resx",
+                "AppMenuBar.hu-HU.resx",
+                "AppMenuBar.uk-UA.resx",
+                "AppMenuBar.ja-JP.resx",
+                "AppMenuBar.kn-IN.resx",
+                "AppMenuBar.it-IT.resx",
+                "AppMenuBar.zh-Hant.resx",
+                "AppMenuBar.da-DK.resx",
+                "AppMenuBar.ar-SA.resx",
+                "AppMenuBar.el-GR.resx",
+                "AppMenuBar.fa-IR.resx",
+                "AppMenuBar.id-ID.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Assets.xcassets",
+            "files": [
+                "Contents.json"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Assets.xcassets/AppIcon.appiconset",
+            "files": [
+                "256-mac.png",
+                "16-mac.png",
+                "1024-mac.png",
+                "128-mac.png",
+                "32-mac.png",
+                "Contents.json",
+                "64-mac.png",
+                "512-mac.png"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Views",
+            "files": [
+                "MainWindow.cs",
+                "AppMenuBar.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Core",
+            "files": [
+                "ThemeListener.cs",
+                "FontProvider.cs",
+                "SettingsStorage.cs",
+                "Clipboard.cs",
+                "Constants.cs",
+                "FileStorage.cs",
+                "WindowService.cs",
+                "WindowStateBackup.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Core/Helpers",
+            "files": [
+                "ThreadHelper.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Controls",
+            "files": [
+                "AppKitDispatcher.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.MacOS/Controls/BlazorWebView",
+            "files": [
+                "RootComponent.cs",
+                "RootComponentsCollection.cs",
+                "BlazorWKWebView.cs",
+                "UrlLoadingStrategy.cs",
+                "StaticContentHotReloadManager.cs",
+                "BlazorWebViewManager.cs",
+                "UrlLoadingEventArgs.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI",
+            "files": [
+                "Program.cs",
+                "DevToys.CLI.csproj",
+                "CommandToICommandLineToolMap.cs",
+                "CommandLineToolMetadata.cs",
+                "OptionToICommandLineToolMap.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Strings/CliStrings",
+            "files": [
+                "CliStrings.fi-FI.resx",
+                "CliStrings.Designer.cs",
+                "CliStrings.es-AR.resx",
+                "CliStrings.it-IT.resx",
+                "CliStrings.pl-PL.resx",
+                "CliStrings.sv-SE.resx",
+                "CliStrings.uk-UA.resx",
+                "CliStrings.nb.resx",
+                "CliStrings.ru-RU.resx",
+                "CliStrings.te-IN.resx",
+                "CliStrings.hi-IN.resx",
+                "CliStrings.sr-SP.resx",
+                "CliStrings.pt-BR.resx",
+                "CliStrings.ja-JP.resx",
+                "CliStrings.kw-GB.resx",
+                "CliStrings.ar-SA.resx",
+                "CliStrings.nl-NL.resx",
+                "CliStrings.ta-IN.resx",
+                "CliStrings.kn-IN.resx",
+                "CliStrings.ko-KR.resx",
+                "CliStrings.cs-CZ.resx",
+                "CliStrings.ca-ES.resx",
+                "CliStrings.fa-IR.resx",
+                "CliStrings.ro-RO.resx",
+                "CliStrings.id-ID.resx",
+                "CliStrings.zh-Hans.resx",
+                "CliStrings.en-GB.resx",
+                "CliStrings.da-DK.resx",
+                "CliStrings.tr-TR.resx",
+                "CliStrings.bn-BD.resx",
+                "CliStrings.is-IS.resx",
+                "CliStrings.vi-VN.resx",
+                "CliStrings.fr-FR.resx",
+                "CliStrings.ka-GE.resx",
+                "CliStrings.el-GR.resx",
+                "CliStrings.es-ES.resx",
+                "CliStrings.be-BY.resx",
+                "CliStrings.de-DE.resx",
+                "CliStrings.af-ZA.resx",
+                "CliStrings.he-IL.resx",
+                "CliStrings.hu-HU.resx",
+                "CliStrings.resx",
+                "CliStrings.pt-PT.resx",
+                "CliStrings.zh-Hant.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Properties",
+            "files": [
+                "launchSettings.json"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Core",
+            "files": [
+                "OneOfOption.cs",
+                "TypeExtensions.cs",
+                "OneOfParser.cs",
+                "Constants.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Core/Settings",
+            "files": [
+                "SettingsStorage.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.CLI/Core/FileStorage",
+            "files": [
+                "FileStorage.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows",
+            "files": [
+                "NativeMethods.txt",
+                "MainWindow.xaml",
+                "App.xaml",
+                "App.xaml.cs",
+                "app.manifest",
+                "MainWindow.xaml.cs",
+                "DevToys.Windows.csproj"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Strings/TaskBar",
+            "files": [
+                "TaskBar.bn-BD.resx",
+                "TaskBar.he-IL.resx",
+                "TaskBar.fi-FI.resx",
+                "TaskBar.uk-UA.resx",
+                "TaskBar.kn-IN.resx",
+                "TaskBar.te-IN.resx",
+                "TaskBar.sr-SP.resx",
+                "TaskBar.el-GR.resx",
+                "TaskBar.af-ZA.resx",
+                "TaskBar.pt-PT.resx",
+                "TaskBar.zh-Hans.resx",
+                "TaskBar.es-AR.resx",
+                "TaskBar.ja-JP.resx",
+                "TaskBar.resx",
+                "TaskBar.id-ID.resx",
+                "TaskBar.nb.resx",
+                "TaskBar.kw-GB.resx",
+                "TaskBar.ru-RU.resx",
+                "TaskBar.en-GB.resx",
+                "TaskBar.vi-VN.resx",
+                "TaskBar.ko-KR.resx",
+                "TaskBar.pt-BR.resx",
+                "TaskBar.hu-HU.resx",
+                "TaskBar.fa-IR.resx",
+                "TaskBar.es-ES.resx",
+                "TaskBar.ta-IN.resx",
+                "TaskBar.hi-IN.resx",
+                "TaskBar.it-IT.resx",
+                "TaskBar.is-IS.resx",
+                "TaskBar.be-BY.resx",
+                "TaskBar.pl-PL.resx",
+                "TaskBar.ka-GE.resx",
+                "TaskBar.ar-SA.resx",
+                "TaskBar.nl-NL.resx",
+                "TaskBar.ro-RO.resx",
+                "TaskBar.ca-ES.resx",
+                "TaskBar.sv-SE.resx",
+                "TaskBar.zh-Hant.resx",
+                "TaskBar.da-DK.resx",
+                "TaskBar.de-DE.resx",
+                "TaskBar.cs-CZ.resx",
+                "TaskBar.tr-TR.resx",
+                "TaskBar.Designer.cs",
+                "TaskBar.fr-FR.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Strings/Other",
+            "files": [
+                "Other.de-DE.resx",
+                "Other.resx",
+                "Other.fi-FI.resx",
+                "Other.bn-BD.resx",
+                "Other.kw-GB.resx",
+                "Other.tr-TR.resx",
+                "Other.hi-IN.resx",
+                "Other.hu-HU.resx",
+                "Other.nl-NL.resx",
+                "Other.ro-RO.resx",
+                "Other.el-GR.resx",
+                "Other.ka-GE.resx",
+                "Other.kn-IN.resx",
+                "Other.fa-IR.resx",
+                "Other.id-ID.resx",
+                "Other.fr-FR.resx",
+                "Other.zh-Hans.resx",
+                "Other.be-BY.resx",
+                "Other.ja-JP.resx",
+                "Other.pt-BR.resx",
+                "Other.sv-SE.resx",
+                "Other.Designer.cs",
+                "Other.sr-SP.resx",
+                "Other.ru-RU.resx",
+                "Other.it-IT.resx",
+                "Other.es-AR.resx",
+                "Other.af-ZA.resx",
+                "Other.is-IS.resx",
+                "Other.uk-UA.resx",
+                "Other.zh-Hant.resx",
+                "Other.da-DK.resx",
+                "Other.ar-SA.resx",
+                "Other.nb.resx",
+                "Other.en-GB.resx",
+                "Other.he-IL.resx",
+                "Other.ca-ES.resx",
+                "Other.vi-VN.resx",
+                "Other.ko-KR.resx",
+                "Other.cs-CZ.resx",
+                "Other.ta-IN.resx",
+                "Other.pl-PL.resx",
+                "Other.pt-PT.resx",
+                "Other.te-IN.resx",
+                "Other.es-ES.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Native",
+            "files": [
+                "AccentFlag.cs",
+                "DWM_WINDOW_CORNER_PREFERENCE.cs",
+                "DwmValues.cs",
+                "AccentEdges.cs",
+                "SnapLayoutHelper.cs",
+                "DWMWINDOWATTRIBUTE_EXTENDED.cs",
+                "HwndSourceMessages.cs",
+                "WindowCompositionAttribute.cs",
+                "WindowCompositionAttributeData.cs",
+                "NativeMethods.cs",
+                "AccentState.cs",
+                "AccentPolicy.cs",
+                "HwndButtons.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/wwwroot",
+            "files": [
+                "index.html"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Properties",
+            "files": [
+                "AssemblyInfo.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Themes",
+            "files": [
+                "Light.xaml",
+                "Dark.xaml"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Core",
+            "files": [
+                "ThemeListener.cs",
+                "FontProvider.cs",
+                "TaskbarJumpListService.cs",
+                "SettingsStorage.cs",
+                "QualityOfServiceLevel.cs",
+                "Clipboard.cs",
+                "Constants.cs",
+                "FileStorage.cs",
+                "WindowService.cs",
+                "EfficiencyModeService.cs",
+                "WindowStateBackup.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Core/Helpers",
+            "files": [
+                "ImageHelper.cs",
+                "ThreadHelper.cs",
+                "DpiHelper.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Controls",
+            "files": [
+                "MicaWindowWithOverlay.xaml.cs",
+                "MicaWindowWithOverlay.xaml",
+                "HwndHostEx.cs",
+                "OverlayWindow.xaml",
+                "OverlayControl.cs",
+                "OverlayWindow.xaml.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/platforms/desktop/DevToys.Windows/Controls/WebView",
+            "files": [
+                "CustomBlazorWebView.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Business",
+            "files": [
+                "DevToys.Business.csproj"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Business/Models",
+            "files": [
+                "NavigationParameters.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Business/Properties",
+            "files": [
+                "AssemblyInfo.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Business/Services",
+            "files": [
+                "CommandLineLauncherService.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Business/ViewModels",
+            "files": [
+                "ToolGroupPageViewModel.cs",
+                "MainWindowViewModel.cs",
+                "ToolPageViewModel.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api",
+            "files": [
+                "TextSpan.cs",
+                "DevToys.Api.csproj",
+                "DevToys.Api.targets",
+                "IDataGridRow.cs",
+                "ViewModelBase.cs",
+                "DevToys.Api.props",
+                "README.md",
+                "IMefProvider.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Strings/ApiText",
+            "files": [
+                "ApiText.ro-RO.resx",
+                "ApiText.hi-IN.resx",
+                "ApiText.pl-PL.resx",
+                "ApiText.vi-VN.resx",
+                "ApiText.resx",
+                "ApiText.te-IN.resx",
+                "ApiText.ca-ES.resx",
+                "ApiText.tr-TR.resx",
+                "ApiText.de-DE.resx",
+                "ApiText.sr-SP.resx",
+                "ApiText.kn-IN.resx",
+                "ApiText.es-ES.resx",
+                "ApiText.it-IT.resx",
+                "ApiText.hu-HU.resx",
+                "ApiText.pt-PT.resx",
+                "ApiText.fa-IR.resx",
+                "ApiText.is-IS.resx",
+                "ApiText.el-GR.resx",
+                "ApiText.zh-Hant.resx",
+                "ApiText.af-ZA.resx",
+                "ApiText.sv-SE.resx",
+                "ApiText.bn-BD.resx",
+                "ApiText.ja-JP.resx",
+                "ApiText.uk-UA.resx",
+                "ApiText.nb.resx",
+                "ApiText.ar-SA.resx",
+                "ApiText.ta-IN.resx",
+                "ApiText.en-GB.resx",
+                "ApiText.fi-FI.resx",
+                "ApiText.id-ID.resx",
+                "ApiText.cs-CZ.resx",
+                "ApiText.es-AR.resx",
+                "ApiText.fr-FR.resx",
+                "ApiText.kw-GB.resx",
+                "ApiText.pt-BR.resx",
+                "ApiText.he-IL.resx",
+                "ApiText.Designer.cs",
+                "ApiText.zh-Hans.resx",
+                "ApiText.ka-GE.resx",
+                "ApiText.da-DK.resx",
+                "ApiText.be-BY.resx",
+                "ApiText.nl-NL.resx",
+                "ApiText.ko-KR.resx",
+                "ApiText.ru-RU.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Settings",
+            "files": [
+                "ISettingsProvider.cs",
+                "SettingDefinition.cs",
+                "SettingChangedEventArgs.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool",
+            "files": [
+                "IResourceAssemblyIdentifier.cs",
+                "FontDefinition.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/CLI",
+            "files": [
+                "ConsoleProgressBar.cs",
+                "ICommandLineTool.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/Metadata",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/Metadata/Metadata",
+            "files": [
+                "IOrderableMetadata.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/Metadata/Attributes",
+            "files": [
+                "Platform.cs",
+                "TargetPlatformAttribute.cs",
+                "NoCompactOverlaySupportAttribute.cs",
+                "NotFavorableAttribute.cs",
+                "CommandNameAttribute.cs",
+                "OrderAttribute.cs",
+                "MenuPlacementAttribute.cs",
+                "NameAttribute.cs",
+                "ToolDisplayInformationAttribute.cs",
+                "CommandLineOptionAttribute.cs",
+                "AcceptedDataTypeNameAttribute.cs",
+                "MenuPlacement.cs",
+                "NotSearchableAttribute.cs",
+                "DataTypeNameAttribute.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/SmartDetection",
+            "files": [
+                "DataDetectionResult.cs",
+                "IDataTypeDetector.cs",
+                "PredefinedCommonDataTypeNames.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/GUI",
+            "files": [
+                "GuiToolGroup.cs",
+                "PredefinedCommonToolGroupNames.cs",
+                "PredefinedSupportedImageFormats.cs",
+                "IGuiTool.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/GUI/LanguageService",
+            "files": [
+                "ILanguageService.cs",
+                "AutoCompletionItem.cs",
+                "SemanticToken.cs",
+                "SemanticTokenType.cs",
+                "AutoCompletionItemKind.cs",
+                "SemanticTokenModifier.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Tool/GUI/Components",
+            "files": [
+                "IUIWrap.cs",
+                "IUIUtf32IconProvider.cs",
+                "IUIUtf32IconButton.cs",
+                "IUIStack.cs",
+                "IUINumberInput.cs",
+                "IUIUtf32IconDropDownMenuItem.cs",
+                "IUIDropDownListItem.cs",
+                "UIGridUnitType.cs",
+                "IUIGrid.cs",
+                "IUISetting.cs",
+                "IUIWebView.cs",
+                "IUIUtf32Icon.cs",
+                "IUISplitGrid.cs",
+                "IUIUtf32GlyphProvider.cs",
+                "IUISettingGroup.cs",
+                "IUIInfoBar.cs",
+                "IUITitledElement.cs",
+                "IUITitledElementWithChildren.cs",
+                "IUISwitch.cs",
+                "IUIButton.cs",
+                "IUIMultiLineTextInput.cs",
+                "UIGridLength.cs",
+                "IUIDropDownButton.cs",
+                "IUILabel.cs",
+                "UILabelStyle.cs",
+                "UISpacing.cs",
+                "IUISinglelineTextInput.cs",
+                "UIHorizontalAlignment.cs",
+                "IUIElement.cs",
+                "IUIFileSelector.cs",
+                "IUIDataGrid.cs",
+                "UIToolView.cs",
+                "IUIPasswordInput.cs",
+                "IUICard.cs",
+                "UITextWrapMode.cs",
+                "UIOrientation.cs",
+                "IUIIcon.cs",
+                "IUIListItem.cs",
+                "UIVerticalAlignment.cs",
+                "UIInfoBarSeverity.cs",
+                "IUIUtf32IconDropDownButton.cs",
+                "IUIList.cs",
+                "IUIProgressRing.cs",
+                "UITextLineNumber.cs",
+                "UIHighlightedTextSpan.cs",
+                "IUISelectDropDownList.cs",
+                "UITextEndOfLinePreference.cs",
+                "IUIGridCell.cs",
+                "IUIElementWithChildren.cs",
+                "UIDialog.cs",
+                "IUIDiffTextInput.cs",
+                "IUIDropDownMenuItem.cs",
+                "IUIImageViewer.cs",
+                "UIHighlightedTextSpanColor.cs",
+                "UIHoverTooltip.cs",
+                "IUIDataGridCell.cs",
+                "IUIDataGridRow.cs",
+                "IUIProgressBar.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Core",
+            "files": [
+                "ThrottledProgress.cs",
+                "ResultInfo.cs",
+                "DictionaryExtensions.cs",
+                "IClipboard.cs",
+                "IFontProvider.cs",
+                "IFileStorage.cs",
+                "ResultInfoSeverity.cs",
+                "OneOfExtensions.cs",
+                "SimpleSandboxedFileReader.cs",
+                "SandboxedFileReader.cs",
+                "ObservableHashSet.cs",
+                "LoggingExtensions.cs",
+                "ObservableCollectionExtensions.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Core/Threading",
+            "files": [
+                "AsyncLazy.cs",
+                "DisposableSemaphore.cs",
+                "TaskExtensions.cs",
+                "CancellationTokenExtension.cs",
+                "TaskSchedulerAwaiter.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Api/Core/Theme",
+            "files": [
+                "IThemeListener.cs",
+                "ApplicationTheme.cs",
+                "AvailableApplicationTheme.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/shared",
+            "files": [
+                "LinkerConfig.xml",
+                "GlobalUsings.cs",
+                "SharedAssemblyInfo.cs",
+                "SharedAssemblyVersion.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization",
+            "files": [
+                "DevToys.Localization.csproj",
+                "DevToysLocalizationResourceManagerAssemblyIdentifier.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/UIDataGrid",
+            "files": [
+                "UIDataGrid.bn-BD.resx",
+                "UIDataGrid.he-IL.resx",
+                "UIDataGrid.id-ID.resx",
+                "UIDataGrid.kn-IN.resx",
+                "UIDataGrid.nl-NL.resx",
+                "UIDataGrid.en-GB.resx",
+                "UIDataGrid.zh-Hans.resx",
+                "UIDataGrid.pt-BR.resx",
+                "UIDataGrid.af-ZA.resx",
+                "UIDataGrid.da-DK.resx",
+                "UIDataGrid.hu-HU.resx",
+                "UIDataGrid.pl-PL.resx",
+                "UIDataGrid.fa-IR.resx",
+                "UIDataGrid.vi-VN.resx",
+                "UIDataGrid.resx",
+                "UIDataGrid.ro-RO.resx",
+                "UIDataGrid.uk-UA.resx",
+                "UIDataGrid.fi-FI.resx",
+                "UIDataGrid.is-IS.resx",
+                "UIDataGrid.zh-Hant.resx",
+                "UIDataGrid.Designer.cs",
+                "UIDataGrid.tr-TR.resx",
+                "UIDataGrid.ca-ES.resx",
+                "UIDataGrid.pt-PT.resx",
+                "UIDataGrid.ko-KR.resx",
+                "UIDataGrid.it-IT.resx",
+                "UIDataGrid.ar-SA.resx",
+                "UIDataGrid.sv-SE.resx",
+                "UIDataGrid.te-IN.resx",
+                "UIDataGrid.es-AR.resx",
+                "UIDataGrid.ta-IN.resx",
+                "UIDataGrid.fr-FR.resx",
+                "UIDataGrid.kw-GB.resx",
+                "UIDataGrid.de-DE.resx",
+                "UIDataGrid.cs-CZ.resx",
+                "UIDataGrid.el-GR.resx",
+                "UIDataGrid.ru-RU.resx",
+                "UIDataGrid.sr-SP.resx",
+                "UIDataGrid.be-BY.resx",
+                "UIDataGrid.nb.resx",
+                "UIDataGrid.es-ES.resx",
+                "UIDataGrid.hi-IN.resx",
+                "UIDataGrid.ja-JP.resx",
+                "UIDataGrid.ka-GE.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/UIImageViewer",
+            "files": [
+                "UIImageViewer.it-IT.resx",
+                "UIImageViewer.te-IN.resx",
+                "UIImageViewer.ca-ES.resx",
+                "UIImageViewer.da-DK.resx",
+                "UIImageViewer.ro-RO.resx",
+                "UIImageViewer.hu-HU.resx",
+                "UIImageViewer.zh-Hans.resx",
+                "UIImageViewer.fa-IR.resx",
+                "UIImageViewer.bn-BD.resx",
+                "UIImageViewer.cs-CZ.resx",
+                "UIImageViewer.uk-UA.resx",
+                "UIImageViewer.es-AR.resx",
+                "UIImageViewer.af-ZA.resx",
+                "UIImageViewer.tr-TR.resx",
+                "UIImageViewer.fi-FI.resx",
+                "UIImageViewer.be-BY.resx",
+                "UIImageViewer.ja-JP.resx",
+                "UIImageViewer.fr-FR.resx",
+                "UIImageViewer.is-IS.resx",
+                "UIImageViewer.pl-PL.resx",
+                "UIImageViewer.sr-SP.resx",
+                "UIImageViewer.ta-IN.resx",
+                "UIImageViewer.zh-Hant.resx",
+                "UIImageViewer.ar-SA.resx",
+                "UIImageViewer.el-GR.resx",
+                "UIImageViewer.he-IL.resx",
+                "UIImageViewer.Designer.cs",
+                "UIImageViewer.nl-NL.resx",
+                "UIImageViewer.es-ES.resx",
+                "UIImageViewer.en-GB.resx",
+                "UIImageViewer.ko-KR.resx",
+                "UIImageViewer.sv-SE.resx",
+                "UIImageViewer.ka-GE.resx",
+                "UIImageViewer.de-DE.resx",
+                "UIImageViewer.kw-GB.resx",
+                "UIImageViewer.ru-RU.resx",
+                "UIImageViewer.hi-IN.resx",
+                "UIImageViewer.pt-BR.resx",
+                "UIImageViewer.id-ID.resx",
+                "UIImageViewer.kn-IN.resx",
+                "UIImageViewer.pt-PT.resx",
+                "UIImageViewer.nb.resx",
+                "UIImageViewer.vi-VN.resx",
+                "UIImageViewer.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/WhatsNewDialog",
+            "files": [
+                "WhatsNewDialog.zh-Hant.resx",
+                "WhatsNewDialog.uk-UA.resx",
+                "WhatsNewDialog.it-IT.resx",
+                "WhatsNewDialog.ro-RO.resx",
+                "WhatsNewDialog.hi-IN.resx",
+                "WhatsNewDialog.kw-GB.resx",
+                "WhatsNewDialog.he-IL.resx",
+                "WhatsNewDialog.sv-SE.resx",
+                "WhatsNewDialog.zh-Hans.resx",
+                "WhatsNewDialog.nl-NL.resx",
+                "WhatsNewDialog.kn-IN.resx",
+                "WhatsNewDialog.da-DK.resx",
+                "WhatsNewDialog.af-ZA.resx",
+                "WhatsNewDialog.hu-HU.resx",
+                "WhatsNewDialog.pt-BR.resx",
+                "WhatsNewDialog.nb.resx",
+                "WhatsNewDialog.ka-GE.resx",
+                "WhatsNewDialog.ko-KR.resx",
+                "WhatsNewDialog.ca-ES.resx",
+                "WhatsNewDialog.es-ES.resx",
+                "WhatsNewDialog.cs-CZ.resx",
+                "WhatsNewDialog.en-GB.resx",
+                "WhatsNewDialog.id-ID.resx",
+                "WhatsNewDialog.el-GR.resx",
+                "WhatsNewDialog.fi-FI.resx",
+                "WhatsNewDialog.sr-SP.resx",
+                "WhatsNewDialog.ta-IN.resx",
+                "WhatsNewDialog.fa-IR.resx",
+                "WhatsNewDialog.fr-FR.resx",
+                "WhatsNewDialog.pl-PL.resx",
+                "WhatsNewDialog.es-AR.resx",
+                "WhatsNewDialog.de-DE.resx",
+                "WhatsNewDialog.is-IS.resx",
+                "WhatsNewDialog.ja-JP.resx",
+                "WhatsNewDialog.bn-BD.resx",
+                "WhatsNewDialog.ru-RU.resx",
+                "WhatsNewDialog.resx",
+                "WhatsNewDialog.tr-TR.resx",
+                "WhatsNewDialog.vi-VN.resx",
+                "WhatsNewDialog.Designer.cs",
+                "WhatsNewDialog.pt-PT.resx",
+                "WhatsNewDialog.te-IN.resx",
+                "WhatsNewDialog.be-BY.resx",
+                "WhatsNewDialog.ar-SA.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/ToolGroupPage",
+            "files": [
+                "ToolGroupPage.vi-VN.resx",
+                "ToolGroupPage.zh-Hant.resx",
+                "ToolGroupPage.pt-BR.resx",
+                "ToolGroupPage.ja-JP.resx",
+                "ToolGroupPage.ka-GE.resx",
+                "ToolGroupPage.resx",
+                "ToolGroupPage.es-AR.resx",
+                "ToolGroupPage.ar-SA.resx",
+                "ToolGroupPage.cs-CZ.resx",
+                "ToolGroupPage.ru-RU.resx",
+                "ToolGroupPage.uk-UA.resx",
+                "ToolGroupPage.ro-RO.resx",
+                "ToolGroupPage.fa-IR.resx",
+                "ToolGroupPage.hi-IN.resx",
+                "ToolGroupPage.sr-SP.resx",
+                "ToolGroupPage.ta-IN.resx",
+                "ToolGroupPage.kw-GB.resx",
+                "ToolGroupPage.be-BY.resx",
+                "ToolGroupPage.nl-NL.resx",
+                "ToolGroupPage.Designer.cs",
+                "ToolGroupPage.zh-Hans.resx",
+                "ToolGroupPage.id-ID.resx",
+                "ToolGroupPage.it-IT.resx",
+                "ToolGroupPage.de-DE.resx",
+                "ToolGroupPage.fr-FR.resx",
+                "ToolGroupPage.is-IS.resx",
+                "ToolGroupPage.hu-HU.resx",
+                "ToolGroupPage.kn-IN.resx",
+                "ToolGroupPage.ko-KR.resx",
+                "ToolGroupPage.sv-SE.resx",
+                "ToolGroupPage.he-IL.resx",
+                "ToolGroupPage.es-ES.resx",
+                "ToolGroupPage.da-DK.resx",
+                "ToolGroupPage.fi-FI.resx",
+                "ToolGroupPage.pt-PT.resx",
+                "ToolGroupPage.te-IN.resx",
+                "ToolGroupPage.tr-TR.resx",
+                "ToolGroupPage.pl-PL.resx",
+                "ToolGroupPage.en-GB.resx",
+                "ToolGroupPage.el-GR.resx",
+                "ToolGroupPage.nb.resx",
+                "ToolGroupPage.af-ZA.resx",
+                "ToolGroupPage.ca-ES.resx",
+                "ToolGroupPage.bn-BD.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/UITextInputWrapper",
+            "files": [
+                "UITextInputWrapper.af-ZA.resx",
+                "UITextInputWrapper.hi-IN.resx",
+                "UITextInputWrapper.sv-SE.resx",
+                "UITextInputWrapper.kn-IN.resx",
+                "UITextInputWrapper.nl-NL.resx",
+                "UITextInputWrapper.en-GB.resx",
+                "UITextInputWrapper.de-DE.resx",
+                "UITextInputWrapper.fr-FR.resx",
+                "UITextInputWrapper.zh-Hans.resx",
+                "UITextInputWrapper.pt-BR.resx",
+                "UITextInputWrapper.fi-FI.resx",
+                "UITextInputWrapper.hu-HU.resx",
+                "UITextInputWrapper.ko-KR.resx",
+                "UITextInputWrapper.kw-GB.resx",
+                "UITextInputWrapper.ca-ES.resx",
+                "UITextInputWrapper.cs-CZ.resx",
+                "UITextInputWrapper.resx",
+                "UITextInputWrapper.Designer.cs",
+                "UITextInputWrapper.it-IT.resx",
+                "UITextInputWrapper.zh-Hant.resx",
+                "UITextInputWrapper.te-IN.resx",
+                "UITextInputWrapper.he-IL.resx",
+                "UITextInputWrapper.ka-GE.resx",
+                "UITextInputWrapper.vi-VN.resx",
+                "UITextInputWrapper.sr-SP.resx",
+                "UITextInputWrapper.pl-PL.resx",
+                "UITextInputWrapper.be-BY.resx",
+                "UITextInputWrapper.nb.resx",
+                "UITextInputWrapper.is-IS.resx",
+                "UITextInputWrapper.ja-JP.resx",
+                "UITextInputWrapper.bn-BD.resx",
+                "UITextInputWrapper.ru-RU.resx",
+                "UITextInputWrapper.es-ES.resx",
+                "UITextInputWrapper.es-AR.resx",
+                "UITextInputWrapper.ar-SA.resx",
+                "UITextInputWrapper.tr-TR.resx",
+                "UITextInputWrapper.el-GR.resx",
+                "UITextInputWrapper.da-DK.resx",
+                "UITextInputWrapper.id-ID.resx",
+                "UITextInputWrapper.uk-UA.resx",
+                "UITextInputWrapper.ro-RO.resx",
+                "UITextInputWrapper.pt-PT.resx",
+                "UITextInputWrapper.ta-IN.resx",
+                "UITextInputWrapper.fa-IR.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/InfoBar",
+            "files": [
+                "InfoBar.hu-HU.resx",
+                "InfoBar.it-IT.resx",
+                "InfoBar.ro-RO.resx",
+                "InfoBar.pl-PL.resx",
+                "InfoBar.da-DK.resx",
+                "InfoBar.tr-TR.resx",
+                "InfoBar.pt-BR.resx",
+                "InfoBar.nl-NL.resx",
+                "InfoBar.bn-BD.resx",
+                "InfoBar.nb.resx",
+                "InfoBar.ja-JP.resx",
+                "InfoBar.es-AR.resx",
+                "InfoBar.ca-ES.resx",
+                "InfoBar.vi-VN.resx",
+                "InfoBar.ru-RU.resx",
+                "InfoBar.en-GB.resx",
+                "InfoBar.fa-IR.resx",
+                "InfoBar.hi-IN.resx",
+                "InfoBar.uk-UA.resx",
+                "InfoBar.fi-FI.resx",
+                "InfoBar.ka-GE.resx",
+                "InfoBar.fr-FR.resx",
+                "InfoBar.kw-GB.resx",
+                "InfoBar.be-BY.resx",
+                "InfoBar.ta-IN.resx",
+                "InfoBar.sr-SP.resx",
+                "InfoBar.resx",
+                "InfoBar.is-IS.resx",
+                "InfoBar.id-ID.resx",
+                "InfoBar.ar-SA.resx",
+                "InfoBar.sv-SE.resx",
+                "InfoBar.ko-KR.resx",
+                "InfoBar.he-IL.resx",
+                "InfoBar.de-DE.resx",
+                "InfoBar.kn-IN.resx",
+                "InfoBar.pt-PT.resx",
+                "InfoBar.zh-Hant.resx",
+                "InfoBar.Designer.cs",
+                "InfoBar.el-GR.resx",
+                "InfoBar.zh-Hans.resx",
+                "InfoBar.te-IN.resx",
+                "InfoBar.af-ZA.resx",
+                "InfoBar.es-ES.resx",
+                "InfoBar.cs-CZ.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/TextBox",
+            "files": [
+                "TextBox.hi-IN.resx",
+                "TextBox.ta-IN.resx",
+                "TextBox.ro-RO.resx",
+                "TextBox.uk-UA.resx",
+                "TextBox.nl-NL.resx",
+                "TextBox.fr-FR.resx",
+                "TextBox.ca-ES.resx",
+                "TextBox.resx",
+                "TextBox.kn-IN.resx",
+                "TextBox.ja-JP.resx",
+                "TextBox.te-IN.resx",
+                "TextBox.Designer.cs",
+                "TextBox.ka-GE.resx",
+                "TextBox.he-IL.resx",
+                "TextBox.be-BY.resx",
+                "TextBox.sr-SP.resx",
+                "TextBox.pt-PT.resx",
+                "TextBox.bn-BD.resx",
+                "TextBox.ko-KR.resx",
+                "TextBox.sv-SE.resx",
+                "TextBox.da-DK.resx",
+                "TextBox.zh-Hans.resx",
+                "TextBox.id-ID.resx",
+                "TextBox.de-DE.resx",
+                "TextBox.es-ES.resx",
+                "TextBox.kw-GB.resx",
+                "TextBox.cs-CZ.resx",
+                "TextBox.fi-FI.resx",
+                "TextBox.vi-VN.resx",
+                "TextBox.es-AR.resx",
+                "TextBox.af-ZA.resx",
+                "TextBox.hu-HU.resx",
+                "TextBox.ru-RU.resx",
+                "TextBox.zh-Hant.resx",
+                "TextBox.is-IS.resx",
+                "TextBox.nb.resx",
+                "TextBox.en-GB.resx",
+                "TextBox.pt-BR.resx",
+                "TextBox.ar-SA.resx",
+                "TextBox.fa-IR.resx",
+                "TextBox.el-GR.resx",
+                "TextBox.pl-PL.resx",
+                "TextBox.tr-TR.resx",
+                "TextBox.it-IT.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/MainWindow",
+            "files": [
+                "MainWindow.vi-VN.resx",
+                "MainWindow.cs-CZ.resx",
+                "MainWindow.kn-IN.resx",
+                "MainWindow.Designer.cs",
+                "MainWindow.is-IS.resx",
+                "MainWindow.it-IT.resx",
+                "MainWindow.ta-IN.resx",
+                "MainWindow.en-GB.resx",
+                "MainWindow.da-DK.resx",
+                "MainWindow.id-ID.resx",
+                "MainWindow.ro-RO.resx",
+                "MainWindow.sv-SE.resx",
+                "MainWindow.uk-UA.resx",
+                "MainWindow.hu-HU.resx",
+                "MainWindow.pt-PT.resx",
+                "MainWindow.fa-IR.resx",
+                "MainWindow.pl-PL.resx",
+                "MainWindow.ka-GE.resx",
+                "MainWindow.ar-SA.resx",
+                "MainWindow.kw-GB.resx",
+                "MainWindow.be-BY.resx",
+                "MainWindow.te-IN.resx",
+                "MainWindow.nb.resx",
+                "MainWindow.bn-BD.resx",
+                "MainWindow.af-ZA.resx",
+                "MainWindow.sr-SP.resx",
+                "MainWindow.zh-Hans.resx",
+                "MainWindow.ja-JP.resx",
+                "MainWindow.resx",
+                "MainWindow.de-DE.resx",
+                "MainWindow.tr-TR.resx",
+                "MainWindow.zh-Hant.resx",
+                "MainWindow.fr-FR.resx",
+                "MainWindow.pt-BR.resx",
+                "MainWindow.nl-NL.resx",
+                "MainWindow.es-AR.resx",
+                "MainWindow.ca-ES.resx",
+                "MainWindow.ru-RU.resx",
+                "MainWindow.es-ES.resx",
+                "MainWindow.he-IL.resx",
+                "MainWindow.el-GR.resx",
+                "MainWindow.fi-FI.resx",
+                "MainWindow.hi-IN.resx",
+                "MainWindow.ko-KR.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/ToolPage",
+            "files": [
+                "ToolPage.nl-NL.resx",
+                "ToolPage.ka-GE.resx",
+                "ToolPage.vi-VN.resx",
+                "ToolPage.he-IL.resx",
+                "ToolPage.da-DK.resx",
+                "ToolPage.ru-RU.resx",
+                "ToolPage.ko-KR.resx",
+                "ToolPage.resx",
+                "ToolPage.id-ID.resx",
+                "ToolPage.pt-PT.resx",
+                "ToolPage.en-GB.resx",
+                "ToolPage.ja-JP.resx",
+                "ToolPage.ta-IN.resx",
+                "ToolPage.Designer.cs",
+                "ToolPage.de-DE.resx",
+                "ToolPage.ca-ES.resx",
+                "ToolPage.nb.resx",
+                "ToolPage.pl-PL.resx",
+                "ToolPage.cs-CZ.resx",
+                "ToolPage.be-BY.resx",
+                "ToolPage.kn-IN.resx",
+                "ToolPage.af-ZA.resx",
+                "ToolPage.it-IT.resx",
+                "ToolPage.ro-RO.resx",
+                "ToolPage.fa-IR.resx",
+                "ToolPage.pt-BR.resx",
+                "ToolPage.es-ES.resx",
+                "ToolPage.is-IS.resx",
+                "ToolPage.el-GR.resx",
+                "ToolPage.sr-SP.resx",
+                "ToolPage.ar-SA.resx",
+                "ToolPage.hi-IN.resx",
+                "ToolPage.sv-SE.resx",
+                "ToolPage.kw-GB.resx",
+                "ToolPage.fr-FR.resx",
+                "ToolPage.hu-HU.resx",
+                "ToolPage.es-AR.resx",
+                "ToolPage.uk-UA.resx",
+                "ToolPage.te-IN.resx",
+                "ToolPage.tr-TR.resx",
+                "ToolPage.zh-Hant.resx",
+                "ToolPage.bn-BD.resx",
+                "ToolPage.zh-Hans.resx",
+                "ToolPage.fi-FI.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/UIFileSelectorPresenter",
+            "files": [
+                "UIFileSelectorPresenter.nl-NL.resx",
+                "UIFileSelectorPresenter.kw-GB.resx",
+                "UIFileSelectorPresenter.zh-Hans.resx",
+                "UIFileSelectorPresenter.ro-RO.resx",
+                "UIFileSelectorPresenter.sr-SP.resx",
+                "UIFileSelectorPresenter.resx",
+                "UIFileSelectorPresenter.ja-JP.resx",
+                "UIFileSelectorPresenter.ar-SA.resx",
+                "UIFileSelectorPresenter.uk-UA.resx",
+                "UIFileSelectorPresenter.es-AR.resx",
+                "UIFileSelectorPresenter.he-IL.resx",
+                "UIFileSelectorPresenter.sv-SE.resx",
+                "UIFileSelectorPresenter.is-IS.resx",
+                "UIFileSelectorPresenter.ka-GE.resx",
+                "UIFileSelectorPresenter.Designer.cs",
+                "UIFileSelectorPresenter.pt-BR.resx",
+                "UIFileSelectorPresenter.fa-IR.resx",
+                "UIFileSelectorPresenter.te-IN.resx",
+                "UIFileSelectorPresenter.en-GB.resx",
+                "UIFileSelectorPresenter.de-DE.resx",
+                "UIFileSelectorPresenter.kn-IN.resx",
+                "UIFileSelectorPresenter.el-GR.resx",
+                "UIFileSelectorPresenter.it-IT.resx",
+                "UIFileSelectorPresenter.hu-HU.resx",
+                "UIFileSelectorPresenter.bn-BD.resx",
+                "UIFileSelectorPresenter.es-ES.resx",
+                "UIFileSelectorPresenter.zh-Hant.resx",
+                "UIFileSelectorPresenter.tr-TR.resx",
+                "UIFileSelectorPresenter.ko-KR.resx",
+                "UIFileSelectorPresenter.ta-IN.resx",
+                "UIFileSelectorPresenter.fr-FR.resx",
+                "UIFileSelectorPresenter.pt-PT.resx",
+                "UIFileSelectorPresenter.da-DK.resx",
+                "UIFileSelectorPresenter.ru-RU.resx",
+                "UIFileSelectorPresenter.be-BY.resx",
+                "UIFileSelectorPresenter.fi-FI.resx",
+                "UIFileSelectorPresenter.id-ID.resx",
+                "UIFileSelectorPresenter.pl-PL.resx",
+                "UIFileSelectorPresenter.hi-IN.resx",
+                "UIFileSelectorPresenter.ca-ES.resx",
+                "UIFileSelectorPresenter.cs-CZ.resx",
+                "UIFileSelectorPresenter.nb.resx",
+                "UIFileSelectorPresenter.vi-VN.resx",
+                "UIFileSelectorPresenter.af-ZA.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/ToggleSwitch",
+            "files": [
+                "ToggleSwitch.cs-CZ.resx",
+                "ToggleSwitch.uk-UA.resx",
+                "ToggleSwitch.kw-GB.resx",
+                "ToggleSwitch.id-ID.resx",
+                "ToggleSwitch.it-IT.resx",
+                "ToggleSwitch.ru-RU.resx",
+                "ToggleSwitch.ja-JP.resx",
+                "ToggleSwitch.sv-SE.resx",
+                "ToggleSwitch.zh-Hant.resx",
+                "ToggleSwitch.hu-HU.resx",
+                "ToggleSwitch.is-IS.resx",
+                "ToggleSwitch.he-IL.resx",
+                "ToggleSwitch.fa-IR.resx",
+                "ToggleSwitch.es-AR.resx",
+                "ToggleSwitch.Designer.cs",
+                "ToggleSwitch.en-GB.resx",
+                "ToggleSwitch.te-IN.resx",
+                "ToggleSwitch.be-BY.resx",
+                "ToggleSwitch.fr-FR.resx",
+                "ToggleSwitch.kn-IN.resx",
+                "ToggleSwitch.ro-RO.resx",
+                "ToggleSwitch.vi-VN.resx",
+                "ToggleSwitch.nl-NL.resx",
+                "ToggleSwitch.resx",
+                "ToggleSwitch.ka-GE.resx",
+                "ToggleSwitch.zh-Hans.resx",
+                "ToggleSwitch.ta-IN.resx",
+                "ToggleSwitch.sr-SP.resx",
+                "ToggleSwitch.de-DE.resx",
+                "ToggleSwitch.pl-PL.resx",
+                "ToggleSwitch.pt-BR.resx",
+                "ToggleSwitch.hi-IN.resx",
+                "ToggleSwitch.el-GR.resx",
+                "ToggleSwitch.tr-TR.resx",
+                "ToggleSwitch.nb.resx",
+                "ToggleSwitch.ko-KR.resx",
+                "ToggleSwitch.ar-SA.resx",
+                "ToggleSwitch.bn-BD.resx",
+                "ToggleSwitch.pt-PT.resx",
+                "ToggleSwitch.fi-FI.resx",
+                "ToggleSwitch.es-ES.resx",
+                "ToggleSwitch.af-ZA.resx",
+                "ToggleSwitch.ca-ES.resx",
+                "ToggleSwitch.da-DK.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Localization/Strings/FirstStartDialog",
+            "files": [
+                "FirstStartDialog.he-IL.resx",
+                "FirstStartDialog.vi-VN.resx",
+                "FirstStartDialog.en-GB.resx",
+                "FirstStartDialog.ja-JP.resx",
+                "FirstStartDialog.Designer.cs",
+                "FirstStartDialog.tr-TR.resx",
+                "FirstStartDialog.ko-KR.resx",
+                "FirstStartDialog.is-IS.resx",
+                "FirstStartDialog.ta-IN.resx",
+                "FirstStartDialog.te-IN.resx",
+                "FirstStartDialog.es-AR.resx",
+                "FirstStartDialog.pl-PL.resx",
+                "FirstStartDialog.ca-ES.resx",
+                "FirstStartDialog.fa-IR.resx",
+                "FirstStartDialog.zh-Hans.resx",
+                "FirstStartDialog.fr-FR.resx",
+                "FirstStartDialog.id-ID.resx",
+                "FirstStartDialog.kw-GB.resx",
+                "FirstStartDialog.fi-FI.resx",
+                "FirstStartDialog.bn-BD.resx",
+                "FirstStartDialog.hi-IN.resx",
+                "FirstStartDialog.nb.resx",
+                "FirstStartDialog.pt-BR.resx",
+                "FirstStartDialog.af-ZA.resx",
+                "FirstStartDialog.it-IT.resx",
+                "FirstStartDialog.cs-CZ.resx",
+                "FirstStartDialog.sv-SE.resx",
+                "FirstStartDialog.es-ES.resx",
+                "FirstStartDialog.da-DK.resx",
+                "FirstStartDialog.ka-GE.resx",
+                "FirstStartDialog.be-BY.resx",
+                "FirstStartDialog.ro-RO.resx",
+                "FirstStartDialog.kn-IN.resx",
+                "FirstStartDialog.de-DE.resx",
+                "FirstStartDialog.sr-SP.resx",
+                "FirstStartDialog.el-GR.resx",
+                "FirstStartDialog.uk-UA.resx",
+                "FirstStartDialog.ru-RU.resx",
+                "FirstStartDialog.resx",
+                "FirstStartDialog.ar-SA.resx",
+                "FirstStartDialog.nl-NL.resx",
+                "FirstStartDialog.pt-PT.resx",
+                "FirstStartDialog.zh-Hant.resx",
+                "FirstStartDialog.hu-HU.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core",
+            "files": [
+                "IGroup.cs",
+                "DevToys.Core.csproj",
+                "TitleBarInfoProvider.cs",
+                "IItem.cs",
+                "AppHelper.cs",
+                "OSHelper.cs",
+                "ExtensionOrderer.cs",
+                "FileHelper.cs",
+                "ISeparator.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Models",
+            "files": [
+                "GitHubRelease.cs",
+                "ChangeSelectedMenuItemMessage.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Settings",
+            "files": [
+                "ISettingsStorage.cs",
+                "SettingsProvider.cs",
+                "PredefinedSettings.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Tools",
+            "files": [
+                "SmartDetectionService.cs",
+                "SmartDetectedTool.cs",
+                "GuiToolProvider.cs",
+                "GuiToolInstance.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Tools/Metadata",
+            "files": [
+                "GuiToolGroupMetadata.cs",
+                "DataTypeDetectorMetadata.cs",
+                "LanguageServiceMetadata.cs",
+                "ResourceAssemblyIdentifierMetadata.cs",
+                "ReservedGuiToolGroupNames.cs",
+                "GuiToolMetadata.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Tools/ViewItems",
+            "files": [
+                "GuiToolViewItem.cs",
+                "GroupViewItem.cs",
+                "SeparatorViewItem.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Properties",
+            "files": [
+                "AdditionGlobalUsings.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Version",
+            "files": [
+                "VersionService.cs",
+                "IVersionService.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Debugger",
+            "files": [
+                "HotReloadEventArgs.cs",
+                "HotReloadService.cs",
+                "DebuggerHelper.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Web",
+            "files": [
+                "WebClientService.cs",
+                "IWebClientService.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Logging",
+            "files": [
+                "FileLogger.cs",
+                "LoggingBuilderExtensions.cs",
+                "FileLoggerProvider.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Core/Mef",
+            "files": [
+                "RecursiveDirectoryCatalog.cs",
+                "MefComposer.cs",
+                "MefProvider.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor",
+            "files": [
+                "DevToys.Blazor.csproj",
+                ".eslintrc.json",
+                "package.json",
+                "Main.razor",
+                "gulpfile.js",
+                "_Imports.razor",
+                "tsconfig.json"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Pages",
+            "files": [
+                "MainLayout.razor",
+                "Index.razor.scss",
+                "Index.razor",
+                "Index.razor.cs",
+                "MainLayout.razor.cs",
+                "MainLayout.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Pages/Dialogs",
+            "files": [
+                "WhatsNewDialog.razor",
+                "FirstStartDialog.razor",
+                "WhatsNewDialog.razor.cs",
+                "FirstStartDialog.razor.cs",
+                "WhatsNewDialog.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Pages/SubPages",
+            "files": [
+                "ToolGroup.razor.js",
+                "ToolGroup.razor.cs",
+                "ToolGroup.razor.js.map",
+                "ToolPage.razor",
+                "ToolGroup.razor.scss",
+                "ToolGroup.razor.ts",
+                "ToolPage.razor.scss",
+                "ToolPage.razor.cs",
+                "ToolGroup.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot",
+            "files": [
+                "favicon.ico"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/js",
+            "files": [
+                "require.js",
+                "devtoys.js",
+                "simplebar-modified.js",
+                "devtoys.g.js"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/img",
+            "files": [
+                "idea-disabled.svg",
+                "idea.svg",
+                "splash-screen.svg"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/img/hero",
+            "files": [
+                "light-theme-tile.png",
+                "dark-theme-tile.png"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/lib",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/lib/split-grid",
+            "files": [
+                "split-grid.js"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/wwwroot/css",
+            "files": [
+                "devtoys.g.css",
+                "app.css"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInTools",
+            "files": [
+                "DevToysBlazorResourceManagerAssemblyIdentifier.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInTools/Settings",
+            "files": [
+                "Settings.te-IN.resx",
+                "Settings.be-BY.resx",
+                "Settings.ta-IN.resx",
+                "Settings.af-ZA.resx",
+                "Settings.zh-Hans.resx",
+                "Settings.nb.resx",
+                "Settings.Designer.cs",
+                "Settings.kw-GB.resx",
+                "Settings.es-ES.resx",
+                "Settings.fa-IR.resx",
+                "Settings.fi-FI.resx",
+                "Settings.uk-UA.resx",
+                "Settings.hu-HU.resx",
+                "Settings.pt-BR.resx",
+                "Settings.he-IL.resx",
+                "Settings.ka-GE.resx",
+                "Settings.ru-RU.resx",
+                "Settings.sv-SE.resx",
+                "Settings.id-ID.resx",
+                "Settings.bn-BD.resx",
+                "Settings.zh-Hant.resx",
+                "Settings.ja-JP.resx",
+                "Settings.is-IS.resx",
+                "Settings.ar-SA.resx",
+                "Settings.vi-VN.resx",
+                "Settings.sr-SP.resx",
+                "Settings.hi-IN.resx",
+                "Settings.ca-ES.resx",
+                "Settings.es-AR.resx",
+                "Settings.it-IT.resx",
+                "Settings.ro-RO.resx",
+                "Settings.kn-IN.resx",
+                "SettingsGuiTool.cs",
+                "Settings.de-DE.resx",
+                "Settings.el-GR.resx",
+                "Settings.en-GB.resx",
+                "Settings.pl-PL.resx",
+                "Settings.pt-PT.resx",
+                "Settings.cs-CZ.resx",
+                "Settings.resx",
+                "Settings.tr-TR.resx",
+                "Settings.fr-FR.resx",
+                "Settings.nl-NL.resx",
+                "Settings.da-DK.resx",
+                "Settings.ko-KR.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInTools/SupportDevelopment",
+            "files": [
+                "SupportDevelopment.resx",
+                "SupportDevelopment.ar-SA.resx",
+                "SupportDevelopment.vi-VN.resx",
+                "SupportDevelopment.el-GR.resx",
+                "SupportDevelopment.fi-FI.resx",
+                "SupportDevelopment.kn-IN.resx",
+                "SupportDevelopmentGuidTools.cs",
+                "SupportDevelopment.pt-BR.resx",
+                "SupportDevelopment.he-IL.resx",
+                "SupportDevelopment.nb.resx",
+                "SupportDevelopment.pl-PL.resx",
+                "SupportDevelopment.ru-RU.resx",
+                "SupportDevelopment.af-ZA.resx",
+                "SupportDevelopment.pt-PT.resx",
+                "SupportDevelopment.hi-IN.resx",
+                "SupportDevelopment.fa-IR.resx",
+                "SupportDevelopment.es-ES.resx",
+                "SupportDevelopment.id-ID.resx",
+                "SupportDevelopment.bn-BD.resx",
+                "SupportDevelopment.kw-GB.resx",
+                "SupportDevelopment.sr-SP.resx",
+                "SupportDevelopment.te-IN.resx",
+                "SupportDevelopment.ko-KR.resx",
+                "SupportDevelopment.sv-SE.resx",
+                "SupportDevelopment.is-IS.resx",
+                "SupportDevelopment.tr-TR.resx",
+                "SupportDevelopment.Designer.cs",
+                "SupportDevelopment.zh-Hant.resx",
+                "SupportDevelopment.de-DE.resx",
+                "SupportDevelopment.fr-FR.resx",
+                "SupportDevelopment.be-BY.resx",
+                "SupportDevelopment.ro-RO.resx",
+                "SupportDevelopment.ta-IN.resx",
+                "SupportDevelopment.ja-JP.resx",
+                "SupportDevelopment.ka-GE.resx",
+                "SupportDevelopment.uk-UA.resx",
+                "SupportDevelopment.ca-ES.resx",
+                "SupportDevelopment.zh-Hans.resx",
+                "SupportDevelopment.nl-NL.resx",
+                "SupportDevelopment.en-GB.resx",
+                "SupportDevelopment.es-AR.resx",
+                "SupportDevelopment.da-DK.resx",
+                "SupportDevelopment.hu-HU.resx",
+                "SupportDevelopment.cs-CZ.resx",
+                "SupportDevelopment.it-IT.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInTools/ExtensionsManager",
+            "files": [
+                "ExtensionsManagerGuiTool.cs",
+                "ExtensionsManager.ko-KR.resx",
+                "ExtensionsManager.ca-ES.resx",
+                "ExtensionsManager.sr-SP.resx",
+                "ExtensionsManager.sv-SE.resx",
+                "ExtensionsManager.uk-UA.resx",
+                "ExtensionsManager.bn-BD.resx",
+                "ExtensionsManager.be-BY.resx",
+                "ExtensionsManager.en-GB.resx",
+                "ExtensionsManager.ta-IN.resx",
+                "ExtensionsManager.zh-Hans.resx",
+                "ExtensionsManager.cs-CZ.resx",
+                "ExtensionsManager.id-ID.resx",
+                "ExtensionsManager.fr-FR.resx",
+                "ExtensionsManager.de-DE.resx",
+                "ExtensionsManager.resx",
+                "ExtensionsManager.pl-PL.resx",
+                "ExtensionsManager.el-GR.resx",
+                "ExtensionsManager.es-AR.resx",
+                "ExtensionsManager.tr-TR.resx",
+                "ExtensionsManager.ru-RU.resx",
+                "ExtensionsManager.ro-RO.resx",
+                "ExtensionsManager.ar-SA.resx",
+                "ExtensionInstallationResult.cs",
+                "ExtensionsManager.pt-PT.resx",
+                "ExtensionsManager.nb.resx",
+                "ExtensionsManager.hu-HU.resx",
+                "ExtensionsManager.es-ES.resx",
+                "ExtensionsManager.nl-NL.resx",
+                "ExtensionsManager.is-IS.resx",
+                "ExtensionsManager.ka-GE.resx",
+                "ExtensionsManager.da-DK.resx",
+                "ExtensionsManager.kn-IN.resx",
+                "ExtensionsManager.pt-BR.resx",
+                "ExtensionsManager.it-IT.resx",
+                "ExtensionsManager.zh-Hant.resx",
+                "ExtensionsManager.te-IN.resx",
+                "ExtensionsManager.hi-IN.resx",
+                "ExtensionsManager.af-ZA.resx",
+                "ExtensionsManager.ja-JP.resx",
+                "ExtensionsManager.fa-IR.resx",
+                "ExtensionsManager.he-IL.resx",
+                "ExtensionsManager.vi-VN.resx",
+                "ExtensionInstallationManager.cs",
+                "ExtensionsManager.Designer.cs",
+                "ExtensionsManager.fi-FI.resx",
+                "ExtensionsManager.kw-GB.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets",
+            "files": [
+                "changelog.md"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/sass",
+            "files": [
+                "_typography.scss",
+                "_layout.scss",
+                "devtoys.scss",
+                "_transitions.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/sass/theme",
+            "files": [
+                "_default.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/sass/theme/macos",
+            "files": [
+                "light.scss",
+                "dark.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/sass/theme/linux",
+            "files": [
+                "light.scss",
+                "dark.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/sass/theme/windows",
+            "files": [
+                "light.scss",
+                "dark.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/fonts",
+            "files": [
+                "FluentSystemIcons-Regular.ttf"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/javascript",
+            "files": [
+                "dom.js.map",
+                "dom.js",
+                "popover.js.map",
+                "monacoEditor.js",
+                "monacoEditor.ts",
+                "popover.js",
+                "index.esm.js.map",
+                "monacoEditorLanguage.js.map",
+                "monacoEditorLanguage.ts",
+                "monacoEditor.js.map",
+                "index.esm.ts",
+                "index.esm.js",
+                "monacoEditorLanguage.js",
+                "dom.ts",
+                "popover.ts"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Assets/samples",
+            "files": [
+                "json-sample.json"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Properties",
+            "files": [
+                "AdditionGlobalUsings.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInGroups",
+            "files": [
+                "Groups.es-AR.resx",
+                "Groups.bn-BD.resx",
+                "Groups.te-IN.resx",
+                "Groups.es-ES.resx",
+                "Groups.is-IS.resx",
+                "Groups.ru-RU.resx",
+                "Groups.it-IT.resx",
+                "Groups.pl-PL.resx",
+                "FormattersGroup.cs",
+                "GraphicGroup.cs",
+                "Groups.id-ID.resx",
+                "Groups.el-GR.resx",
+                "Groups.ar-SA.resx",
+                "Groups.vi-VN.resx",
+                "Groups.be-BY.resx",
+                "Groups.en-GB.resx",
+                "Groups.de-DE.resx",
+                "Groups.ro-RO.resx",
+                "Groups.uk-UA.resx",
+                "Groups.he-IL.resx",
+                "Groups.ta-IN.resx",
+                "Groups.da-DK.resx",
+                "Groups.hu-HU.resx",
+                "Groups.zh-Hant.resx",
+                "Groups.kn-IN.resx",
+                "TestersGroup.cs",
+                "Groups.hi-IN.resx",
+                "Groups.cs-CZ.resx",
+                "Groups.zh-Hans.resx",
+                "Groups.resx",
+                "Groups.af-ZA.resx",
+                "Groups.nl-NL.resx",
+                "Groups.sv-SE.resx",
+                "Groups.pt-BR.resx",
+                "Groups.kw-GB.resx",
+                "Groups.pt-PT.resx",
+                "TextGroup.cs",
+                "Groups.fa-IR.resx",
+                "Groups.nb.resx",
+                "Groups.fr-FR.resx",
+                "ConvertersGroup.cs",
+                "EncodersDecodersGroup.cs",
+                "Groups.ca-ES.resx",
+                "Groups.sr-SP.resx",
+                "Groups.ko-KR.resx",
+                "GeneratorsGroup.cs",
+                "Groups.fi-FI.resx",
+                "Groups.ja-JP.resx",
+                "Groups.Designer.cs",
+                "Groups.tr-TR.resx",
+                "Groups.ka-GE.resx"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/BuiltInDataTypeDetectors",
+            "files": [
+                "Base64TextDataTypeDetector.cs",
+                "JsonDataTypeDetector.cs",
+                "XmlDataTypeDetector.cs",
+                "Base64ImageDataTypeDetector.cs",
+                "ImageFileDataTypeDetector.cs",
+                "JsonArrayDataTypeDetector.cs",
+                "FileDataTypeDetector.cs",
+                "XsdDataTypeDetector.cs",
+                "TextDataTypeDetector.cs",
+                "ImageDataTypeDetector.cs",
+                "DateDataTypeDetector.cs",
+                "FilesDataTypeDetector.cs",
+                "GZipTextDataTypeDetector.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components",
+            "files": [
+                "StyledComponentBase.cs",
+                "JSStyledComponentBase.cs",
+                "MefComponentBase.cs",
+                "Render.razor",
+                "IFocusable.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/UIElements",
+            "files": [
+                "UIDropDownButtonPresenter.razor.cs",
+                "UISettingPresenter.razor",
+                "UISplitGridPresenter.razor",
+                "UIDataGridPresenter.razor",
+                "UISwitchPresenter.razor",
+                "UIIconPresenter.razor",
+                "UIWrapPresenter.razor.cs",
+                "UISettingGroupPresenter.razor.cs",
+                "UICardPresenter.razor",
+                "UIStackPresenter.razor.cs",
+                "UICardPresenter.razor.cs",
+                "UIWebViewPresenter.razor.cs",
+                "UITextInputWrapper.razor.js",
+                "UINumberInputPresenter.razor",
+                "UIMultiLineTextInputHelper.cs",
+                "UITextInputWrapper.razor.scss",
+                "UIImageViewerPresenter.razor.cs",
+                "UIWebViewPresenter.razor.js.map",
+                "UIButtonPresenter.razor.cs",
+                "UIInfoBarPresenter.razor",
+                "UIPasswordInputPresenter.razor",
+                "UIProgressRingPresenter.razor",
+                "UIFileSelectorPresenter.razor",
+                "UISettingPresenter.razor.cs",
+                "UITextInputWrapper.razor",
+                "UISelectDropDownListPresenter.razor.cs",
+                "UISingleLineTextInputPresenter.razor.cs",
+                "UIListPresenter.razor.cs",
+                "UIMultiLineTextInputPresenter.razor.cs",
+                "UISettingGroupPresenter.razor.scss",
+                "UIStackPresenter.razor",
+                "UIWebViewPresenter.razor.ts",
+                "UIDataGridPresenter.razor.cs",
+                "UIListPresenter.razor",
+                "UIFileSelectorPresenter.razor.ts",
+                "UISettingGroupPresenter.razor",
+                "UISplitGridPresenter.razor.cs",
+                "UILabelPresenter.razor",
+                "UIMultiLineTextInputPresenter.razor",
+                "UIElementPresenter.razor",
+                "UIImageViewerPresenter.razor",
+                "UIImageViewerPresenter.razor.scss",
+                "UIWrapPresenter.razor",
+                "UIFileSelectorPresenter.razor.cs",
+                "UITextInputWrapper.razor.cs",
+                "UITextInputWrapper.razor.js.map",
+                "UILabelPresenter.razor.cs",
+                "UIGridPresenter.razor.cs",
+                "UIPasswordInputPresenter.razor.cs",
+                "UINumberInputPresenter.razor.cs",
+                "UIFileSelectorPresenter.razor.js",
+                "UIGridPresenter.razor",
+                "UIProgressRingPresenter.razor.cs",
+                "UIProgressBarPresenter.razor.cs",
+                "UIFileSelectorPresenter.razor.js.map",
+                "UIDropDownButtonPresenter.razor",
+                "UIDiffTextInputPresenter.razor",
+                "UIWebViewPresenter.razor",
+                "UIInfoBarPresenter.razor.cs",
+                "UISingleLineTextInputPresenter.razor",
+                "UIIconPresenter.razor.cs",
+                "UIProgressBarPresenter.razor",
+                "UIWebViewPresenter.razor.scss",
+                "UIButtonPresenter.razor",
+                "UICardPresenter.razor.scss",
+                "UIWebViewPresenter.razor.js",
+                "UIElementPresenter.razor.cs",
+                "UITextInputWrapper.razor.ts",
+                "UIDataGridPresenter.razor.scss",
+                "UISelectDropDownListPresenter.razor",
+                "UIFileSelectorPresenter.razor.scss",
+                "UIDiffTextInputPresenter.razor.cs",
+                "UIMultiLineTextInputPresenter.razor.scss",
+                "UISwitchPresenter.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/TextBlock",
+            "files": [
+                "TextBlock.razor.scss",
+                "TextBlockStyle.cs",
+                "TextBlock.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/MonacoEditor",
+            "files": [
+                "MonacoEditorDiff.razor.scss",
+                "MonacoEditor.razor.scss",
+                "MonacoEditorDiff.razor",
+                "RicherMonacoEditorBase.cs",
+                "MonacoEditor.razor.cs",
+                "MonacoEditorDiff.razor.cs",
+                "MonacoEditorBase.cs",
+                "RicherMonacoEditorDiffBase.cs",
+                "MonacoEditor.razor",
+                "MonacoEditorHelper.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/MonacoEditor/Monaco",
+            "files": [
+                "UriComponents.cs",
+                "MarkerSeverity.cs",
+                "MouseEvent.cs",
+                "Environment.cs",
+                "TextModel.cs",
+                "Token.cs",
+                "KeyboardEvent.cs",
+                "MarkdownString.cs",
+                "MarkerTag.cs",
+                "KeyMod.cs",
+                "SelectionDirection.cs",
+                "Selection.cs",
+                "ScrollEvent.cs",
+                "ScrolledVisiblePosition.cs",
+                "Range.cs",
+                "KeyCode.cs",
+                "Position.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/MonacoEditor/Monaco/Editor",
+            "files": [
+                "PositionAffinity.cs",
+                "InjectedTextOptions.cs",
+                "EditorUpdateOptions.cs",
+                "MouseTargetType.cs",
+                "BuiltinTheme.cs",
+                "DiffEditorModel.cs",
+                "MouseTargetMarginData.cs",
+                "ModelChangedEvent.cs",
+                "ContentSizeChangedEvent.cs",
+                "EditorConstructionOptions.cs",
+                "TextModelResolvedOptions.cs",
+                "SingleEditOperation.cs",
+                "ActionDescriptor.cs",
+                "GuidesOptions.cs",
+                "EditorInlayHintsOptions.cs",
+                "ScrollbarVisibility.cs",
+                "ColorizerElementOptions.cs",
+                "EditorLightbulbOptions.cs",
+                "MouseTargetContentText.cs",
+                "TokenThemeRule.cs",
+                "DiffEditorOptions.cs",
+                "EditorFindOptions.cs",
+                "StandaloneEditorConstructionOptions.cs",
+                "MouseTargetOverviewRuler.cs",
+                "IdentifiedSingleEditOperation.cs",
+                "MouseTargetContentEmptyData.cs",
+                "EditorMinimapLayoutInfo.cs",
+                "WrappingIndent.cs",
+                "EditorAutoIndentStrategy.cs",
+                "EditorOverrideServices.cs",
+                "EditorHoverOptions.cs",
+                "MouseTargetOutsideEditor.cs",
+                "OverviewRulerLane.cs",
+                "EditorScrollbarOptions.cs",
+                "RenderMinimap.cs",
+                "StandaloneDiffEditorConstructionOptions.cs",
+                "UnicodeHighlightOptions.cs",
+                "ValidEditOperation.cs",
+                "SmartSelectOptions.cs",
+                "CursorChangeReason.cs",
+                "ComputedEditorOptions.cs",
+                "BracketPairColorizationOptions.cs",
+                "AccessibilitySupport.cs",
+                "ModelDecoration.cs",
+                "DiffEditorConstructionOptions.cs",
+                "MouseTargetTextarea.cs",
+                "MouseTargetContentWidget.cs",
+                "EndOfLinePreference.cs",
+                "IGlobalEditorOptions.cs",
+                "Delegates.cs",
+                "MouseTargetViewZoneData.cs",
+                "EditorParameterHintOptions.cs",
+                "EditorLayoutInfo.cs",
+                "MouseTargetScrollbar.cs",
+                "EditorMouseEvent.cs",
+                "ModelLanguageConfigurationChangedEvent.cs",
+                "QuickSuggestionsOptions.cs",
+                "TextEditorCursorStyle.cs",
+                "DecorationOptions.cs",
+                "ModelContentChangedEvent.cs",
+                "RenderLineNumbersType.cs",
+                "IDiffEditorBaseOptions.cs",
+                "ConfigurationChangedEvent.cs",
+                "MouseTargetViewZone.cs",
+                "MouseTargetUnknown.cs",
+                "EditorPaddingOptions.cs",
+                "PasteEvent.cs",
+                "ThemeColor.cs",
+                "ContentWidgetPositionPreference.cs",
+                "DiffNavigatorOptions.cs",
+                "GotoLocationOptions.cs",
+                "EditorExperimentalOptions.cs",
+                "TrackedRangeStickiness.cs",
+                "ModelLanguageChangedEvent.cs",
+                "ModelDecorationMinimapOptions.cs",
+                "ModelDecorationsChangedEvent.cs",
+                "ApplyUpdateResult.cs",
+                "EndOfLineSequence.cs",
+                "CursorSelectionChangedEvent.cs",
+                "QuickSuggestionsValue.cs",
+                "ModelContentChange.cs",
+                "ModelDeltaDecoration.cs",
+                "PartialEditorMouseEvent.cs",
+                "DiffLineInformation.cs",
+                "DropIntoEditorOptions.cs",
+                "MinimapPosition.cs",
+                "InjectedTextCursorStops.cs",
+                "ModelDecorationOverviewRulerOptions.cs",
+                "NewScrollPosition.cs",
+                "EditorOption.cs",
+                "Dimension.cs",
+                "EditorMinimapOptions.cs",
+                "TextEditorCursorBlinkingStyle.cs",
+                "OverlayWidgetPositionPreference.cs",
+                "OverviewRulerPosition.cs",
+                "BaseMouseTarget.cs",
+                "MouseTargetContentEmpty.cs",
+                "MouseTargetContentTextData.cs",
+                "DefaultEndOfLine.cs",
+                "EditorCommentsOptions.cs",
+                "ColorizerOptions.cs",
+                "CursorPositionChangedEvent.cs",
+                "MouseTargetOverlayWidget.cs",
+                "WebWorkerOptions.cs",
+                "ModelOptionsChangedEvent.cs",
+                "IEditorOption.cs",
+                "FindMatch.cs",
+                "InlineSuggestOptions.cs",
+                "TextModelUpdateOptions.cs",
+                "ScrollType.cs",
+                "MouseTargetMargin.cs",
+                "SuggestOptions.cs",
+                "WordAtPosition.cs",
+                "ModelDecorationOptions.cs",
+                "EditorOptions.cs",
+                "StickyScrollOptions.cs",
+                "StandaloneThemeData.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/MonacoEditor/Monaco/Languages",
+            "files": [
+                "CompletionItemInsertTextRule.cs",
+                "CompletionItemKind.cs",
+                "CompletionItemLabel.cs",
+                "CompletionItem.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/TextBox",
+            "files": [
+                "TextBox.razor.js.map",
+                "TextBox.razor.js",
+                "TextBox.razor.scss",
+                "TextBoxTypes.cs",
+                "TextBox.razor.ts",
+                "TextBox.razor.cs",
+                "TextBox.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Text/AutoSuggestBox",
+            "files": [
+                "AutoSuggestBox.razor",
+                "AutoSuggestBox.razor.cs",
+                "AutoSuggestBox.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Menu",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Menu/ContextMenu",
+            "files": [
+                "ContextMenuItem.cs",
+                "ContextMenu.razor.cs",
+                "ContextMenu.razor",
+                "ContextMenu.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Menu/NavBar",
+            "files": [
+                "NavBar.razor.cs",
+                "NavBarItem.razor.cs",
+                "NavBarItem.razor.scss",
+                "NavBarItem.razor",
+                "NavBar.razor.js",
+                "NavBar.razor.js.map",
+                "NavBar.razor.scss",
+                "NavBar.razor.ts",
+                "NavBar.razor",
+                "NavBarThresholds.cs",
+                "NavBarSidebarStates.cs",
+                "NavBarState.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Dialog",
+            "files": [
+                "Dialog.razor.cs",
+                "Dialog.razor.scss",
+                "Dialog.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/FullScreenContainer",
+            "files": [
+                "FullScreenContainer.razor.cs",
+                "FullScreenContainer.razor.js.map",
+                "FullScreenContainer.razor.ts",
+                "FullScreenContainer.razor.js",
+                "FullScreenContainer.razor.scss",
+                "FullScreenContainer.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/ScrollViewer",
+            "files": [
+                "ScrollViewer.razor.js",
+                "ScrollViewer.razor.js.map",
+                "ScrollViewer.razor.cs",
+                "ScrollViewer.razor.scss",
+                "ScrollViewer.razor",
+                "ScrollViewer.razor.ts"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Overlay",
+            "files": [
+                "Overlay.razor.cs",
+                "Overlay.razor",
+                "Overlay.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Card",
+            "files": [
+                "Card.razor.scss",
+                "Card.razor.cs",
+                "Card.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Grid",
+            "files": [
+                "GridCell.razor.cs",
+                "Grid.razor",
+                "Grid.razor.cs",
+                "GridCell.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Expander",
+            "files": [
+                "Expander.razor.scss",
+                "Expander.razor",
+                "Expander.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Popover",
+            "files": [
+                "PopoverProvider.razor",
+                "Popover.razor",
+                "PopoverProvider.razor.cs",
+                "OverflowBehavior.cs",
+                "Origin.cs",
+                "Popover.razor.cs",
+                "Popover.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/FocusTrapper",
+            "files": [
+                "FocusTrapper.razor.js.map",
+                "FocusTrapper.razor.cs",
+                "FocusTrapper.razor.ts",
+                "FocusTrapper.razor",
+                "FocusTrapper.razor.js"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/SplitGrid",
+            "files": [
+                "SplitGrid.razor.ts",
+                "SplitGrid.razor.js.map",
+                "SplitGrid.razor.js",
+                "SplitGrid.razor.scss",
+                "SplitGrid.razor.cs",
+                "SplitGrid.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/Container",
+            "files": [
+                "Container.razor",
+                "Container.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Layout/StackPanel",
+            "files": [
+                "StackPanel.razor.cs",
+                "StackPanel.razor.scss",
+                "StackPanel.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Collections",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Collections/ListBox",
+            "files": [
+                "ListBox.razor",
+                "ListBoxItem.razor",
+                "ListBoxItem.razor.cs",
+                "ListBox.razor.scss",
+                "ListBoxItem.razor.scss",
+                "ListBox.razor.cs",
+                "SelectBase.cs",
+                "ListBoxItemBuildingContextMenuEventArgs.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Collections/DataGrid",
+            "files": [
+                "DataGrid.razor.scss",
+                "DataGridColumnHeader.razor.js.map",
+                "DataGridColumnHeader.razor",
+                "DataGridColumnHeader.razor.cs",
+                "DataGrid.razor.ts",
+                "DataGridColumnHeader.razor.js",
+                "DataGridColumnHeader.razor.ts",
+                "DataGrid.razor.js",
+                "DataGrid.razor",
+                "DataGridColumnResizeService.cs",
+                "DataGrid.razor.cs",
+                "DataGrid.razor.js.map"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Collections/GridView",
+            "files": [
+                "GridView.razor.js.map",
+                "GridView.razor.ts",
+                "GridView.razor.scss",
+                "GridView.razor.js",
+                "GridView.razor.cs",
+                "GridView.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Feedback",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Feedback/FontIcon",
+            "files": [
+                "FontIcon.razor.scss",
+                "FontIcon.razor",
+                "FontIcon.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Feedback/InfoBar",
+            "files": [
+                "InfoBar.razor.scss",
+                "InfoBar.razor.cs",
+                "InfoBar.razor",
+                "InfoBarSeverity.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Feedback/ProgressBar",
+            "files": [
+                "ProgressBar.razor",
+                "ProgressBar.razor.scss",
+                "ProgressBar.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/Feedback/ProgressRing",
+            "files": [
+                "ProgressRing.razor",
+                "ProgressRing.razor.scss",
+                "ProgressRing.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput",
+            "files": []
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/Button",
+            "files": [
+                "Button.razor.cs",
+                "Button.razor.scss",
+                "Button.razor",
+                "ButtonAppearance.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/CheckBox",
+            "files": [
+                "CheckBox.razor.scss",
+                "CheckBox.razor",
+                "CheckBox.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/ComboBox",
+            "files": [
+                "ComboBox.razor.cs",
+                "ComboBox.razor",
+                "ComboBox.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/RadioButton",
+            "files": [
+                "RadioButton.razor.scss",
+                "RadioButton.razor",
+                "RadioButton.razor.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/DropDownButton",
+            "files": [
+                "DropDownButton.razor.scss",
+                "DropDownListItem.cs",
+                "DropDownButton.razor.cs",
+                "DropDownButton.razor"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Components/BasicInput/ToggleSwitch",
+            "files": [
+                "ToggleSwitch.razor",
+                "ToggleSwitch.razor.cs",
+                "ToggleSwitch.razor.scss"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core",
+            "files": [
+                "BlazorSandboxedFileReader.cs",
+                "DevToysBlazorEmbeddedFileProvider.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core/Services",
+            "files": [
+                "PopoverService.cs",
+                "FontService.cs",
+                "UIDialogService.cs",
+                "GlobalDialogService.cs",
+                "DocumentEventService.cs",
+                "MonacoLanguageService.cs",
+                "ContextMenuService.cs",
+                "PopoverHandler.cs",
+                "IWindowService.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core/Languages",
+            "files": [
+                "LanguageDefinition.cs",
+                "FlowDirection.cs",
+                "LanguageManager.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core/Converters",
+            "files": [
+                "PolymorphicConverter.cs",
+                "PolymorphicConverterFactory.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core/Helpers",
+            "files": [
+                "CssBuilder.cs",
+                "ValueBuilder.cs",
+                "StyleBuilder.cs"
+            ]
+        },
+        {
+            "directory": "src/app/dev/DevToys.Blazor/Core/Extensions",
+            "files": [
+                "IJSRuntimeExtensions.cs",
+                "WebUnitsExtensions.cs",
+                "JsonExtensions.cs"
+            ]
+        },
+        {
+            "directory": "src/build",
+            "files": [
+                "Directory.Build.targets",
+                "Build.cs",
+                "DotnetParameters.cs",
+                "_build.csproj.DotSettings",
+                "_build.csproj",
+                "Configuration.cs",
+                ".editorconfig",
+                "Directory.Build.props"
+            ]
+        },
+        {
+            "directory": "src/build/Properties",
+            "files": [
+                "launchSettings.json"
+            ]
+        },
+        {
+            "directory": "src/build/AppVersion",
+            "files": [
+                "VersionString.cs",
+                "AppVersionTask.cs",
+                "VersionUpdateRule.cs",
+                "CSharpVersionUpdateRule.cs",
+                "CSharpUpdater.cs",
+                "ProjectVersionUpdateRule.cs",
+                "AppxManifestUpdater.cs",
+                "ProjectUpdater.cs"
+            ]
+        },
+        {
+            "directory": "src/build/Restore",
+            "files": [
+                "RestoreTask.cs"
+            ]
+        },
+        {
+            "directory": ".github",
+            "files": [
+                "PULL_REQUEST_TEMPLATE.md",
+                "advanced-issue-labeler.yml"
+            ]
+        },
+        {
+            "directory": ".github/ISSUE_TEMPLATE",
+            "files": [
+                "bug_report.yml",
+                "config.yml",
+                "enhancement_request.yml",
+                "feature_request.yml"
+            ]
+        },
+        {
+            "directory": ".github/workflows",
+            "files": [
+                "ci.yml",
+                "issue_labeler.yml"
+            ]
+        },
+        {
+            "directory": "assets",
+            "files": [
+                "ms-store-rate.png",
+                "hero-screenshot.png"
+            ]
+        },
+        {
+            "directory": "assets/font",
+            "files": [
+                "NumberBaseConverter.svg",
+                "JwtDecoder.svg",
+                "JsonYaml.svg",
+                "StringUtilities.svg",
+                "Converters.svg",
+                "UrlEncoderDecoder.svg",
+                "SqlFormatter.svg",
+                "Formatters.svg",
+                "ImageConverter.svg",
+                "LoremIpsumGenerator.svg",
+                "DevToys-Tools-Icons.sfd",
+                "CertificateEncoderDecoder.svg",
+                "HtmlEncoderDecoder.svg",
+                "HashGenerator.svg",
+                "JsonFormatter.svg",
+                "Settings.svg",
+                "ChecksumGenerator.svg",
+                "GraphicTools.svg",
+                "TextDiff.svg",
+                "Generators.svg",
+                "ListCompare.svg",
+                "PngJpgCompressor.svg",
+                "ColorBlindnessSimulator.svg",
+                "DevToys-Tools-Icons.ttf",
+                "ColorPicker.svg",
+                "XmlFormatter.svg",
+                "Base64ImageEncoderDecoder.svg",
+                "README.md",
+                "GZipEncoderDecoder.svg",
+                "RegexTester.svg",
+                "StringEscapeUnescape.svg",
+                "UuidGenerator.svg",
+                "CronParser.svg",
+                "MarkdownPreview.svg",
+                "XMLValidator.svg",
+                "EncodersDecoders.svg",
+                "AllTools.svg",
+                "Timestamp.svg",
+                "TextTools.svg",
+                "Base64EncoderDecoder.svg",
+                "DevToys-Tools-Icons.afm"
+            ]
+        },
+        {
+            "directory": "assets/logo",
+            "files": [
+                "DevToys icon.fig"
+            ]
+        },
+        {
+            "directory": "assets/logo/MacOS",
+            "files": []
+        },
+        {
+            "directory": "assets/logo/MacOS/Preview",
+            "files": [
+                "256-mac.png",
+                "Icon-MacOS-Preview.svg",
+                "16-mac.png",
+                "1024-mac.png",
+                "128-mac.png",
+                "32-mac.png",
+                "64-mac.png",
+                "512-mac.png"
+            ]
+        },
+        {
+            "directory": "assets/logo/MacOS/Stable",
+            "files": [
+                "256-mac.png",
+                "16-mac.png",
+                "1024-mac.png",
+                "Icon-MacOS.svg",
+                "128-mac.png",
+                "32-mac.png",
+                "64-mac.png",
+                "512-mac.png"
+            ]
+        },
+        {
+            "directory": "assets/logo/Windows-Linux",
+            "files": []
+        },
+        {
+            "directory": "assets/logo/Windows-Linux/Preview",
+            "files": [
+                "Icon-Windows-Linux-Preview.svg",
+                "Icon-Windows-Preview.ico",
+                "Icon-Windows-Linux-Preview.png"
+            ]
+        },
+        {
+            "directory": "assets/logo/Windows-Linux/Preview/msix",
+            "files": [
+                "Square150x150Logo.scale-100.png",
+                "StoreLogo.scale-400.png",
+                "SmallTile.scale-400.png",
+                "Square44x44Logo.scale-400.png",
+                "Wide310x150Logo.scale-100.png",
+                "Square44x44Logo.scale-150.png",
+                "Square44x44Logo.targetsize-256.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-24.png",
+                "Square150x150Logo.scale-400.png",
+                "Wide310x150Logo.scale-125.png",
+                "SmallTile.scale-200.png",
+                "Square44x44Logo.scale-125.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-16.png",
+                "StoreLogo.scale-100.png",
+                "Wide310x150Logo.scale-200.png",
+                "Square44x44Logo.altform-unplated_targetsize-32.png",
+                "StoreLogo.scale-150.png",
+                "Square150x150Logo.scale-150.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-32.png",
+                "StoreLogo.scale-125.png",
+                "Square44x44Logo.altform-unplated_targetsize-256.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-48.png",
+                "LargeTile.scale-100.png",
+                "Square44x44Logo.targetsize-24_altform-unplated.png",
+                "Square150x150Logo.scale-125.png",
+                "SmallTile.scale-100.png",
+                "Square44x44Logo.targetsize-48.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-256.png",
+                "Wide310x150Logo.scale-400.png",
+                "Square44x44Logo.targetsize-32.png",
+                "LargeTile.scale-125.png",
+                "Square44x44Logo.altform-unplated_targetsize-16.png",
+                "SmallTile.scale-150.png",
+                "LargeTile.scale-200.png",
+                "Square44x44Logo.scale-200.png",
+                "LargeTile.scale-150.png",
+                "Square150x150Logo.scale-200.png",
+                "LargeTile.scale-400.png",
+                "Square44x44Logo.targetsize-24.png",
+                "Square44x44Logo.altform-unplated_targetsize-48.png",
+                "Square44x44Logo.targetsize-16.png",
+                "Wide310x150Logo.scale-150.png",
+                "StoreLogo.scale-200.png",
+                "SmallTile.scale-125.png",
+                "Square44x44Logo.scale-100.png"
+            ]
+        },
+        {
+            "directory": "assets/logo/Windows-Linux/Stable",
+            "files": [
+                "Icon-Windows-Linux.png",
+                "Icon-Windows-Linux.svg",
+                "Icon-Windows.ico"
+            ]
+        },
+        {
+            "directory": "assets/logo/Windows-Linux/Stable/msix",
+            "files": [
+                "Square150x150Logo.scale-100.png",
+                "StoreLogo.scale-400.png",
+                "SmallTile.scale-400.png",
+                "Square44x44Logo.scale-400.png",
+                "Wide310x150Logo.scale-100.png",
+                "Square44x44Logo.scale-150.png",
+                "Square44x44Logo.targetsize-256.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-24.png",
+                "Square150x150Logo.scale-400.png",
+                "Wide310x150Logo.scale-125.png",
+                "SmallTile.scale-200.png",
+                "Square44x44Logo.scale-125.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-16.png",
+                "StoreLogo.scale-100.png",
+                "Wide310x150Logo.scale-200.png",
+                "Square44x44Logo.altform-unplated_targetsize-32.png",
+                "StoreLogo.scale-150.png",
+                "Square44x44Logo.altform-unplated_targetsize-24.png",
+                "Square150x150Logo.scale-150.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-32.png",
+                "StoreLogo.scale-125.png",
+                "Square44x44Logo.altform-unplated_targetsize-256.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-48.png",
+                "LargeTile.scale-100.png",
+                "Square44x44Logo.targetsize-24_altform-unplated.png",
+                "Square150x150Logo.scale-125.png",
+                "SmallTile.scale-100.png",
+                "Square44x44Logo.targetsize-48.png",
+                "Square44x44Logo.altform-lightunplated_targetsize-256.png",
+                "Wide310x150Logo.scale-400.png",
+                "Square44x44Logo.targetsize-32.png",
+                "LargeTile.scale-125.png",
+                "Square44x44Logo.altform-unplated_targetsize-16.png",
+                "SmallTile.scale-150.png",
+                "LargeTile.scale-200.png",
+                "Square44x44Logo.scale-200.png",
+                "LargeTile.scale-150.png",
+                "Square150x150Logo.scale-200.png",
+                "LargeTile.scale-400.png",
+                "Square44x44Logo.targetsize-24.png",
+                "Square44x44Logo.altform-unplated_targetsize-48.png",
+                "Square44x44Logo.targetsize-16.png",
+                "Wide310x150Logo.scale-150.png",
+                "StoreLogo.scale-200.png",
+                "SmallTile.scale-125.png",
+                "Square44x44Logo.scale-100.png"
+            ]
+        },
+        {
+            "directory": "assets/screenshots",
+            "files": [
+                "screenshot4.png",
+                "screenshot1.png",
+                "screenshot2.png",
+                "screenshot3.png"
+            ]
+        },
+        {
+            "directory": ".nuke",
+            "files": [
+                "build.schema.json",
+                "parameters.json"
+            ]
+        },
+        {
+            "directory": "tools",
+            "files": [
+                "Restore-MonacoEditor.sh",
+                "monaco-editor-version-number.txt",
+                "enable-long-paths.reg",
+                "Install-DotNet.sh",
+                "Restore-MonacoEditor.ps1",
+                "app-version-number.txt",
+                "Install-DotNet.ps1"
+            ]
+        },
+        {
+            "directory": ".vscode",
+            "files": [
+                "settings.json",
+                "tasks.json",
+                "launch.json",
+                "extensions.json"
+            ]
+        },
+        {
+            "directory": "chocolatey",
+            "files": [
+                "README.md"
+            ]
+        },
+        {
+            "directory": "chocolatey/DevToys",
+            "files": [
+                "devtoys.nuspec",
+                "update.ps1"
+            ]
+        },
+        {
+            "directory": "chocolatey/DevToys/tools",
+            "files": [
+                "chocolateyinstall.ps1"
+            ]
+        }
+    ],
+    "files": []
+}

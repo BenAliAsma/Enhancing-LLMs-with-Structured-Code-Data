@@ -1,0 +1,1271 @@
+{
+    "project_structure": [
+        {
+            "directory": ".",
+            "files": [
+                ".nvmrc",
+                ".prettierrc.json",
+                "Dockerfile",
+                "default.conf.template",
+                "entrypoint.sh",
+                "index.html",
+                "package.json",
+                "eslint.config.mjs",
+                "CODE_OF_CONDUCT.md",
+                ".prettierignore",
+                "tsconfig.node.json",
+                "postcss.config.js",
+                ".gitignore",
+                "components.json",
+                "tailwind.config.js",
+                "package-lock.json",
+                "CONTRIBUTING.md",
+                "README.md",
+                "tsconfig.json",
+                "vite.config.ts",
+                "CHANGELOG.md",
+                ".dockerignore",
+                "tsconfig.app.json",
+                "LICENSE"
+            ]
+        },
+        {
+            "directory": "public",
+            "files": [
+                "ChartDB.gif",
+                "buckle-animated.gif",
+                "load-new-db-instructions.gif",
+                "chartdb.png",
+                "robots.txt",
+                "config.js",
+                "sitemap.xml",
+                "buckle.png",
+                "favicon.ico"
+            ]
+        },
+        {
+            "directory": "src",
+            "files": [
+                "router.tsx",
+                "types.d.ts",
+                "index.css",
+                "vite-env.d.ts",
+                "main.tsx",
+                "app.tsx",
+                "globals.css",
+                "window.d.ts"
+            ]
+        },
+        {
+            "directory": "src/components",
+            "files": []
+        },
+        {
+            "directory": "src/components/accordion",
+            "files": [
+                "accordion.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/zoomable-image",
+            "files": [
+                "zoomable-image.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/select",
+            "files": [
+                "select.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/sheet",
+            "files": [
+                "sheet.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/dialog",
+            "files": [
+                "dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/badge",
+            "files": [
+                "badge.tsx",
+                "badge-variants.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/table",
+            "files": [
+                "table.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/command",
+            "files": [
+                "dialog.tsx",
+                "command.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/hover-card",
+            "files": [
+                "hover-card.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/code-snippet",
+            "files": [
+                "code-snippet.tsx",
+                "config.ts",
+                "code-editor.ts"
+            ]
+        },
+        {
+            "directory": "src/components/code-snippet/languages",
+            "files": [
+                "dbml-language.ts"
+            ]
+        },
+        {
+            "directory": "src/components/code-snippet/themes",
+            "files": [
+                "dark.ts",
+                "light.ts"
+            ]
+        },
+        {
+            "directory": "src/components/diagram-icon",
+            "files": [
+                "diagram-icon.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/breadcrumb",
+            "files": [
+                "breadcrumb.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/toggle",
+            "files": [
+                "toggle.tsx",
+                "toggle-group.tsx",
+                "toggle-variants.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/popover",
+            "files": [
+                "popover.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/button",
+            "files": [
+                "button.tsx",
+                "button-variants.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/resizable",
+            "files": [
+                "resizable.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/menubar",
+            "files": [
+                "menubar.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/tabs",
+            "files": [
+                "tabs.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/card",
+            "files": [
+                "card.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/context-menu",
+            "files": [
+                "context-menu.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/dropdown-menu",
+            "files": [
+                "dropdown-menu.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/label",
+            "files": [
+                "label.tsx",
+                "label-variants.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/combobox",
+            "files": [
+                "combobox.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/alert-dialog",
+            "files": [
+                "alert-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/list-menu",
+            "files": [
+                "list-menu.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/avatar",
+            "files": [
+                "avatar.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/select-box",
+            "files": [
+                "select-box.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/drawer",
+            "files": [
+                "drawer.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/separator",
+            "files": [
+                "separator.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/checkbox",
+            "files": [
+                "checkbox.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/skeleton",
+            "files": [
+                "skeleton.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/spinner",
+            "files": [
+                "spinner.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/link",
+            "files": [
+                "link.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/sidebar",
+            "files": [
+                "use-sidebar.tsx",
+                "sidebar.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/scroll-area",
+            "files": [
+                "scroll-area.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/alert",
+            "files": [
+                "alert.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/file-uploader",
+            "files": [
+                "file-uploader.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/input",
+            "files": [
+                "input.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/toast",
+            "files": [
+                "toaster.tsx",
+                "toast.tsx",
+                "use-toast.ts"
+            ]
+        },
+        {
+            "directory": "src/components/empty-state",
+            "files": [
+                "empty-state.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/textarea",
+            "files": [
+                "textarea.tsx"
+            ]
+        },
+        {
+            "directory": "src/components/tooltip",
+            "files": [
+                "tooltip.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs",
+            "files": []
+        },
+        {
+            "directory": "src/dialogs/table-schema-dialog",
+            "files": [
+                "table-schema-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/create-relationship-dialog",
+            "files": [
+                "create-relationship-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/create-diagram-dialog",
+            "files": [
+                "create-diagram-dialog-step.ts",
+                "create-diagram-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/create-diagram-dialog/select-database",
+            "files": [
+                "select-database.tsx",
+                "example-option.tsx",
+                "database-option.tsx",
+                "select-database-content.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/import-diagram-dialog",
+            "files": [
+                "import-diagram-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/export-diagram-dialog",
+            "files": [
+                "export-diagram-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/import-dbml-dialog",
+            "files": [
+                "import-dbml-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/base-alert-dialog",
+            "files": [
+                "base-alert-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/export-image-dialog",
+            "files": [
+                "export-image-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/open-diagram-dialog",
+            "files": [
+                "open-diagram-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/common",
+            "files": [
+                "base-dialog-props.ts"
+            ]
+        },
+        {
+            "directory": "src/dialogs/common/import-database",
+            "files": [
+                "import-database.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/common/import-database/instructions-section",
+            "files": [
+                "instructions-section.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/common/import-database/instructions-section/instructions",
+            "files": [
+                "ddl-instruction-step.tsx",
+                "smart-query-instructions.tsx",
+                "ddl-instructions.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/common/import-database/instructions-section/instructions/ssms-info",
+            "files": [
+                "ssms-info.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/import-database-dialog",
+            "files": [
+                "import-database-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/star-us-dialog",
+            "files": [
+                "star-us-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/dialogs/export-sql-dialog",
+            "files": [
+                "export-sql-dialog.tsx"
+            ]
+        },
+        {
+            "directory": "src/hooks",
+            "files": [
+                "use-breakpoint.ts",
+                "use-history.ts",
+                "use-local-config.ts",
+                "use-mobile.tsx",
+                "use-layout.ts",
+                "use-full-screen-spinner.ts",
+                "use-redo-undo-stack.ts",
+                "use-config.ts",
+                "use-dialog.ts",
+                "use-debounce-v2.ts",
+                "use-export-image.ts",
+                "use-chartdb.ts",
+                "use-debounce.ts",
+                "use-canvas.ts",
+                "use-storage.ts",
+                "use-export-diagram.tsx",
+                "use-theme.ts"
+            ]
+        },
+        {
+            "directory": "src/helmet",
+            "files": [
+                "helmet-data.tsx"
+            ]
+        },
+        {
+            "directory": "src/assets",
+            "files": [
+                "cockroachdb_logo_dark.png",
+                "postgresql_logo.png",
+                "mariadb_logo_dark.png",
+                "ssms-instructions.png",
+                "sqlite_logo_2.png",
+                "sqlite_logo.png",
+                "empty_state.png",
+                "sql_server_logo_2.png",
+                "logo-dark.png",
+                "mariadb_logo.png",
+                "empty_state_dark.png",
+                "mysql_logo_dark.png",
+                "supabase.png",
+                "mysql_5_7.png",
+                "sqlite_logo_dark.png",
+                "cockroachdb_logo_2.png",
+                "sql_server_logo.png",
+                "clickhouse_logo_2.png",
+                "cloudflare_d1.png",
+                "postgresql_logo_2.png",
+                "star-us.gif",
+                "logo-light.png",
+                "logo.png",
+                "general_db_logo_2.png",
+                "clickhouse_logo_dark.png",
+                "sql_server_logo_dark.png",
+                "timescale.png",
+                "mysql_logo.png",
+                "postgresql_logo_dark.png",
+                "clickhouse_logo.png",
+                "logo-2.png",
+                "cockroachdb_logo.png",
+                "mariadb_logo_2.png",
+                "mysql_logo_2.png"
+            ]
+        },
+        {
+            "directory": "src/assets/examples",
+            "files": [
+                "bike_stores_example.png",
+                "dvd_rental_example_dark.png",
+                "dvd_rental_example.png",
+                "employees_example_dark.png",
+                "employees_example.png",
+                "bike_stores_example_dark.png"
+            ]
+        },
+        {
+            "directory": "src/assets/templates",
+            "files": [
+                "airbnb.png",
+                "doorkeeper-db.png",
+                "feedbin-db.png",
+                "pay-rails-db.png",
+                "twitter-db.png",
+                "bookstack-db-dark.png",
+                "talk-db-dark.png",
+                "django-axes-db-dark.png",
+                "voyager-db.png",
+                "sylius-db-dark.png",
+                "reversion-db-dark.png",
+                "freescout-db.png",
+                "reversion-db.png",
+                "koel-db-dark.png",
+                "django-db.png",
+                "laravel-activitylog-db.png",
+                "polr-db-dark.png",
+                "laravel-db.png",
+                "bouncer-db-dark.png",
+                "flarum-db.png",
+                "canvas-db.png",
+                "django-axes-db.png",
+                "pay-rails-db-dark.png",
+                "comfortable-mexican-sofa-db.png",
+                "flipper-db-dark.png",
+                "employeedb-dark.png",
+                "deployer-db.png",
+                "saas-pegasus-db-dark.png",
+                "pixelfed-db-dark.png",
+                "airbnb-dark.png",
+                "devise-db-dark.png",
+                "devise-db.png",
+                "wordpress-db-dark.png",
+                "attendize-db.png",
+                "octobox-db.png",
+                "flipper-db.png",
+                "monica-db-dark.png",
+                "laravel-db-dark.png",
+                "koel-db.png",
+                "screeenly-db.png",
+                "gravity-db.png",
+                "gravity-db-dark.png",
+                "cabot-db.png",
+                "ticketit-db-dark.png",
+                "freescout-db-dark.png",
+                "wordpress-db.png",
+                "bouncer-db.png",
+                "doorkeeper-db-dark.png",
+                "adonis-acl-dark.png",
+                "feedbin-db-dark.png",
+                "staytus-db-dark.png",
+                "pokemon-dark.png",
+                "lobsters-db.png",
+                "flarum-db-dark.png",
+                "snipe-it-db.png",
+                "talk-db.png",
+                "monica-db.png",
+                "polr-db.png",
+                "taggit-db-dark.png",
+                "refinerycms-db-dark.png",
+                "employeedb.png",
+                "ticketit-db.png",
+                "sylius-db.png",
+                "screeenly-db-dark.png",
+                "akaunting-dark.png",
+                "adonis-acl.png",
+                "pokemon.png",
+                "cachet-db.png",
+                "visual-novel-db-dark.png",
+                "octobox-db-dark.png",
+                "lobsters-db-dark.png",
+                "buddypress.png",
+                "staytus-db.png",
+                "laravel-permission-db.png",
+                "akaunting.png",
+                "laravel-spark-db.png",
+                "orchid-db.png",
+                "laravel-activitylog-db-dark.png",
+                "buddypress-dark.png",
+                "saas-pegasus-db.png",
+                "cabot-db-dark.png",
+                "twitter-db-dark.png",
+                "cachet-db-dark.png",
+                "attendize-db-dark.png",
+                "refinerycms-db.png",
+                "hacker-news-db-dark.png",
+                "voyager-db-dark.png",
+                "deployer-db-dark.png",
+                "orchid-db-dark.png",
+                "hacker-news-db.png",
+                "canvas-db-dark.png",
+                "laravel-permission-db-dark.png",
+                "snipe-it-db-dark.png",
+                "laravel-spark-db-dark.png",
+                "pixelfed-db.png",
+                "visual-novel-db.png",
+                "comfortable-mexican-sofa-db-dark.png",
+                "bookstack-db.png",
+                "django-db-dark.png",
+                "taggit-db.png"
+            ]
+        },
+        {
+            "directory": "src/pages",
+            "files": []
+        },
+        {
+            "directory": "src/pages/editor-page",
+            "files": [
+                "editor-mobile-layout.tsx",
+                "editor-desktop-layout.tsx",
+                "editor-page.tsx",
+                "use-diagram-loader.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/canvas",
+            "files": [
+                "relationship-edge.tsx",
+                "marker-definitions.tsx",
+                "canvas.tsx",
+                "canvas-utils.ts",
+                "canvas-context-menu.tsx",
+                "dependency-edge.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/canvas/hooks",
+            "files": [
+                "use-is-lost-in-canvas.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/canvas/toolbar",
+            "files": [
+                "toolbar-button.tsx",
+                "toolbar.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/canvas/table-node",
+            "files": [
+                "table-node-dependency-indicator.tsx",
+                "table-node.tsx",
+                "table-node-context-menu.tsx",
+                "table-node-field.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/canvas/table-node/table-node-status",
+            "files": [
+                "table-node-status.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/top-navbar",
+            "files": [
+                "diagram-name.tsx",
+                "top-navbar.tsx",
+                "last-saved.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/top-navbar/menu",
+            "files": [
+                "menu.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/top-navbar/language-nav",
+            "files": [
+                "language-nav.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel",
+            "files": [
+                "side-panel.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section",
+            "files": [
+                "tables-section.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list",
+            "files": [
+                "table-list.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item",
+            "files": [
+                "table-list-item.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-content",
+            "files": [
+                "table-list-item-content.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-content/table-field",
+            "files": [
+                "table-field-toggle.tsx",
+                "table-field.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-content/table-field/table-field-modal",
+            "files": [
+                "table-field-modal.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-content/table-index",
+            "files": [
+                "table-index-toggle.tsx",
+                "table-index.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-content/color-picker",
+            "files": [
+                "color-picker.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-list/table-list-item/table-list-item-header",
+            "files": [
+                "table-list-item-header.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/tables-section/table-dbml",
+            "files": [
+                "table-dbml.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/relationships-section",
+            "files": [
+                "relationships-section.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/relationships-section/relationship-list",
+            "files": [
+                "relationship-list.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/relationships-section/relationship-list/relationship-list-item",
+            "files": [
+                "relationship-list-item.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/relationships-section/relationship-list/relationship-list-item/relationship-list-item-header",
+            "files": [
+                "relationship-list-item-header.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/relationships-section/relationship-list/relationship-list-item/relationship-list-item-content",
+            "files": [
+                "relationship-list-item-content.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/list-item-header-button",
+            "files": [
+                "list-item-header-button.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/dependencies-section",
+            "files": [
+                "dependencies-section.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/dependencies-section/dependency-list",
+            "files": [
+                "dependency-list.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/dependencies-section/dependency-list/dependency-list-item",
+            "files": [
+                "dependency-list-item.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/dependencies-section/dependency-list/dependency-list-item/dependency-list-item-header",
+            "files": [
+                "dependency-list-item-header.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/side-panel/dependencies-section/dependency-list/dependency-list-item/dependency-list-item-content",
+            "files": [
+                "dependency-list-item-content.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/editor-page/editor-sidebar",
+            "files": [
+                "editor-sidebar.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/templates-page",
+            "files": [
+                "templates-page-helmet.tsx",
+                "templates-page.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/templates-page/template-card",
+            "files": [
+                "template-card.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/examples-page",
+            "files": [
+                "example-card.tsx",
+                "examples-page.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/examples-page/examples-data",
+            "files": [
+                "examples-data.ts"
+            ]
+        },
+        {
+            "directory": "src/pages/template-page",
+            "files": [
+                "template-page.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/clone-template-page",
+            "files": [
+                "clone-template-page.tsx"
+            ]
+        },
+        {
+            "directory": "src/pages/not-found-page",
+            "files": [
+                "not-found-page.tsx"
+            ]
+        },
+        {
+            "directory": "src/templates-data",
+            "files": [
+                "templates-data.ts",
+                "template-utils.ts"
+            ]
+        },
+        {
+            "directory": "src/templates-data/templates",
+            "files": [
+                "adonis-acl-db.ts",
+                "laravel-permission-db.ts",
+                "cabot-db.ts",
+                "visual-novel-db.ts",
+                "laravel-db.ts",
+                "akaunting-db.ts",
+                "screeenly-db.ts",
+                "devise-db.ts",
+                "freescout-db.ts",
+                "sylius-db.ts",
+                "gravity-db.ts",
+                "feedbin-db.ts",
+                "snipe-it-db.ts",
+                "taggit-db.ts",
+                "pixelfed-db.ts",
+                "twitter-db.ts",
+                "attendize-db.ts",
+                "django-db.ts",
+                "wordpress-db.ts",
+                "laravel-spark-db.ts",
+                "bouncer-db.ts",
+                "ticketit-db.ts",
+                "flarum-db.ts",
+                "pokemon-db.ts",
+                "staytus-db.ts",
+                "django-axes-db.ts",
+                "koel-db.ts",
+                "hacker-news-db.ts",
+                "polr-db.ts",
+                "bookstack-db.ts",
+                "saas-pegasus-db.ts",
+                "refinerycms-db.ts",
+                "octobox-db.ts",
+                "buddypress-db.ts",
+                "deployer-db.ts",
+                "comfortable-mexican-sofa-db.ts",
+                "canvas-db.ts",
+                "lobsters-db.ts",
+                "doorkeeper-db.ts",
+                "orchid-db.ts",
+                "voyager-db.ts",
+                "laravel-activitylog-db.ts",
+                "pay-rails-db.ts",
+                "cachet-db.ts",
+                "flipper-db.ts",
+                "reversion-db.ts",
+                "employee-db.ts",
+                "airbnb-db.ts",
+                "talk-db.ts",
+                "monica-db.ts"
+            ]
+        },
+        {
+            "directory": "src/context",
+            "files": []
+        },
+        {
+            "directory": "src/context/alert-context",
+            "files": [
+                "alert-context.tsx",
+                "alert-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/local-config-context",
+            "files": [
+                "local-config-context.tsx",
+                "local-config-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/keyboard-shortcuts-context",
+            "files": [
+                "keyboard-shortcuts-context.tsx",
+                "keyboard-shortcuts.ts",
+                "keyboard-shortcuts-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/config-context",
+            "files": [
+                "config-provider.tsx",
+                "config-context.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/history-context",
+            "files": [
+                "redo-undo-action.ts",
+                "redo-undo-stack-context.tsx",
+                "history-context.tsx",
+                "redo-undo-stack-provider.tsx",
+                "history-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/diff-context",
+            "files": [
+                "use-diff.ts",
+                "diff-context.tsx",
+                "diff-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/diff-context/diff-check",
+            "files": [
+                "diff-check.ts"
+            ]
+        },
+        {
+            "directory": "src/context/chartdb-context",
+            "files": [
+                "chartdb-context.tsx",
+                "chartdb-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/full-screen-spinner-context",
+            "files": [
+                "full-screen-spinner-context.tsx",
+                "full-screen-spinner-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/storage-context",
+            "files": [
+                "storage-context.tsx",
+                "storage-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/dialog-context",
+            "files": [
+                "dialog-context.tsx",
+                "dialog-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/canvas-context",
+            "files": [
+                "canvas-provider.tsx",
+                "canvas-context.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/layout-context",
+            "files": [
+                "layout-provider.tsx",
+                "layout-context.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/theme-context",
+            "files": [
+                "theme-context.tsx",
+                "theme-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/context/export-image-context",
+            "files": [
+                "export-image-context.tsx",
+                "export-image-provider.tsx"
+            ]
+        },
+        {
+            "directory": "src/i18n",
+            "files": [
+                "i18n.ts",
+                "types.ts"
+            ]
+        },
+        {
+            "directory": "src/i18n/locales",
+            "files": [
+                "es.ts",
+                "ar.ts",
+                "ko_KR.ts",
+                "pt_BR.ts",
+                "mr.ts",
+                "fr.ts",
+                "gu.ts",
+                "uk.ts",
+                "hi.ts",
+                "en.ts",
+                "ne.ts",
+                "ja.ts",
+                "ru.ts",
+                "id_ID.ts",
+                "te.ts",
+                "de.ts",
+                "bn.ts",
+                "vi.ts",
+                "zh_CN.ts",
+                "zh_TW.ts",
+                "tr.ts"
+            ]
+        },
+        {
+            "directory": "src/lib",
+            "files": [
+                "utils.ts",
+                "clone.ts",
+                "env.ts",
+                "dbml-import.ts",
+                "export-import-utils.ts",
+                "colors.ts",
+                "databases.ts",
+                "graph.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data",
+            "files": [
+                "default-schemas.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/import-metadata",
+            "files": [
+                "utils.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/import-metadata/metadata-types",
+            "files": [
+                "primary-key-info.ts",
+                "database-metadata.ts",
+                "table-info.ts",
+                "column-info.ts",
+                "view-info.ts",
+                "foreign-key-info.ts",
+                "index-info.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/import-metadata/scripts",
+            "files": [
+                "sqlserver-script.ts",
+                "clickhouse-script.ts",
+                "mysql-script.ts",
+                "scripts.ts",
+                "maria-script.ts",
+                "cockroachdb-script.ts",
+                "postgres-script.ts",
+                "sqlite-script.ts",
+                "minimize-script.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/sql-import",
+            "files": [
+                "index.ts",
+                "common.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/sql-import/dialect-importers",
+            "files": []
+        },
+        {
+            "directory": "src/lib/data/sql-import/dialect-importers/postgresql",
+            "files": [
+                "postgresql-dump.ts",
+                "postgresql.ts",
+                "postgresql-common.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/sql-import/dialect-importers/mysql",
+            "files": [
+                "mysql.ts",
+                "mysql-common.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/sql-import/dialect-importers/sqlite",
+            "files": [
+                "sqlite-common.ts",
+                "sqlite.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/sql-import/dialect-importers/sqlserver",
+            "files": [
+                "sqlserver.ts",
+                "sqlserver-common.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/export-metadata",
+            "files": [
+                "export-sql-cache.ts",
+                "export-sql-script.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/export-metadata/export-per-type",
+            "files": [
+                "postgresql.ts",
+                "mysql.ts",
+                "mssql.ts",
+                "sqlite.ts",
+                "common.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/data/data-types",
+            "files": [
+                "mysql-data-types.ts",
+                "generic-data-types.ts",
+                "sqlite-data-types.ts",
+                "postgres-data-types.ts",
+                "mariadb-data-types.ts",
+                "data-types.ts",
+                "clickhouse-data-types.ts",
+                "sql-server-data-types.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/domain",
+            "files": [
+                "db-table.ts",
+                "database-clients.ts",
+                "db-index.ts",
+                "config.ts",
+                "db-dependency.ts",
+                "diagram.ts",
+                "db-schema.ts",
+                "database-type.ts",
+                "db-field.ts",
+                "database-edition.ts",
+                "db-relationship.ts"
+            ]
+        },
+        {
+            "directory": "src/lib/domain/diff",
+            "files": [
+                "index-diff.ts",
+                "field-diff.ts",
+                "diff.ts",
+                "relationship-diff.ts",
+                "table-diff.ts"
+            ]
+        },
+        {
+            "directory": ".github",
+            "files": []
+        },
+        {
+            "directory": ".github/workflows",
+            "files": [
+                "release.yaml",
+                "publish.yaml",
+                "ci.yaml"
+            ]
+        },
+        {
+            "directory": ".husky",
+            "files": [
+                "pre-commit"
+            ]
+        }
+    ],
+    "files": []
+}
