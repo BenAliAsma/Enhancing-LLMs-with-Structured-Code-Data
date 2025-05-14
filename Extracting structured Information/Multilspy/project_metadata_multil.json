@@ -1,0 +1,499 @@
+{
+  "project_structure": [
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    },
+    {
+      "directory": ".",
+      "files": [
+        "__init__.py",
+        "state.py",
+        "lmstudio.py",
+        "configuration.py",
+        "utils.py",
+        "graph.py",
+        "prompts.py"
+      ],
+      "subdirectories": []
+    }
+  ],
+  "files": [
+    {
+      "path": "__init__.py",
+      "ast": {
+        "functions": [],
+        "classes": [],
+        "imports": [],
+        "errors": []
+      },
+      "lsp": {
+        "file": "__init__.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "state.py",
+      "ast": {
+        "functions": [],
+        "classes": [
+          {
+            "name": "SummaryState",
+            "bases": [],
+            "lineno": 6
+          },
+          {
+            "name": "SummaryStateInput",
+            "bases": [],
+            "lineno": 15
+          },
+          {
+            "name": "SummaryStateOutput",
+            "bases": [],
+            "lineno": 19
+          }
+        ],
+        "imports": [
+          "operator",
+          "dataclasses.dataclass",
+          "dataclasses.field",
+          "typing_extensions.Annotated"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "state.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "lmstudio.py",
+      "ast": {
+        "functions": [
+          {
+            "name": "__init__",
+            "lineno": 23,
+            "args": [
+              "self",
+              "base_url",
+              "model",
+              "temperature",
+              "format",
+              "api_key"
+            ],
+            "returns": null
+          },
+          {
+            "name": "_generate",
+            "lineno": 52,
+            "args": [
+              "self",
+              "messages",
+              "stop",
+              "run_manager"
+            ],
+            "returns": "ChatResult"
+          }
+        ],
+        "classes": [
+          {
+            "name": "ChatLMStudio",
+            "bases": [
+              "ChatOpenAI"
+            ],
+            "lineno": 18
+          }
+        ],
+        "imports": [
+          "json",
+          "logging",
+          "typing.Any",
+          "typing.List",
+          "typing.Optional",
+          "langchain_core.callbacks.manager.CallbackManagerForLLMRun",
+          "langchain_core.messages.BaseMessage",
+          "langchain_core.outputs.ChatResult",
+          "langchain_openai.ChatOpenAI",
+          "pydantic.Field"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "lmstudio.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "configuration.py",
+      "ast": {
+        "functions": [
+          {
+            "name": "from_runnable_config",
+            "lineno": 59,
+            "args": [
+              "cls",
+              "config"
+            ],
+            "returns": "'Configuration'"
+          }
+        ],
+        "classes": [
+          {
+            "name": "SearchAPI",
+            "bases": [
+              "Enum"
+            ],
+            "lineno": 8
+          },
+          {
+            "name": "Configuration",
+            "bases": [
+              "BaseModel"
+            ],
+            "lineno": 14
+          }
+        ],
+        "imports": [
+          "os",
+          "enum.Enum",
+          "pydantic.BaseModel",
+          "pydantic.Field",
+          "typing.Any",
+          "typing.Optional",
+          "typing.Literal",
+          "langchain_core.runnables.RunnableConfig"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "configuration.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "utils.py",
+      "ast": {
+        "functions": [
+          {
+            "name": "get_config_value",
+            "lineno": 13,
+            "args": [
+              "value"
+            ],
+            "returns": "str"
+          },
+          {
+            "name": "strip_thinking_tokens",
+            "lineno": 31,
+            "args": [
+              "text"
+            ],
+            "returns": "str"
+          },
+          {
+            "name": "deduplicate_and_format_sources",
+            "lineno": 49,
+            "args": [
+              "search_response",
+              "max_tokens_per_source",
+              "fetch_full_page"
+            ],
+            "returns": "str"
+          },
+          {
+            "name": "format_sources",
+            "lineno": 112,
+            "args": [
+              "search_results"
+            ],
+            "returns": "str"
+          },
+          {
+            "name": "fetch_raw_content",
+            "lineno": 130,
+            "args": [
+              "url"
+            ],
+            "returns": "Optional[str]"
+          },
+          {
+            "name": "duckduckgo_search",
+            "lineno": 154,
+            "args": [
+              "query",
+              "max_results",
+              "fetch_full_page"
+            ],
+            "returns": "Dict[str, List[Dict[str, Any]]]"
+          },
+          {
+            "name": "searxng_search",
+            "lineno": 208,
+            "args": [
+              "query",
+              "max_results",
+              "fetch_full_page"
+            ],
+            "returns": "Dict[str, List[Dict[str, Any]]]"
+          },
+          {
+            "name": "tavily_search",
+            "lineno": 260,
+            "args": [
+              "query",
+              "fetch_full_page",
+              "max_results"
+            ],
+            "returns": "Dict[str, List[Dict[str, Any]]]"
+          },
+          {
+            "name": "perplexity_search",
+            "lineno": 289,
+            "args": [
+              "query",
+              "perplexity_search_loop_count"
+            ],
+            "returns": "Dict[str, Any]"
+          }
+        ],
+        "classes": [],
+        "imports": [
+          "os",
+          "httpx",
+          "requests",
+          "typing.Dict",
+          "typing.Any",
+          "typing.List",
+          "typing.Union",
+          "typing.Optional",
+          "markdownify.markdownify",
+          "langsmith.traceable",
+          "tavily.TavilyClient",
+          "duckduckgo_search.DDGS",
+          "langchain_community.utilities.SearxSearchWrapper"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "utils.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "graph.py",
+      "ast": {
+        "functions": [
+          {
+            "name": "generate_query",
+            "lineno": 17,
+            "args": [
+              "state",
+              "config"
+            ],
+            "returns": null
+          },
+          {
+            "name": "web_research",
+            "lineno": 76,
+            "args": [
+              "state",
+              "config"
+            ],
+            "returns": null
+          },
+          {
+            "name": "summarize_sources",
+            "lineno": 114,
+            "args": [
+              "state",
+              "config"
+            ],
+            "returns": null
+          },
+          {
+            "name": "reflect_on_summary",
+            "lineno": 177,
+            "args": [
+              "state",
+              "config"
+            ],
+            "returns": null
+          },
+          {
+            "name": "finalize_summary",
+            "lineno": 231,
+            "args": [
+              "state"
+            ],
+            "returns": null
+          },
+          {
+            "name": "route_research",
+            "lineno": 262,
+            "args": [
+              "state",
+              "config"
+            ],
+            "returns": "Literal['finalize_summary', 'web_research']"
+          }
+        ],
+        "classes": [],
+        "imports": [
+          "json",
+          "typing_extensions.Literal",
+          "langchain_core.messages.HumanMessage",
+          "langchain_core.messages.SystemMessage",
+          "langchain_core.runnables.RunnableConfig",
+          "langchain_ollama.ChatOllama",
+          "langgraph.graph.START",
+          "langgraph.graph.END",
+          "langgraph.graph.StateGraph",
+          "ollama_deep_researcher.configuration.Configuration",
+          "ollama_deep_researcher.configuration.SearchAPI",
+          "ollama_deep_researcher.utils.deduplicate_and_format_sources",
+          "ollama_deep_researcher.utils.tavily_search",
+          "ollama_deep_researcher.utils.format_sources",
+          "ollama_deep_researcher.utils.perplexity_search",
+          "ollama_deep_researcher.utils.duckduckgo_search",
+          "ollama_deep_researcher.utils.searxng_search",
+          "ollama_deep_researcher.utils.strip_thinking_tokens",
+          "ollama_deep_researcher.utils.get_config_value",
+          "ollama_deep_researcher.state.SummaryState",
+          "ollama_deep_researcher.state.SummaryStateInput",
+          "ollama_deep_researcher.state.SummaryStateOutput",
+          "ollama_deep_researcher.prompts.query_writer_instructions",
+          "ollama_deep_researcher.prompts.summarizer_instructions",
+          "ollama_deep_researcher.prompts.reflection_instructions",
+          "ollama_deep_researcher.prompts.get_current_date",
+          "ollama_deep_researcher.lmstudio.ChatLMStudio"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "graph.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    },
+    {
+      "path": "prompts.py",
+      "ast": {
+        "functions": [
+          {
+            "name": "get_current_date",
+            "lineno": 4,
+            "args": [],
+            "returns": null
+          }
+        ],
+        "classes": [],
+        "imports": [
+          "datetime.datetime"
+        ],
+        "errors": []
+      },
+      "lsp": {
+        "file": "prompts.py",
+        "symbols": [],
+        "references": [],
+        "definitions": [],
+        "errors": []
+      }
+    }
+  ],
+  "stats": {
+    "total_files": 7,
+    "error_files": 0
+  }
+}

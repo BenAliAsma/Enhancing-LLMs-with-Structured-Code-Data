@@ -1,0 +1,83 @@
+Prérequis
+
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv git build-essential curl
+
+
+sudo apt install -y golang
+
+
+sudo apt install -y npm
+
+
+Étape 1 : Installer `scip-python`
+
+npm install -g @sourcegraph/scip-python
+scip-python --version
+
+
+
+Étape 2 : Installer le CLI `scip`
+
+
+git clone https://github.com/sourcegraph/scip.git --depth=1
+cd scip
+go build ./cmd/scip
+
+
+./scip --help
+
+
+
+Étape 3 : Cloner le projet `astropy`
+
+
+cd ~
+git clone https://github.com/astropy/astropy.git
+cd astropy
+
+
+
+
+Étape 4 : Créer un environnement virtuel Python
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+
+pip install -r requirements.txt   ou
+pip install -e .[test]
+
+pip install pytest
+
+
+
+Étape 5 : Indexer le projet avec `scip-python`
+
+scip-python index . --output index.scip     ou
+NODE_OPTIONS="--max-old-space-size=8192" scip-python index . --output index.scip
+
+
+
+
+
+Étape 6 : Visualiser l'index généré
+
+
+~/scip/scip print ~/astropy/index.scip
+scip print --json index.scip > index.json
+
+
+
+
+
+ Étape 7 : Générer un snapshot décoré
+
+
+~/scip/scip snapshot   ou
+~/scip/scip snapshot --strict=false
+
+
+~/astropy/index.scip
+
+
