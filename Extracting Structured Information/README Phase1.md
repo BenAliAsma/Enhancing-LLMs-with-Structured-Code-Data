@@ -1,4 +1,3 @@
-```markdown
 # Enhancing LLMs with Structured Code Data
 
 **Phase 1 Report: Extracting Structured Information from Code Using Static Analysis Tools**
