@@ -1,183 +1,90 @@
-# Enhancing LLMs with Structured Code Data
+# Phase 1 : Extraction d'informations structurées du code à l'aide d'outils d'analyse statique
 
-**Phase 1 Report: Extracting Structured Information from Code Using Static Analysis Tools**
+## Objectif
 
-![Project Phase](https://img.shields.io/badge/Phase-1%20Completed-success?logo=git)
-![SCIP Selected](https://img.shields.io/badge/Chosen%20Solution-SCIP-blue?logo=sourcegraph)
+Cette phase vise à extraire des informations structurées du code source en utilisant des outils d'analyse statique. L'objectif est de capturer la structure, les relations et la sémantique du code pour créer un contexte riche destiné à l'entraînement de modèles de langage (LLMs).
 
-## 📜 Project Overview
+## Outils explorés
 
-This project aims to enhance Large Language Models (LLMs) with structured code intelligence data to improve:
-- Code understanding accuracy
-- Cross-repository context awareness
-- Semantic code generation capabilities
-- Refactoring suggestion quality
+### 1. **CodeQL**
 
-**Phase 1 Objective**: Evaluate modern static analysis tools for extracting structured code semantics at scale.
+CodeQL est un moteur d'analyse statique développé par GitHub, permettant de traiter le code comme des données. Il offre la possibilité d'écrire des requêtes pour identifier des vulnérabilités de sécurité et des motifs indésirables dans le code.
 
-## 🔍 Evaluated Technologies
+* **Avantages** :
 
-| Tool         | Type          | Strengths                          | Limitations Encountered          |
-|--------------|---------------|------------------------------------|-----------------------------------|
-| **CodeQL**   | Query-based   | - Sophisticated vulnerability patterns<br>- Mature code analysis | - Language coverage<br>- Complex setup |
-| **LSP**      | Protocol      | - Real-time feedback<br>- Editor integration | - Stateful sessions<br>- Scaling issues |
-| **LSIF**     | Index Format  | - Precise code navigation<br>- Cross-reference data | - Language server dependency<br>- Storage overhead |
-| **Multilspy**| LSP Framework | - Multi-language support<br>- Unified interface | - Immature ecosystem<br>- Performance constraints |
-| **SCIP**     | Index Protocol| - Cross-language support<br>- Compact binaries<br>- Historical analysis | - Early adoption challenges |
+  * Analyse sémantique puissante.
+  * Large éventail de requêtes prédéfinies.
+  * Supporte plusieurs langages de programmation.
 
-## �️ Phase 1 Conclusion: SCIP Selection Rationale
+* **Limites** :
 
-After extensive evaluation of static analysis tools, SCIP (Semantic Code Intelligence Protocol) was selected as the foundation for subsequent phases due to:
+  * Principalement axé sur la sécurité.
+  * Nécessite la création d'une base de données avant l'analyse.
+  * Moins adapté pour une exploration générale du code.
 
-### Technical Advantages
-1. **Historical Analysis Capability**
-   - Precise commit-level snapshots
-   - Temporal code intelligence tracking
-2. **Cross-Language Consistency**
-   - Unified schema for 10+ languages
-   - Language-agnostic relationships
-3. **Scalability**
-   - Compact binary format (60-70% smaller than LSIF)
-   - Batch processing optimization
-4. **LLM Synergy**
-   ```mermaid
-   graph LR
-       A[Raw Code] --> B(SCIP Indexer)
-       B --> C[Structured Semantics]
-       C --> D{LLM Training}
-       D --> E[Better Code Understanding]
-       D --> F[Accurate Generation]
-       C --> G[Vector Database]
-       G --> H[Semantic Search]
-   ```
+### 2. **Language Server Protocol (LSP)**
 
-### Operational Benefits
-- **Offline-First Architecture**: Enables analysis of air-gapped codebases
-- **Version Control Integration**: Git-native commit tracking
-- **Ecosystem Growth**: Backed by Sourcegraph's active development
+LSP est un protocole standardisé permettant aux éditeurs de code d'interagir avec des serveurs de langage, offrant des fonctionnalités telles que l'autocomplétion, la navigation dans le code et la gestion des erreurs.
 
-## 🛠️ SCIP Integration Implementation
+* **Avantages** :
 
-### Implementation Highlights
-```bash
-.
-├── scip_workspace/          # Isolated analysis environment
-├── index_generator.sh       # Automated SCIP pipeline
-├── semantic_graphs/         # Extracted code relationships
-└── llm_datasets/            # Processed training data
-```
+  * Intégration fluide avec divers éditeurs.
+  * Fonctionnalités riches pour l'édition de code.
+  * Supporte de nombreux langages via des serveurs dédiés.
 
-### Technical Approach
-1. **Commit-Precise Analysis**
-   ```python
-   def analyze_commit(repo: Repo, hash: str) -> SCIPIndex:
-       """Extracts structured semantics at specific commit"""
-       checkout_commit(hash)
-       return scip_index(repo)
-   ```
+* **Limites** :
 
-2. **Cross-Language Relationship Extraction**
-   ```json
-   {
-     "relationships": [
-       {
-         "source": "py:astropy/units/__init__.py#Unit",
-         "target": "ts:frontend/src/UnitConverter.ts#BaseUnit",
-         "type": "IMPLEMENTS"
-       }
-     ]
-   }
-   ```
+  * Ne fournit pas directement des métadonnées structurées du code.
+  * Dépendant de l'éditeur et du serveur de langage utilisé.
 
-3. **LLM Training Data Generation**
-   ```python
-   def create_finetuning_dataset(index: SCIPIndex) -> Dataset:
-       """Converts SCIP data to LLM-digestible format"""
-       return Dataset(
-           contexts=extract_usage_contexts(index),
-           relationships=extract_semantic_graph(index)
-       )
-   ```
+### 3. **Language Server Index Format (LSIF)**
 
-## 📊 Output Artifacts
+LSIF est un format de données permettant de représenter les informations extraites par un serveur de langage, facilitant ainsi la navigation et l'analyse du code.
 
-| Artifact                | Format       | LLM Application                 |
-|-------------------------|--------------|----------------------------------|
-| Semantic Graphs         | JSON-LD      | Knowledge graph augmentation    |
-| Code Context Windows    | .tfrecord    | Transformer pretraining         |
-| Type Relationships      | Protobuf     | Code generation constraints     |
-| API Usage Traces        | Parquet      | Hallucination reduction         |
+* **Avantages** :
 
-## 🚀 Phase 2 Directions
+  * Permet une exploration efficace du code.
+  * Compatible avec divers outils de développement.
 
-1. **SCIP-LLM Integration Framework**
-   - Develop attention mechanisms for SCIP graph integration
-   - Implement code generation verifiers using SCIP constraints
+* **Limites** :
 
-2. **Optimization Targets**
-   ```mermaid
-   gantt
-       title Phase 2 Timeline
-       dateFormat  YYYY-MM-DD
-       section SCIP Integration
-       Attention Modification     :active, p2a1, 2024-03-01, 30d
-       Verification Pipeline      :p2a2, after p2a1, 45d
-       section Performance
-       Baseline Metrics           :2024-03-15, 15d
-       Optimization Targets       :2024-04-01, 60d
-   ```
+  * Nécessite la génération préalable d'un index LSIF.
+  * Peut être complexe à mettre en place pour de grands projets.
 
-3. **Cross-Modal Architecture**
-   ```python
-   class CodeAwareLLM(nn.Module):
-       def __init__(self, scip_db: GraphDatabase):
-           self.llm = MistralForCausalLM()
-           self.scip_projection = GraphAttentionLayer(scip_db)
-           
-       def forward(self, prompt: str) -> str:
-           semantic_context = self.scip_projection(prompt)
-           return self.llm(prompt, context=semantic_context)
-   ```
+### 4. **multilspy**
 
-## 📋 Usage (Phase 1 Final Implementation)
+multilspy est une bibliothèque Python permettant d'interagir avec des serveurs de langage via LSP, facilitant l'extraction de métadonnées structurées du code.
 
-### Prerequisites
-- Python 3.10+
-- SCIP CLI 0.2.3+
-- Git 2.35+
+* **Avantages** :
 
-### Generate SCIP Index
-```bash
-./index_generator.sh https://github.com/your/repo.git COMMIT_HASH
-```
+  * Intégration facile avec des serveurs de langage existants.
+  * Permet d'extraire des informations détaillées sur le code.
+  * Adapté pour une analyse automatisée.
 
-### Expected Output
-```
-✅ Success: SCIP index generated at
-  - ./scip_workspace/repo_name/formatted_snapshot.json
-  - ./scip_workspace/repo_name/semantic_graphs/
-```
+* **Limites** :
 
-## 🚨 Troubleshooting
+  * Dépendant de la configuration du serveur de langage.
+  * Peut nécessiter des ajustements pour des projets spécifiques.
 
-**Issue**: Missing cross-language references  
-**Solution**: Enable multi-language indexing:
-```bash
-scip-python index --cross-language .
-```
+### 5. **SCIP (Semantic Code Index Protocol)**
 
-**Issue**: LLM context window overflow  
-**Mitigation**: Use SCIP-aware chunking:
-```python
-from scip_utils import semantic_chunker
+SCIP est un format de données et un protocole permettant de représenter des informations sémantiques sur le code, facilitant ainsi son exploration et son analyse.
 
-chunks = semantic_chunker(index.scip, max_tokens=4096)
-```
+* **Avantages** :
 
-## 📚 References
+  * Offre une représentation riche et structurée du code.
+  * Permet une navigation efficace et une analyse approfondie.
+  * Supporte l'intégration avec divers outils d'analyse.
 
-1. SCIP White Paper: [Sourcegraph/scip](https://github.com/sourcegraph/scip)
-2. LLM Code Understanding: [Codex, OpenAI (2023)]
-3. Semantic Code Analysis: [Allamanis et al., IEEE TSE (2022)]
+* **Limites** :
 
-'''
+  * Nécessite la génération préalable d'un index SCIP.
+  * Peut être complexe à mettre en place pour de grands projets.
+
+## Choix final : **SCIP**
+
+Après évaluation des différents outils, le choix s'est porté sur **SCIP** en raison de sa capacité à fournir une représentation sémantique riche et structurée du code, facilitant ainsi son exploration et son analyse. Ce choix permet d'obtenir un contexte détaillé du code, essentiel pour l'entraînement de modèles de langage performants.
+
+## Conclusion
+
+La première phase a permis d'explorer et d'évaluer divers outils d'analyse statique du code. Le choix de SCIP comme outil principal offre une base solide pour l'extraction d'informations structurées, essentielle pour les phases suivantes du projet.
