@@ -1,0 +1,8 @@
+{"id":1,"type":"vertex","label":"metaData","version":"0.4.3","positionEncoding":"utf-16","projectRoot":"file:///home/asma/exemple","toolInfo":{"name":"lsif-py"}}
+{"id":2,"type":"vertex","label":"project","kind":"py"}
+{"id":3,"type":"vertex","label":"$event","kind":"begin","scope":"project","data":2}
+{"id":4,"type":"vertex","label":"document","languageId":"py","uri":"file:///home/asma/exemple/hello.py","contents":"cHJpbnQoIkhlbGxvIHdvcmxkISIp"}
+{"id":5,"type":"vertex","label":"$event","kind":"begin","scope":"document","data":4}
+{"id":6,"type":"vertex","label":"$event","kind":"end","scope":"document","data":4}
+{"id":7,"type":"edge","label":"contains","outV":2,"inVs":[4]}
+{"id":8,"type":"vertex","label":"$event","kind":"end","scope":"project","data":2}
