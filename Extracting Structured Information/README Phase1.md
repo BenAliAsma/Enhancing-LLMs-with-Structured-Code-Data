@@ -1,4 +1,4 @@
-# Phase 1 : Extraction d'informations structurées du code à l'aide d'outils d'analyse statique
+# Phase 1 : Extraction d'informations structurées du code à l'aide d'outils d'analyse statique 
 
 ## Objectif
 
