@@ -1,0 +1,4 @@
+jedi
+pydantic
+stringcase
+click
