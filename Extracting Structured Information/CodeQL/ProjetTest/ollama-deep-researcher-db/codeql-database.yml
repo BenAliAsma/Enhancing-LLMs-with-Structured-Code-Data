@@ -1,0 +1,10 @@
+---
+sourceLocationPrefix: C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\ollama-deep-researcher-main
+baselineLinesOfCode: 436
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  cliVersion: 2.20.3
+  creationTime: 2025-03-20T15:45:53.394066100Z
+finalised: true

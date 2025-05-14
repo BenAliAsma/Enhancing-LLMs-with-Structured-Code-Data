@@ -1,0 +1,8 @@
+{
+  "queries": [
+    {
+      "path": "extract_project_metadata.ql",
+      "kind": "problem"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[2025-03-20 16:44:49] This is codeql database create ollama-deep-researcher-db --source-root=ollama-deep-researcher-main --language=python
+[2025-03-20 16:44:49] Log file was started late.
+[2025-03-20 16:44:49] [PROGRESS] database create> Initializing database at C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\queries\ollama-deep-researcher-db.
+[2025-03-20 16:44:49] Running plumbing command: codeql database init --language=python --extractor-options-verbosity=1 --qlconfig-file=C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\queries\qlconfig.yml --source-root=C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\queries\ollama-deep-researcher-main --allow-missing-source-root=false --allow-already-existing -- C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\queries\ollama-deep-researcher-db
+[2025-03-20 16:44:49] Exception caught at top level: Invalid source root: C:\Users\Asus\Desktop\StageBordeau\CodeQL\PythonData\queries\ollama-deep-researcher-main.
+                      com.semmle.cli2.database.InitCommand.executeSubcommand(InitCommand.java:170)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:119)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:201)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:113)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)

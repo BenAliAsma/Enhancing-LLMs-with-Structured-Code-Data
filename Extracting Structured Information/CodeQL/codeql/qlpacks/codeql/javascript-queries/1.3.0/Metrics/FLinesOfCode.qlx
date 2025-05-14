@@ -1,0 +1,32 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: FLinesOfCode.ql
+dbscheme: c88c69174bd0dd4e95f1bcfbada68a2505e812c3
+stages:
+- offset: 1
+results:
+  '#select':
+    resultArranger: 2"f"ei11"n"i
+    sortFields:
+    - -2
+inputsDigest: a6fa3548950d1f9a37867e7f0c4d393ad3fce697
+metadata:
+  name: Lines of code in files
+  kind: treemap
+  description: |-
+    Measures the number of lines of code in each file, ignoring lines that
+                  contain only comments or whitespace.
+  treemap.warnOn: highValues
+  metricType: file
+  metricAggregate: avg sum max
+  id: js/lines-of-code-in-files
+  tags: maintainability
+
+---
+...
+dQLXst:20231115xÚİTÍrÓ0¾ë)LÌb¯¤¸IÃğÓ–ÂÊĞa†›£Ør¢T¶S­Sx‡§ArÒ&ms0ñH»ßîj÷û¤Ñ(¢¨ÏëRÆ¦©*iâÏµ¹ˆQ–¥–İ¬Îå­µf&m¼Ù¶ÿÖ|©»­åzÓ]ˆO3£–¶{ÙH£$F_Ô2jS¯0ñ}HL#A­ZMhí÷#„Ö1kÑ«ÃyD´ñGù³¹,egD9TT¢”A¡´D2ò=Ãë[ZçÒ8—TJ9çGšğ@j— ²©5eªU%±]ùbëEé~İzIÃèş¥‘6VùABÄnYNÜ Î¯ĞÊ2ºÔºS&¯L`ç
+#±Ñ6ğ~ëÊ
+×¸‰\‡S¬ucå;aç1„¹Â¥‘y	$’’E(¤ÈS$ØÄs1Œã	aõMxôˆ2¾GÉ˜í³:~üLè×]•ÇåR‡~ãKxºU‘ıÁAŞïL€‘1İ—ê¿Ğø–¯%[n¾súí<p'ÿ£7ZL…è4jD5“ûÀü,Nàlãİm­¢¬4%™1 8fœÊ;1éÎ"éÎ,á¢VUjæHğ1ÆôÉè&Û&"•U7ĞÅsN<"€A€TyÙ( ¤é¹$'şL»”q­‰·M9•æ¬8õùÏŠcOìF#´°ABğÜX^Œş:…¼‘Ö¨ã“­ág”®§÷·ğî ñÈ·¼aä7î×=Òz/)PNDÂ[Æh{ÓùäQUèš©f*—İ“)¬ª«½	#‡…£X1l>t··€pOƒ·²©3÷&>ªïb$¢A¡­ÏWŠ°1:¨‚İóÙĞõŠ<…õ<øÑb\

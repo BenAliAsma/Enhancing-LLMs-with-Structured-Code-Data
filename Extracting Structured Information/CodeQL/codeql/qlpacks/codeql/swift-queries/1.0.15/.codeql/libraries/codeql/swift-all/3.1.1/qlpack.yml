@@ -1,0 +1,21 @@
+---
+library: true
+warnOnImplicitThis: true
+name: codeql/swift-all
+version: 3.1.1
+buildMetadata:
+  sha: e27d8c16729588259f8143c7ed4569d517b0de10
+  cliVersion: 2.20.3
+dependencies:
+  codeql/controlflow: 1.0.15
+  codeql/dataflow: 1.1.9
+  codeql/mad: 1.0.15
+  codeql/regex: 1.0.15
+  codeql/ssa: 1.0.15
+  codeql/tutorial: 1.0.15
+  codeql/util: 2.0.2
+dbscheme: swift.dbscheme
+extractor: swift
+upgrades: upgrades
+groups:
+ - swift

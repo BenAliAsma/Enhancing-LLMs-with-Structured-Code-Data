@@ -1,0 +1,28 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: ExtractNeutrals.ql
+dbscheme: 1fd1afa7862b82955785edd29820054ab6c9ec81
+stages:
+- offset: 1
+results:
+  '#select':
+    resultArranger: 6"package"s"type"s"name"s"signature"s"kind"s"provenance"s
+    sortFields:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+inputsDigest: 73526c87ebe8bbc5bb286322fe44e99ccb9df421
+metadata:
+  name: Extract MaD neutral model rows.
+  description: This extracts the Models as data neutral model rows.
+  id: java/utils/modelconverter/generate-data-extensions-neutral
+
+---
+...
+dQLXst:20231115xÚÍÁNÃ0†ï}ŠĞ¯ íÀN qgBšiM	u“ÎI;†Ä»“fEGn$RôÛŸe;ÿƒOGiÃ›ëd°–öNZğÔuLEåjú¥JCz¬ZŸŞ”Şq‘2?Añ#»Ä×Ÿ¦×©é‘Â)„RÇ{zfl^8-FfXÇÂå¼K‚	A_ÙíÁØ@b‘áæã(ncvÒÖg½Ş1ç›ru¡¦M±!=)‹)o‹aR­±µêÅdÑVÓyÇq&ËõÓõ×jÛP´	ÕÛçì®,ÿ“C0ì¡›Ö­œI¢“!‚U¸?şer"¿,W2bá‰©
+‹iŞ!»ZÎqvößÂÓÒ

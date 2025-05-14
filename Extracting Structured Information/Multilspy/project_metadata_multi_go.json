@@ -1,0 +1,806 @@
+{
+    "project_structure": [
+        {
+            "directory": ".",
+            "files": [
+                "admin.go",
+                "caddy.go",
+                "metrics.go",
+                "modules_test.go",
+                "modules.go",
+                "sigtrap_nonposix.go",
+                "listeners_test.go",
+                "go.mod",
+                "replacer_test.go",
+                "logging.go",
+                "listen_unix.go",
+                "listen_unix_setopt_freebsd.go",
+                "filepath_windows.go",
+                "listen_unix_setopt.go",
+                "listeners.go",
+                "sigtrap_posix.go",
+                "filesystem.go",
+                "listeners_fuzz.go",
+                ".golangci.yml",
+                ".gitattributes",
+                "storage.go",
+                "caddy_test.go",
+                ".goreleaser.yml",
+                "sigtrap.go",
+                "usagepool.go",
+                ".gitignore",
+                "duration_fuzz.go",
+                "admin_test.go",
+                "replacer.go",
+                "context_test.go",
+                "filepath.go",
+                "go.sum",
+                "AUTHORS",
+                ".editorconfig",
+                "context.go",
+                "README.md",
+                "listen.go",
+                "replacer_fuzz.go",
+                "LICENSE",
+                "service_windows.go"
+            ]
+        },
+        {
+            "directory": ".github",
+            "files": [
+                "FUNDING.yml",
+                "SECURITY.md",
+                "dependabot.yml",
+                "CONTRIBUTING.md"
+            ]
+        },
+        {
+            "directory": ".github/workflows",
+            "files": [
+                "release.yml",
+                "ci.yml",
+                "cross-build.yml",
+                "lint.yml",
+                "release_published.yml"
+            ]
+        },
+        {
+            "directory": "internal",
+            "files": [
+                "sockets.go",
+                "ranges.go"
+            ]
+        },
+        {
+            "directory": "internal/metrics",
+            "files": [
+                "metrics.go",
+                "metrics_test.go"
+            ]
+        },
+        {
+            "directory": "internal/testmocks",
+            "files": [
+                "dummyverifier.go"
+            ]
+        },
+        {
+            "directory": "internal/filesystems",
+            "files": [
+                "os.go",
+                "map.go"
+            ]
+        },
+        {
+            "directory": "cmd",
+            "files": [
+                "removebinary_windows.go",
+                "x509rootsfallback.go",
+                "commandfactory.go",
+                "packagesfuncs.go",
+                "commandfuncs.go",
+                "removebinary.go",
+                "main_test.go",
+                "cobra.go",
+                "commands.go",
+                "main.go",
+                "storagefuncs.go"
+            ]
+        },
+        {
+            "directory": "cmd/caddy",
+            "files": [
+                "setcap.sh",
+                "main.go"
+            ]
+        },
+        {
+            "directory": "modules",
+            "files": []
+        },
+        {
+            "directory": "modules/caddyfs",
+            "files": [
+                "filesystem.go"
+            ]
+        },
+        {
+            "directory": "modules/caddytls",
+            "files": [
+                "values.go",
+                "leafpemloader.go",
+                "pemloader.go",
+                "connpolicy_test.go",
+                "tls.go",
+                "zerosslissuer.go",
+                "storageloader.go",
+                "leafstorageloader.go",
+                "leaffolderloader_test.go",
+                "ondemand.go",
+                "capools_test.go",
+                "capools.go",
+                "acmeissuer.go",
+                "leafpemloader_test.go",
+                "leaffileloader_test.go",
+                "certselection.go",
+                "certmanagers.go",
+                "matchers.go",
+                "matchers_test.go",
+                "folderloader.go",
+                "fileloader.go",
+                "internalissuer.go",
+                "leaffolderloader.go",
+                "leaffileloader.go",
+                "ech.go",
+                "automation.go",
+                "sessiontickets.go",
+                "connpolicy.go"
+            ]
+        },
+        {
+            "directory": "modules/caddytls/standardstek",
+            "files": [
+                "stek.go"
+            ]
+        },
+        {
+            "directory": "modules/caddytls/distributedstek",
+            "files": [
+                "distributedstek.go"
+            ]
+        },
+        {
+            "directory": "modules/metrics",
+            "files": [
+                "metrics.go",
+                "adminmetrics.go",
+                "metrics_test.go"
+            ]
+        },
+        {
+            "directory": "modules/logging",
+            "files": [
+                "filters.go",
+                "appendencoder.go",
+                "filewriter.go",
+                "nopencoder.go",
+                "filterencoder.go",
+                "cores.go",
+                "encoders.go",
+                "netwriter.go",
+                "filewriter_test.go",
+                "filters_test.go",
+                "filewriter_test_windows.go"
+            ]
+        },
+        {
+            "directory": "modules/internal",
+            "files": []
+        },
+        {
+            "directory": "modules/internal/network",
+            "files": [
+                "networkproxy.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp",
+            "files": [
+                "metrics.go",
+                "replacer_test.go",
+                "http2listener.go",
+                "responsematchers.go",
+                "logging.go",
+                "server.go",
+                "responsewriter_test.go",
+                "marshalers.go",
+                "subroute.go",
+                "errors.go",
+                "app.go",
+                "server_test.go",
+                "routes.go",
+                "ip_range.go",
+                "vars.go",
+                "responsematchers_test.go",
+                "autohttps.go",
+                "invoke.go",
+                "matchers.go",
+                "matchers_test.go",
+                "replacer.go",
+                "metrics_test.go",
+                "celmatcher_test.go",
+                "celmatcher.go",
+                "caddyhttp.go",
+                "staticresp.go",
+                "httpredirectlistener.go",
+                "ip_matchers.go",
+                "caddyhttp_test.go",
+                "responsewriter.go",
+                "staticresp_test.go",
+                "staticerror.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/requestbody",
+            "files": [
+                "caddyfile.go",
+                "requestbody.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/tracing",
+            "files": [
+                "tracer_test.go",
+                "tracerprovider.go",
+                "tracer.go",
+                "tracerprovider_test.go",
+                "module_test.go",
+                "module.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/logging",
+            "files": [
+                "logadd.go",
+                "caddyfile.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/caddyauth",
+            "files": [
+                "caddyauth.go",
+                "basicauth.go",
+                "caddyfile.go",
+                "command.go",
+                "hashes.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/fileserver",
+            "files": [
+                "matcher_test.go",
+                "staticfiles_test.go",
+                "staticfiles.go",
+                "caddyfile.go",
+                "browse.html",
+                "command.go",
+                "browse.go",
+                "browsetplcontext.go",
+                "browsetplcontext_test.go",
+                "matcher.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/fileserver/testdata",
+            "files": [
+                "notphp.php.txt",
+                "remote.php",
+                "ملف.txt",
+                "index.php",
+                "large.txt",
+                "foo.txt",
+                "%D9%85%D9%84%D9%81.txt"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/fileserver/testdata/foodir",
+            "files": [
+                "bar.txt",
+                "foo.txt"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/fileserver/testdata/foo.php.php",
+            "files": [
+                "index.php"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/intercept",
+            "files": [
+                "intercept.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/reverseproxy",
+            "files": [
+                "admin.go",
+                "metrics.go",
+                "copyresponse.go",
+                "addresses.go",
+                "healthchecks.go",
+                "selectionpolicies.go",
+                "httptransport.go",
+                "selectionpolicies_test.go",
+                "ascii.go",
+                "upstreams.go",
+                "caddyfile.go",
+                "hosts.go",
+                "streaming_test.go",
+                "reverseproxy.go",
+                "buffering_test.go",
+                "addresses_test.go",
+                "command.go",
+                "httptransport_test.go",
+                "upstreams_test.go",
+                "streaming.go",
+                "ascii_test.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/reverseproxy/forwardauth",
+            "files": [
+                "caddyfile.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/reverseproxy/fastcgi",
+            "files": [
+                "fastcgi.go",
+                "record.go",
+                "writer.go",
+                "reader.go",
+                "header.go",
+                "client_test.go",
+                "caddyfile.go",
+                "client.go",
+                "pool.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/map",
+            "files": [
+                "caddyfile.go",
+                "map_test.go",
+                "map.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/headers",
+            "files": [
+                "caddyfile.go",
+                "headers.go",
+                "headers_test.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/standard",
+            "files": [
+                "imports.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/templates",
+            "files": [
+                "frontmatter.go",
+                "tplcontext.go",
+                "caddyfile.go",
+                "tplcontext_test.go",
+                "templates.go",
+                "frontmatter_fuzz.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/encode",
+            "files": [
+                "encode_test.go",
+                "caddyfile.go",
+                "encode.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/encode/zstd",
+            "files": [
+                "zstd.go",
+                "zstd_precompressed.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/encode/gzip",
+            "files": [
+                "gzip.go",
+                "gzip_precompressed.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/encode/brotli",
+            "files": [
+                "brotli_precompressed.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/rewrite",
+            "files": [
+                "rewrite_test.go",
+                "caddyfile.go",
+                "rewrite.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/push",
+            "files": [
+                "link.go",
+                "link_test.go",
+                "caddyfile.go",
+                "handler.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyhttp/proxyprotocol",
+            "files": [
+                "listenerwrapper.go",
+                "policy.go",
+                "module.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyevents",
+            "files": [
+                "app.go"
+            ]
+        },
+        {
+            "directory": "modules/caddyevents/eventsconfig",
+            "files": [
+                "caddyfile.go"
+            ]
+        },
+        {
+            "directory": "modules/filestorage",
+            "files": [
+                "filestorage.go"
+            ]
+        },
+        {
+            "directory": "modules/standard",
+            "files": [
+                "imports.go"
+            ]
+        },
+        {
+            "directory": "modules/caddypki",
+            "files": [
+                "ca.go",
+                "maintain.go",
+                "certificates.go",
+                "adminapi.go",
+                "pki.go",
+                "command.go",
+                "crypto.go"
+            ]
+        },
+        {
+            "directory": "modules/caddypki/acmeserver",
+            "files": [
+                "challenges.go",
+                "caddyfile.go",
+                "policy.go",
+                "policy_test.go",
+                "acmeserver.go"
+            ]
+        },
+        {
+            "directory": "caddyconfig",
+            "files": [
+                "load.go",
+                "httploader.go",
+                "configadapters.go"
+            ]
+        },
+        {
+            "directory": "caddyconfig/httpcaddyfile",
+            "files": [
+                "directives_test.go",
+                "options.go",
+                "httptype.go",
+                "tlsapp_test.go",
+                "addresses.go",
+                "options_test.go",
+                "pkiapp.go",
+                "builtins_test.go",
+                "shorthands.go",
+                "serveroptions.go",
+                "addresses_test.go",
+                "tlsapp.go",
+                "httptype_test.go",
+                "builtins.go",
+                "directives.go",
+                "addresses_fuzz.go"
+            ]
+        },
+        {
+            "directory": "caddyconfig/httpcaddyfile/testdata",
+            "files": [
+                "import_variadic_with_import.txt",
+                "import_variadic_snippet.txt",
+                "import_variadic.txt"
+            ]
+        },
+        {
+            "directory": "caddyconfig/caddyfile",
+            "files": [
+                "dispenser.go",
+                "importargs.go",
+                "lexer_test.go",
+                "lexer_fuzz.go",
+                "lexer.go",
+                "parse.go",
+                "adapter.go",
+                "dispenser_test.go",
+                "importgraph.go",
+                "formatter_test.go",
+                "parse_test.go",
+                "formatter_fuzz.go",
+                "formatter.go"
+            ]
+        },
+        {
+            "directory": "caddyconfig/caddyfile/testdata",
+            "files": [
+                "only_white_space.txt",
+                "import_glob2.txt",
+                "import_args0.txt",
+                "import_glob1.txt",
+                "import_test2.txt",
+                "import_test1.txt",
+                "import_recursive1.txt",
+                "import_recursive2.txt",
+                "import_recursive0.txt",
+                "empty.txt",
+                "import_glob0.txt",
+                "import_recursive3.txt",
+                "import_args1.txt"
+            ]
+        },
+        {
+            "directory": "caddyconfig/caddyfile/testdata/glob",
+            "files": [
+                ".dotfile.txt",
+                "import_test1.txt"
+            ]
+        },
+        {
+            "directory": "caddytest",
+            "files": [
+                "caddytest.go",
+                "caddy.ca.cer",
+                "a.caddy.localhost.key",
+                "caddy.localhost.key",
+                "a.caddy.localhost.crt",
+                "caddy.localhost.crt",
+                "caddytest_test.go",
+                "leafcert.pem"
+            ]
+        },
+        {
+            "directory": "caddytest/integration",
+            "files": [
+                "sni_test.go",
+                "listener_test.go",
+                "mockdns_test.go",
+                "reverseproxy_test.go",
+                "caddyfile_test.go",
+                "handler_test.go",
+                "pki_test.go",
+                "map_test.go",
+                "autohttps_test.go",
+                "acme_test.go",
+                "intercept_test.go",
+                "leafcertloaders_test.go",
+                "acmeserver_test.go",
+                "stream_test.go",
+                "caddyfile_adapt_test.go"
+            ]
+        },
+        {
+            "directory": "caddytest/integration/testdata",
+            "files": [
+                "foo_with_trailing_newline.txt",
+                "cookie.html",
+                "index.localhost.html",
+                "import_respond.txt",
+                "foo_with_multiple_trailing_newlines.txt",
+                "foo.txt"
+            ]
+        },
+        {
+            "directory": "caddytest/integration/caddyfile_adapt",
+            "files": [
+                "log_append_encoder.caddyfiletest",
+                "global_options_log_multi.caddyfiletest",
+                "global_options_admin_with_persist_config_off.caddyfiletest",
+                "push.caddyfiletest",
+                "http_only_on_domain.caddyfiletest",
+                "acme_server_multi_custom_challenges.caddyfiletest",
+                "metrics_perhost.caddyfiletest",
+                "reverse_proxy_empty_non_http_transport.caddyfiletest",
+                "tls_client_auth_inline_cert-legacy.caddyfiletest",
+                "acme_server_sign_with_root.caddyfiletest",
+                "global_server_options_single.caddyfiletest",
+                "log_override_name_multiaccess_debug.caddyfiletest",
+                "log_filter_no_wrap.caddyfiletest",
+                "file_server_etag_file_extensions.caddyfiletest",
+                "php_fastcgi_expanded_form.caddyfiletest",
+                "root_directive_permutations.caddyfiletest",
+                "tls_automation_policies_11.caddyfiletest",
+                "reverse_proxy_h2c_shorthand.caddyfiletest",
+                "import_args_snippet_env_placeholder.caddyfiletest",
+                "reverse_proxy_trusted_proxies.caddyfiletest",
+                "tls_automation_policies_3.caddyfiletest",
+                "global_options_log_basic.caddyfiletest",
+                "wildcard_pattern.caddyfiletest",
+                "not_block_merging.caddyfiletest",
+                "tls_automation_wildcard_shadowing.caddyfiletest",
+                "file_server_status.caddyfiletest",
+                "file_server_disable_canonical_uris.caddyfiletest",
+                "php_fastcgi_matcher.caddyfiletest",
+                "sort_vars_in_reverse.caddyfiletest",
+                "server_names.caddyfiletest",
+                "http_only_on_localhost.caddyfiletest",
+                "bind_fd_fdgram_h123.caddyfiletest",
+                "auto_https_prefer_wildcard_multi.caddyfiletest",
+                "auto_https_disable_redirects.caddyfiletest",
+                "tls_automation_policies_8.caddyfiletest",
+                "error_multi_site_blocks.caddyfiletest",
+                "handle_path_sorting.caddyfiletest",
+                "https_on_domain.caddyfiletest",
+                "enable_tls_for_catch_all_site.caddyfiletest",
+                "reverse_proxy_health_path_query.caddyfiletest",
+                "metrics_disable_om.caddyfiletest",
+                "file_server_pass_thru.caddyfiletest",
+                "handle_nested_in_route.caddyfiletest",
+                "tls_explicit_issuer_propagation_options.caddyfiletest",
+                "error_example.caddyfiletest",
+                "tls_automation_policies_4.caddyfiletest",
+                "replaceable_upstream_port.caddyfiletest",
+                "global_options_skip_install_trust.caddyfiletest",
+                "bind_ipv6.caddyfiletest",
+                "header.caddyfiletest",
+                "sort_directives_with_any_matcher_first.caddyfiletest",
+                "global_options_default_bind.caddyfiletest",
+                "import_block_snippet.caddyfiletest",
+                "reverse_proxy_port_range.caddyfiletest",
+                "global_options_acme.caddyfiletest",
+                "file_server_sort.caddyfiletest",
+                "global_options_admin.caddyfiletest",
+                "import_blocks_snippet_nested.caddyfiletest",
+                "tls_dns_ttl.caddyfiletest",
+                "tls_internal_options.caddyfiletest",
+                "matcher_syntax.caddyfiletest",
+                "log_filter_with_header.txt",
+                "log_override_name_multiaccess.caddyfiletest",
+                "error_sort.caddyfiletest",
+                "tls_client_auth_cert_file-legacy-with-verifier.caddyfiletest",
+                "reverse_proxy_handle_response.caddyfiletest",
+                "handle_path.caddyfiletest",
+                "encode_options.caddyfiletest",
+                "reverse_proxy_http_transport_forward_proxy_url.txt",
+                "tls_propagation_options.caddyfiletest",
+                "portless_upstream.caddyfiletest",
+                "tls_acme_preferred_chains.caddyfiletest",
+                "log_roll_days.caddyfiletest",
+                "http_valid_directive_like_site_address.caddyfiletest",
+                "php_fastcgi_try_files_override.caddyfiletest",
+                "method_directive.caddyfiletest",
+                "tls_automation_policies_6.caddyfiletest",
+                "tls_automation_policies_2.caddyfiletest",
+                "reverse_proxy_buffers.caddyfiletest",
+                "reverse_proxy_dynamic_upstreams.caddyfiletest",
+                "global_server_options_multi.caddyfiletest",
+                "shorthand_parameterized_placeholders.caddyfiletest",
+                "uri_query_operations.caddyfiletest",
+                "php_fastcgi_try_files_override_no_dir_index.caddyfiletest",
+                "log_sampling.caddyfiletest",
+                "acme_server_lifetime.caddyfiletest",
+                "request_header.caddyfiletest",
+                "global_options_debug_with_access_log.caddyfiletest",
+                "metrics_merge_options.caddyfiletest",
+                "reverse_proxy_health_headers.caddyfiletest",
+                "tls_automation_policies_7.caddyfiletest",
+                "import_args_snippet.caddyfiletest",
+                "auto_https_ignore_loaded_certs.caddyfiletest",
+                "php_fastcgi_index_off.caddyfiletest",
+                "global_options_log_and_site.caddyfiletest",
+                "auto_https_prefer_wildcard.caddyfiletest",
+                "reverse_proxy_health_method.caddyfiletest",
+                "invoke_named_routes.caddyfiletest",
+                "import_block_snippet_args.caddyfiletest",
+                "tls_client_auth_cert_file.caddyfiletest",
+                "file_server_file_limit.caddyfiletest",
+                "forward_auth_rename_headers.caddyfiletest",
+                "acme_server_default_challenges.caddyfiletest",
+                "tls_automation_policies_1.caddyfiletest",
+                "map_and_vars_with_raw_types.caddyfiletest",
+                "error_simple_codes.caddyfiletest",
+                "reverse_proxy_health_reqbody.caddyfiletest",
+                "log_override_hostname.caddyfiletest",
+                "global_options_log_custom.caddyfiletest",
+                "import_blocks_snippet.caddyfiletest",
+                "log_multi_logger_name.caddyfiletest",
+                "error_range_codes.caddyfiletest",
+                "uri_replace_brace_escape.caddyfiletest",
+                "reverse_proxy_dynamic_upstreams_grace_period.caddyfiletest",
+                "reverse_proxy_load_balance.caddyfiletest",
+                "metrics_syntax.caddyfiletest",
+                "php_fastcgi_subdirectives.caddyfiletest",
+                "http_only_on_hostless_block.caddyfiletest",
+                "tracing.caddyfiletest",
+                "http_only_on_any_address.caddyfiletest",
+                "global_options_persist_config.caddyfiletest",
+                "error_range_simple_codes.caddyfiletest",
+                "acme_server_custom_challenges.caddyfiletest",
+                "matchers_in_route.caddyfiletest",
+                "sort_directives_within_handle.caddyfiletest",
+                "expression_quotes.caddyfiletest",
+                "forward_auth_authelia.caddyfiletest",
+                "global_options_log_sampling.caddyfiletest",
+                "tls_automation_policies_global_email_localhost.caddyfiletest",
+                "global_options.caddyfiletest",
+                "replaceable_upstream.caddyfiletest",
+                "log_add.caddyfiletest",
+                "rewrite_directive_permutations.caddyfiletest",
+                "reverse_proxy_http_transport_tls_file_cert.txt",
+                "replaceable_upstream_partial_port.caddyfiletest",
+                "intercept_response.caddyfiletest",
+                "reverse_proxy_http_transport_tls_inline_cert.txt",
+                "auto_https_off.caddyfiletest",
+                "log_skip_hosts.caddyfiletest",
+                "reverse_proxy_upstream_placeholder.caddyfiletest",
+                "tls_automation_policies_10.caddyfiletest",
+                "http_only_hostnames.caddyfiletest",
+                "file_server_precompressed.caddyfiletest",
+                "reverse_proxy_load_balance_wrr.caddyfiletest",
+                "reverse_proxy_options.caddyfiletest",
+                "tls_automation_policies_9.caddyfiletest",
+                "php_fastcgi_handle_response.caddyfiletest",
+                "log_except_catchall_blocks.caddyfiletest",
+                "tls_explicit_issuer_dns_ttl.caddyfiletest",
+                "global_options_preferred_chains.caddyfiletest",
+                "tls_client_auth_inline_cert_with_leaf_trust.caddyfiletest",
+                "tls_conn_policy_consolidate.caddyfiletest",
+                "heredoc.caddyfiletest",
+                "reverse_proxy_localaddr.caddyfiletest",
+                "tls_client_auth_cert_file-legacy.caddyfiletest",
+                "site_block_sorting.caddyfiletest",
+                "tls_client_auth_inline_cert.caddyfiletest",
+                "http_only_on_non_standard_port.caddyfiletest",
+                "tls_automation_wildcard_force_automate.caddyfiletest",
+                "log_filters.caddyfiletest",
+                "import_args_file.caddyfiletest",
+                "reverse_proxy_http_transport_none_proxy.txt",
+                "request_body.caddyfiletest",
+                "tls_automation_policies_5.caddyfiletest",
+                "reverse_proxy_http_transport_url_proxy.txt"
+            ]
+        },
+        {
+            "directory": "notify",
+            "files": [
+                "notify_other.go",
+                "notify_linux.go",
+                "notify_windows.go"
+            ]
+        }
+    ],
+    "files": []
+}

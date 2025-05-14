@@ -1,0 +1,13 @@
+---
+library: true
+warnOnImplicitThis: true
+name: codeql/tutorial
+version: 1.0.15
+description: "Library for the CodeQL detective tutorials, helping new users learn\
+  \ to write CodeQL queries."
+buildMetadata:
+  sha: e27d8c16729588259f8143c7ed4569d517b0de10
+  cliVersion: 2.20.3
+dependencies: {}
+groups:
+ - shared

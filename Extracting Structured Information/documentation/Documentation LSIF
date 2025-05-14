@@ -1,0 +1,33 @@
+
+  python3 -m venv venv               
+  source venv/bin/activate           
+
+
+2. Installation
+
+
+
+   git clone https://github.com/sourcegraph/lsif-py.git
+   cd lsif-py
+
+
+   pip install -r requirements.txt
+
+
+   pip install .
+
+
+3. Running the Indexer
+
+
+   
+   ./lsif-py lsif_indexer <path-to-your-workspace>
+   
+   
+   
+   ./lsif-py -v lsif_indexer <workspace>
+  
+   
+   ./lsif-py lsif_indexer -o myindex.lsif <workspace>
+ 
+

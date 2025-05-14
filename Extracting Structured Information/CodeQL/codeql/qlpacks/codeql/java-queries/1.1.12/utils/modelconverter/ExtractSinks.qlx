@@ -1,0 +1,30 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: ExtractSinks.ql
+dbscheme: 1fd1afa7862b82955785edd29820054ab6c9ec81
+stages:
+- offset: 1
+results:
+  '#select':
+    resultArranger: 9"package"s"type"s"subtypes"b"name"s"signature"s"ext"s"input"s"kind"s"provenance"s
+    sortFields:
+    - 0
+    - 1
+    - 3
+    - 4
+    - 6
+    - 7
+inputsDigest: 59245002be594467ffa5381ae08b8b0b04f72f2d
+metadata:
+  name: Extract MaD sink model rows.
+  description: This extracts the Models as data sink model rows.
+  id: java/utils/modelconverter/generate-data-extensions-sink
+
+---
+...
+dQLXst:20231115xÚÍ=OÃ0†÷ü
+“Î±“Úª0Ô‰	!õÁÄ9§¶Ó$ş;¶[P™Y°%ßÇ{²_?OÎ­]ZŠq‹7Ó¡°Z±3¶»NcQ‰¿r¶A/z¨[—ÎÔŞè"u¾‹â¶Pl´
+ÿP=O—Uq.ŠŠ‡=ü¤iµ¶„óaĞZLÃ`yò’Ä$		^µÙ	E-wûcrº1'§9¾Ñ:¿®¦BƒÌzdnXÇèA*ÕøÁ"Ã½gŠúÁ³V‘d½5[$ Yr)Ã$µÁ„Îl¹x¾ıœ¯ğÀ£\½d®,«ñäòj:›g²\V“Üÿƒöà•v¢‹şkC[´Xäf¡öág‘V¾¨f«¿Â9ÔXûQ|ÿİ”§:»ø	oè

@@ -1,0 +1,18 @@
+---
+library: false
+warnOnImplicitThis: true
+name: codeql/rust-queries
+version: 0.1.0
+buildMetadata:
+  sha: e27d8c16729588259f8143c7ed4569d517b0de10
+  cliVersion: 2.20.3
+dependencies:
+  codeql/rust-all: 0.1.0
+  codeql/suite-helpers: 1.0.15
+  codeql/util: 2.0.2
+suites: codeql-suites
+extractor: rust
+groups:
+ - rust
+ - queries
+defaultSuiteFile: codeql-suites/rust-code-scanning.qls

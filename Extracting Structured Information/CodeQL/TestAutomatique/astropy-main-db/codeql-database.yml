@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: C:\Users\Asus\Desktop\StageBordeau\CodeQL\TestAutomatique\astropy-main
+baselineLinesOfCode: 342642
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  sha: 7f259327a77787abe7caa1ac5b7103f39a7c4389
+  cliVersion: 2.20.3
+  creationTime: 2025-04-15T08:20:45.745509600Z
+finalised: true

@@ -1,0 +1,1 @@
+{"extensible_predicate_metadata":{"extensible_predicates":[{"name":"restrictAlertsTo","parameters":[{"name":"filePath","type":"string"},{"name":"startLine","type":"int"},{"name":"endLine","type":"int"}],"has_origin":false,"path":"codeql/util/AlertFiltering.qll","start_line":24,"start_column":1,"end_line":24,"end_column":84}]}}

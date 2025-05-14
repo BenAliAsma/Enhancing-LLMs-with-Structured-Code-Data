@@ -1,0 +1,29 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: ExtractSources.ql
+dbscheme: 1fd1afa7862b82955785edd29820054ab6c9ec81
+stages:
+- offset: 1
+results:
+  '#select':
+    resultArranger: 9"package"s"type"s"subtypes"b"name"s"signature"s"ext"s"output"s"kind"s"provenance"s
+    sortFields:
+    - 0
+    - 1
+    - 3
+    - 4
+    - 6
+    - 7
+inputsDigest: fd9e6327d2961c0a55513a27d241e25de2957896
+metadata:
+  name: Extract MaD source model rows.
+  description: This extracts the Models as data source model rows.
+  id: java/utils/modelconverter/generate-data-extensions-source
+
+---
+...
+dQLXst:20231115xÚÍMO!†ïû+°=ï²ÛÚô 'MzğäÅÄ˜t
+ãŠeaË@?Lüï­¦½	¼3ï„¼<ODkÊK±ªğ7Û!wÁt|oİ†vÆRX‰¿´×¢ç=ˆå3··ºÌï¢|‡”Û€N!Uª¯ò£'—_š¼©âñêìiµvËaĞšOã`}Î’Ílq	^µİse<:šßNâ>v“6¤¬¡j«õ`ÒLÇ,%…™?öÈ(¬ÓMÌ@+ÕğÁ!Ãƒg6ø>x¶QF²ŞÙ0Yr)Ùà>Äºpõâùös¾j1òrõRP]7£ñõd:›²^6ãâÿxğJïR~aÍ]„–Ğ9ş1ÿ-!,šü™ØP£ğÃáXÜÔçº¸úíêÉ

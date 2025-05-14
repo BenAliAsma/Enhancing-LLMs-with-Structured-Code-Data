@@ -1,0 +1,41 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: MostlySimilarFile.ql
+dbscheme: 5af903da088e3746aa283700a43a779302453523
+stages:
+- filename: 3149dc5nk7li0paprfa4oo7p039.bytes.qlx
+- filename: 3b4bf5uk2o44rk4d45h6gss0fad.bytes.qlx
+- offset: 1
+results:
+  '#select':
+    resultArranger: 4"m"ei12"message"s"other"ei120s
+inputsDigest: b607b5b3d987215d766147422d5ae5e1ce9c19b3
+metadata:
+  deprecated: ""
+  name: Mostly similar module
+  description: There is another module that shares a lot of the code with this module.
+    Notice that names of variables and types may have been changed. Merge the two
+    modules to improve maintainability.
+  kind: problem
+  problem.severity: recommendation
+  tags: |-
+    testability
+           maintainability
+           useless-code
+           duplicate-code
+           statistical
+           non-attributable
+  sub-severity: low
+  precision: high
+  id: py/mostly-similar-file
+
+---
+...
+dQLXst:20231115xÚÝV]‹ã6}÷¯pÇ”B!¶eÇÉÄ-Kš¡ÃÎ.îCY
+A–n&"òÇHJ;Ù§¾•>ôe_JDa†îÿØ¿Ô+)!É2a—>íÔØºçøØ÷èJ×Õ¥Pm´&âr|BËò]Á·Ñ-†ã«‡eyÕöksQ–Ó®5T´ bÝKažÕº“k¯¨Y&YÄ…îð˜ãø,Yv$jÝ"?ù¥S«DCÓH°ŽÃÑµ¡êLÒS¶Òîß…oåÀEvƒA¿1Ë®Ü®A	ÐñÑÇNÖãÉ1œx“$Þ‚RÔŠºø6°6B&YœÆÙQdïI|+åÙoÅdš¥ÐaO•	EèœACš^~¢Qži>9/‚
+ïê”‰`<Ì‹œ3'ƒ
+óÑ€_K˜Ýõ*I÷fÂçïå–M¥Lò˜ Ó¿Ð6žø,Ÿ÷ïóÑÐª@¯¥	=ø)VDç´ž0çAåáht–Ž‹²l\à%màRu¤„`>yë|¢Îº‡”\g!Ûùæ‘Ç3hJx±(HPYu4!,-Æ£¬,í86]e”hoËìé{åRuV}“ÇEæ “ÉGv=òãAõL›Ù–c”NÆùã²ÄèK|[˜×£FàÓþW+ô mgàó<ûáÈÀÂGìˆFõ³z”³ÙÓ­)‹Æ‹y­Ù8»ÿƒäy(xØâj¶ø$Óû·GH'9(‹Àñ‡/IQYÜ¯Ö°†Ñ^cçðWSlM¢½.†çmDníÕsªÍÞßäÂ=Î¾Ãã° 8«(8C±¾"ä'«†-Zö›ùTR­]vŽð5!õ1árÝ2§xÆ€¤?:Æfî7&Ÿ½…’}p³àw–å×à+lª{fõ(“uÖÕZ½}žðì×$wì•h?¼…fæ{ø^{õ¨6à†0—B›Ýú´®¥#Ó.øô!&éÏ»ùtó€?œ÷ø°üõ´ ¨vgô»?	YXªf]ïÝÅ|7s{ÍßOkjÓØt˜'¾}4omÔAÆ3›Þ¦£°¬-i˜M§WxLwçà*ù0ôÙ,z¸³æR‰]T¹©D#$U¶Eâ&wöÉ^‡óü"¸˜È
+o‚‹t;¾øåž÷"

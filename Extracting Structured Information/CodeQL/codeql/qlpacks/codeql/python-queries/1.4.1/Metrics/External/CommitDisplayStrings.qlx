@@ -1,0 +1,26 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: CommitDisplayStrings.ql
+dbscheme: 5af903da088e3746aa283700a43a779302453523
+stages:
+- offset: 1
+results:
+  '#select':
+    resultArranger: 20s0s
+inputsDigest: f1e20fa9818eb9b554ae7c48d7765c0d9902f61b
+metadata:
+  name: Display strings of commits
+  kind: display-string
+  id: py/commit-display-strings
+  metricType: commit
+
+---
+...
+dQLXst:20231115xÚÍQ=s!íùDjìBÀrHcËž¤°®P‘J3iRH˜[é¹Ý"'r•2eªüÞp'Û3šü7À¾÷xìcób$Ë¦BÙë;ù£éž$aUœ¸¦À‹s´Ý£l­{¢aàC˜È[1iO±lêÉáˆG/¾ƒí™——´aHñJÿØÙ¿TÛd& )Ïõ¬8s¢x$Wb…£”ãTÛ–Ê&.lÄ‹‚åˆŽõŒæ¾à[[}Ssz®ív‹.bÑÃÄòÜ¹Â'õo˜êŸ=õR{LvïõðŒ+m½Ã•ÁÞ	ëØ'è=’Á_Èƒ
+‰ìî]pªhÇH+V¨%˜œkKO¼íš}jcü_Cû™Q
+ëTöå{ºF
+Ø^e Ø2›ß$ƒ2Iü±«mßVâÂÈdêö.!óùCSU>Ž§7Fi§gŒnd)
+€ö9ÀšŒ^ÓšRX½¹ÚÀ*3›ëÍT\i0Ók`Kmî}˜Ä_1ÍÛ‘Ìß’Ÿ#.<µÁžV‰¬w”¾btð‹]†e¬ù˜0ôÓîýNì³z­Ù§²E=

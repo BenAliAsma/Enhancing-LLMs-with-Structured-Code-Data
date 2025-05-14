@@ -1,0 +1,41 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202308110
+creator: 2.20.3
+name: SimilarFunction.ql
+dbscheme: 5af903da088e3746aa283700a43a779302453523
+stages:
+- filename: 3149dc5nk7li0paprfa4oo7p039.bytes.qlx
+- filename: 3b4bf5uk2o44rk4d45h6gss0fad.bytes.qlx
+- offset: 1
+results:
+  '#select':
+    resultArranger: 4"m"ei12"message"s"other"ei120s
+inputsDigest: 337f3065fcd3e8d723d0ffc63ad07ee579c8ef97
+metadata:
+  deprecated: ""
+  name: Similar function
+  description: There is another function that is very similar this one. Extract the
+    common code to a common function to improve sharing.
+  kind: problem
+  tags: |-
+    testability
+           maintainability
+           useless-code
+           duplicate-code
+           statistical
+           non-attributable
+  problem.severity: recommendation
+  sub-severity: low
+  precision: very-high
+  id: py/similar-function
+
+---
+...
+dQLXst:20231115xÚÝV]‹ã6}÷¯pÇ”B!¶eÇÉÄ-Kš¡ÃÎ.îCY
+A–n&"òÇHJ;Ù§¾•>ôe_JDa†îÿØ¿Ô+)!É2a—>íÔØºçøØ÷è^ÉÕ¥Pm´&âr|BËò]Á·Ñ-†ã«‡eyÕöksQ–Ó®5T´ bÝKažÕº“k¯¨Y&YÄ…îð˜ãø,Yv$jÝ"?ù¥S«DCÓH°ŽÃÑµ¡êLÒS¶Òîß…oåÀEvƒA¿1Ë®Ü®A	ÐñÑÇNÖãÉ1œx“$Þ‚RÔŠºø6°6B&YœÆÙQdïI|+åÙoÅdš¥ÐaO•	EèœACš^~¢Qži>9/‚
+ïê”‰`<Ì‹œ3'ƒ
+óÑ€_K˜Ýõ*I÷fÂçïå–M¥Lò˜ Ó¿Ð6žø,Ÿ÷ïóÑÐª@¯¥	=ø)VDç´ž0çAåáht–Ž‹²l\à%màRu¤„`>yë|¢Îº‡”\g!Ûùæ‘Ç3hJx±(HPYu4!,-Æ£¬,í86]e”hoËìé{åRuV}“ÇEæ “ÉG¶ù‚ñ z¦ÍìÎ@Ë1J'ã|HŠqYbô%¾‚-ÌëŽQ#ðiÿ«=HÛø<Ï~82ð€ð;¢Q=ä¬eÁlötkÊ¢±Çb^k¶„Îîÿ y
+¶ØmáÂî>ÉôþíÒIÊb ð@üáKRT÷ÝÖp#ÚkÜ9üÕ·¦Ñ^Ãó6"·öê9Õæ@ïorágßá?ˆqXPœUœ¡Ø?_ò“UÃ-Zö›ùTR­]vŽð5!õ1árÝ2§xÆ€¤?:Æfî&Ÿ½…’}p³àw–å{ðnª{fõ(“uÖÕZ½}žðì×$wì•h?¼…fæ÷ð½öêQmÀa.…6ºõi]KG¦møô!&éÏ»ùtó€?œ÷ø°üõ´ ¨vgô»?	YXªf]ïÝÅ|7s{ÍßOkjÓØt˜'¾}4omÔAÆ3›Þ¦£°¬-i˜M§WxLwçà*ù0ôÙ4=ÜYs©L*ÑIÕ®hq‰;ûŽd¯ÃùG~‘\
+Lde7ÁEº_üé‘ö`

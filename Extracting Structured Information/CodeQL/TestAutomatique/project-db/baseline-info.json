@@ -1,0 +1,1 @@
+{"languages":{"python":{"displayName":"Python","files":["src/ollama_deep_researcher/state.py","src/ollama_deep_researcher/utils.py","src/ollama_deep_researcher/configuration.py","src/ollama_deep_researcher/__init__.py","src/ollama_deep_researcher/prompts.py","src/ollama_deep_researcher/graph.py","src/ollama_deep_researcher/lmstudio.py"],"linesOfCode":870,"name":"python"}}}

@@ -1,0 +1,11 @@
+---
+sourceLocationPrefix: C:\Users\Asus\Desktop\StageBordeau\CodeQL\Automatique\project
+baselineLinesOfCode: 870
+unicodeNewlines: false
+columnKind: utf32
+primaryLanguage: python
+creationMetadata:
+  sha: 0ce98eff145142b8805b71dc18d4c7984e28d8b2
+  cliVersion: 2.20.3
+  creationTime: 2025-03-21T09:25:13.800294400Z
+finalised: true
