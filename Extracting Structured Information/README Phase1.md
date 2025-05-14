@@ -181,3 +181,4 @@ chunks = semantic_chunker(index.scip, max_tokens=4096)
 2. LLM Code Understanding: [Codex, OpenAI (2023)]
 3. Semantic Code Analysis: [Allamanis et al., IEEE TSE (2022)]
 
+'''
