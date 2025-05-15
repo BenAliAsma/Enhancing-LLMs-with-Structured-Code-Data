@@ -1,4 +1,3 @@
-```markdown
 # SCIP Index Generator for Code Repositories
 
 ![SCIP-LSP Relationship](https://img.shields.io/badge/SCIP-LSP_Complementary-blue?logo=sourcegraph)
