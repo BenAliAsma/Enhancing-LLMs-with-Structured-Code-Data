@@ -16,15 +16,21 @@ REPO_NAME=$(basename "$REPO_URL" .git)
 REPO_DIR="$WORKSPACE_DIR/$REPO_NAME"
 SCIP_DIR="$WORKSPACE_DIR/scip"
 
+
 echo "Configuration de l'espace de travail dans $WORKSPACE_DIR..."
 mkdir -p "$WORKSPACE_DIR"
+
 
 echo "Mise à jour et installation des dépendances système..."
 sudo apt update
 sudo apt install -y python3 python3-pip python3-venv git build-essential curl golang npm jq
+sudo npm install -g n
+sudo n stable
+echo "Création de l'environnement virtuel..."
+python3 -m venv .venv
+source .venv/bin/activate
 
 echo "Installation de scip-python via npm..."
-npm install -g @sourcegraph/scip-python
 scip-python --version
 
 echo "Clonage et compilation de scip..."
@@ -39,19 +45,17 @@ cd "$REPO_DIR"
 echo "Checkout vers le commit $COMMIT_HASH"
 git checkout "$COMMIT_HASH"
 
-echo "Création de l'environnement virtuel..."
-python3 -m venv .venv
-source .venv/bin/activate
+
 
 echo "Installation des dépendances Python..."
-pip install -e .[test] || pip install -r requirements.txt
+#pip install -e .[test] || pip install -r requirements.txt
 pip install pytest
 
 echo "Indexation du projet avec scip-python..."
 NODE_OPTIONS="--max-old-space-size=8192" scip-python index . --output index.scip
 
 echo "Génération du fichier JSON brut..."
-"$SCIP_DIR/scip" print index.scip > raw_snapshot.json
+~/scip_workspace/scip/scip print --json index.scip > raw_snapshot.json
 
 echo "Formatage du JSON..."
 python3 - <<EOF
@@ -60,7 +64,7 @@ with open("raw_snapshot.json", "r") as f:
     data = json.loads(f.read())
 with open("formatted_snapshot.json", "w") as f:
     json.dump(data, f, indent=4)
-print("✅ Fichier JSON formaté : $REPO_DIR/formatted_snapshot.json")
+print("Fichier JSON formaté : $REPO_DIR/formatted_snapshot.json")
 EOF
 
 echo "------------------------------------------------"
