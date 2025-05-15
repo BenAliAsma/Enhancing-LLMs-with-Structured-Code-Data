@@ -1,69 +1,82 @@
-# Phase 1: Extracting Structured Information from Code Using CodeQL
+# Phase 1: Extracting Structured Information from Code Using Static Analysis Tools
 
-## 📌 Overview
+## Overview
 
-This project constitutes **Phase 1** of a broader internship initiative focused on using **static analysis tools** to extract structured metadata from source code. The objective is to capture details like class hierarchies, method signatures, variable types, and dependencies to create a rich context suitable for downstream applications, such as large language models (LLMs).
+This project is part of an internship focused on leveraging **static analysis tools** to extract structured metadata from source code. The aim of **Phase 1** is to analyze open-source repositories and extract semantic information that can help build a rich context for **Large Language Models (LLMs)**.
 
-In this phase, **CodeQL** was selected as the primary tool due to its powerful querying capabilities and support for detailed static code analysis. Other tools considered during the preliminary survey included **SonarQube** and **Language Server Protocol (LSP)**.
+During this phase, **CodeQL** was used to analyze Python codebases and extract information such as:
 
----
+* Class and module hierarchies
+* Method definitions and signatures
+* Variable types and scopes
+* Inter-function dependencies and call graphs
 
-## ⚙️ What This Phase Includes
-
-- Cloning and preparing a target GitHub repository
-- Creating a CodeQL database from the repository source code
-- Running CodeQL analysis on the database
-- Exporting results in SARIF format and converting them to JSON for easier processing
+This structured information lays the groundwork for creating an intelligent code understanding pipeline.
 
 ---
 
-## 🧰 Prerequisites
+## Why CodeQL?
 
-Make sure the following are installed:
+Before selecting CodeQL, a survey of popular static analysis tools was conducted, considering:
 
-- [CodeQL CLI](https://github.com/github/codeql-cli-binaries)
-- [Git](https://git-scm.com/)
-- [jq](https://stedolan.github.io/jq/) (for converting SARIF to JSON)
-- Python (if analyzing Python code)
+* **Functionality** and depth of analysis
+* **Ease of use** and learning curve
+* **Cross-language support**
+* **Automation and scalability**
+
+CodeQL stood out due to its ability to model code as a relational database and query it using a variant of SQL. This makes it ideal for extracting customized and complex semantic information.
 
 ---
 
-## 🚀 Usage
+## Usage
 
-To analyze a GitHub repository using the automated batch script:
+This project includes a batch script to automate the process of cloning a GitHub repository, creating a CodeQL database, analyzing it, and converting the output to a more readable format.
 
-```bash
-analyze.bat [GitHub Repo URL]
-````
+### Prerequisites
 
-### Example:
+* [CodeQL CLI](https://codeql.github.com/docs/codeql-cli/)
+* [Git](https://git-scm.com/)
+* [jq](https://stedolan.github.io/jq/) (for JSON processing)
+* Windows OS (or adaptation needed for Unix-based systems)
+
+### Steps
+
+1. Clone the GitHub repository
+2. Create a CodeQL database
+3. Run the analysis
+4. Convert the output to JSON
+
+### Script: `analyze.bat`
+
+```batch
+@echo off
+REM Usage: analyze.bat [GitHub Repo URL]
+...
+```
+
+### Example
 
 ```bash
 analyze.bat https://github.com/astropy/astropy
 ```
 
-### Output Files:
+Upon successful execution, the results will be saved as:
 
-* `resultats_astropy.sarif`: Raw analysis output in SARIF format.
-* `resultats_astropy.json`: Processed JSON version of the SARIF data.
-
----
-
-## 📂 Script Breakdown (`analyze.bat`)
-
-```batch
-1. Checks if a GitHub URL is provided.
-2. Clones the given repository.
-3. Creates a CodeQL database using the source code.
-4. Analyzes the codebase for security and quality issues.
-5. Converts SARIF output into JSON format.
-```
+* SARIF format: `resultats_astropy.sarif`
+* JSON format: `resultats_astropy.json`
 
 ---
 
-## 📝 Notes
+## Output
 
-* The script is currently tailored for **Python** repositories. Update the `--language` parameter in the script for other languages.
-* The default repo name in the script is `astropy-main`; modify this if analyzing a different project.
-* This phase sets the foundation for generating contextual knowledge usable by LLMs in subsequent stages of the project.
+The SARIF and JSON outputs include detailed metadata such as:
+
+* Code locations of vulnerabilities or design patterns
+* File paths, line numbers, and snippet information
+* Class and function definitions
+* Module dependencies
+
+These outputs can be parsed for further processing, visualization, or integration with LLM pipelines.
+
+
 
