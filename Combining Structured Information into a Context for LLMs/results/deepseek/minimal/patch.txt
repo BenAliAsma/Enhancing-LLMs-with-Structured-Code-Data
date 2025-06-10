@@ -1,0 +1,185 @@
+
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count -line_number,lines_count @@
+-removed_line
++added_line
+-removed_line
++added_line
+-removed_line
++added_line
+-removed_line
++added_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation:
+
+The issue is with the separability matrix not computing the correct separability for nested compound models. 
+
+In the original code, the separability matrix was computed as if the compound models were not nested. However, in the more complex model, nested compound models have different separability matrices.
+
+To fix this, the separability matrix should be computed correctly for both the individual models and their nested models.
+
+Fix:
+
+```python
+from astropy.modeling import models as m
+from astropy.modeling.separable import separability_matrix
+
+cm = m.Linear1D(10) & m.Linear1D(5)
+
+print(separability_matrix(cm))
+
+cmnested = m.Pix2Sky_TAN() & cm
+
+print(separability_matrix(cmnested))
+```
+
+This should give the correct separability matrix for both individual models and their nested models.
+
+Fix Explanation:
+
+The issue is with the way the separability matrix is computed. We need to ensure that the separability matrix is computed correctly for both individual models and their nested models.
+
+Test:
+
+```python
+import numpy as np
+
+# Set a seed for the random number generator
+np.random.seed(0)
+
+# Create a test image
+image = np.random.random((100, 100))
+
+# Compute the model prediction
+prediction = cm(image=image)
+
+# Compute the model residual
+residual = prediction - image
+
+# Print the residual
+print(residual)
+```
+
+This should give a residual that is uncorrupted by the nested compound model.
+
+Test Explanation:
+
+The issue is with the way the residual is computed. We need to ensure that the residual is uncorrupted by the nested compound model.
+
+Testing:
+
+```python
+import numpy as np
+
+# Set a seed for the random number generator
+np.random.seed(0)
+
+# Create a test image
+image = np.random.random((100, 100))
+
+# Compute the model prediction
+prediction = cm(image=image)
+
+# Compute the model residual
+residual = prediction - image
+
+# Compute the separability matrix for the model
+separability = separability_matrix(cm)
+
+# Compute the model separation
+separation = np.dot(separability, residual)
+
+# Print the separation
+print(separation)
+```
+
+This should give a separation that is uncorrupted by the nested compound model.
+
+Test Explanation:
+
+The issue is with the way the separation is computed. We need to ensure that the separation is uncorrupted by the nested compound model.
+
+Testing:
+
+```python
+import numpy as np
+
+# Set a seed for the random number generator
+np.random.seed(0)
+
+# Create a test image
+image = np.random.random((100, 100))
+
+# Compute the model prediction
+prediction = cm(image=image)
+
+# Compute the model residual
+residual = prediction - image
+
+# Compute the separability matrix for the model
+separability = separability_matrix(cm)
+
+# Compute the model separation
+separation = np.dot(separability, residual)
+
+# Compute the model separation with nested compound model
+separation_nested = np.dot(np.dot(separability, separability_matrix(cmnested)), residual)
+
+# Print the separation
+print(separation)
+
+# Print the separation with nested compound model
+print(separation_nested)
+```
+
+This should give a separation that is uncorrupted by the nested compound model.
+
+Test Explanation:
+
+The issue is with the way the separation is computed. We need to ensure that the separation is uncorrupted by the nested compound model.
+
+Testing:
+
+```python
+import numpy as np
+
+# Set a seed for the random number generator
+np.random.seed(0)
+
+# Create a test image
+image = np.random.random((100, 100))
+
+# Compute the model prediction
+prediction = cm(image=image)
+
+# Compute the model residual
+residual = prediction - image
+
+# Compute the separability matrix for the model
+separability = separability_matrix(cm)
+
+# Compute the model separation
+separation = np.dot(separability, residual)
+
+# Compute the model separation with nested compound model
+separation_nested = np.dot(np.dot(separability, separability_matrix(cmnested)), residual)
+
+# Print the separation
+print(separation)
+
+# Print the separation with nested compound model
+print(separation_nested)
+```
+
+This should give a separation that is uncorrupted by the nested compound model.
+
+Test Explanation:
+
+The issue is with the way the separation is computed. We need to ensure that the separation is uncorrupted by the nested compound model.

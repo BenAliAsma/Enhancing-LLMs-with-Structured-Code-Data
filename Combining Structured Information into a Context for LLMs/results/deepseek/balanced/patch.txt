@@ -1,0 +1,246 @@
+
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -line_number,lines_count +line_number,lines_count @@
+ context_line
+-removed_line
++added_line
+ context_line
+```
+
+Patch Explanation Explanation:
+```diff
+diff --git a/path/to/file.py b/path/to/file.py
+--- a/path/to/file.py
++++ b/path/to/file.py
+@@ -
