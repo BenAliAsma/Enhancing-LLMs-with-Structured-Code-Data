@@ -1,11 +1,3 @@
-{
-  "model": "microsoft/DialoGPT-small",
-  "strategy": "rag_style",
-  "input_tokens": 0,
-  "output_tokens": 7,
-  "generation_time": 0.02401900291442871,
-  "tokens_per_second": 0,
-  "context_length": 17350,
-  "success": false,
-  "error": "index out of range in self"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6887b361fe20640c8f50d9782d7435ee4799065282a831dfd609187dcf9a8bef
+size 277

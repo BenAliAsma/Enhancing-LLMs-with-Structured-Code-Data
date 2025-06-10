@@ -1,10 +1,3 @@
-{
-  "model": "microsoft/DialoGPT-small",
-  "strategy": "minimal",
-  "input_tokens": 798,
-  "output_tokens": 1,
-  "generation_time": 3.850207805633545,
-  "tokens_per_second": 0.2597262408893412,
-  "context_length": 2043,
-  "success": true
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4920784edbf463bafcbfbc6912b96551acb7582cab14c1d1d726aa5aaae9955
+size 248
