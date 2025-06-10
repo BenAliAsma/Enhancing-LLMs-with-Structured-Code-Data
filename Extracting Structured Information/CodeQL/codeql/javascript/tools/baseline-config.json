@@ -1,8 +1,3 @@
-{
-    "paths-ignore": [
-        "**/node_modules/**",
-        "**/bower_components/**",
-        "**/*.min.js",
-        "**/*-min.js"
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0cbbf87764743213c080d16d8224ff07ede11ee7153d9d2be7cb2a39c9393297
+size 149

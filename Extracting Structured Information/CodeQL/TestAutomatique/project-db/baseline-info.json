@@ -1,1 +1,3 @@
-{"languages":{"python":{"displayName":"Python","files":["src/ollama_deep_researcher/state.py","src/ollama_deep_researcher/utils.py","src/ollama_deep_researcher/configuration.py","src/ollama_deep_researcher/__init__.py","src/ollama_deep_researcher/prompts.py","src/ollama_deep_researcher/graph.py","src/ollama_deep_researcher/lmstudio.py"],"linesOfCode":870,"name":"python"}}}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f36d0f04eaadc33cc9daf4d1496f0536366f1e060b8d5eaf7afe0b32c52fb521
+size 375
