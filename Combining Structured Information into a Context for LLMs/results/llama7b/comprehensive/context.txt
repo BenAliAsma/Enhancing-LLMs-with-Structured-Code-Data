@@ -1,0 +1,517 @@
+# Comprehensive Analysis
+
+Modeling's `separability_matrix` does not compute separability correctly for nested CompoundModels
+Consider the following model:
+
+```python
+from astropy.modeling import models as m
+from astropy.modeling.separable import separability_matrix
+
+cm = m.Linear1D(10) & m.Linear1D(5)
+```
+
+It's separability matrix as you might expect is a diagonal:
+
+```python
+>>> separability_matrix(cm)
+array([[ True, False],
+[False, True]])
+```
+
+If I make the model more complex:
+```python
+>>> separability_matrix(m.Pix2Sky_TAN() & m.Linear1D(10) & m.Linear1D(5))
+array([[ True, True, False, False],
+[ True, True, False, False],
+[False, False, True, False],
+[False, False, False, True]])
+```
+
+The output matrix is again, as expected, the outputs and inputs to the linear models are separable and independent of each other.
+
+If however, I nest these compound models:
+```python
+>>> separability_matrix(m.Pix2Sky_TAN() & cm)
+array([[ True, True, False, False],
+[ True, True, False, False],
+[False, False, True, True],
+[False, False, True, True]])
+```
+Suddenly the inputs and outputs are no longer separable?
+
+This feels like a bug to me, but I might be missing something?
+
+
+## All Relevant Entities
+1. **unknown** (unknown)
+   - File: unknown
+2. **unknown** (unknown)
+   - File: unknown
+3. **unknown** (unknown)
+   - File: unknown
+4. **unknown** (unknown)
+   - File: unknown
+5. **unknown** (unknown)
+   - File: unknown
+6. **unknown** (unknown)
+   - File: unknown
+7. **unknown** (unknown)
+   - File: unknown
+8. **unknown** (unknown)
+   - File: unknown
+9. **unknown** (unknown)
+   - File: unknown
+
+## Complete Code Context
+```python
+"""
+All Code Snippets - Consolidated Python File
+Generated from project: astropy/astropy
+Commit: fa4e8d1cd279acf9b24560813c8652494ccd5922
+Version: 5.1
+Date: 2023-02-06T21:56:51Z
+
+Problem Statement:
+
+Modeling's `separability_matrix` does not compute separability correctly for nested CompoundModels
+Consider the following model:
+
+```python
+from astropy.modeling import models as m
+from astropy.modeling.separable import separability_matrix
+
+cm = m.Linear1D(10) & m.Linear1D(5)
+```
+
+It's separability matrix as you might expect is a diagonal:
+
+```python
+>>> separability_matrix(cm)
+array([[ True, False],
+[False, True]])
+```
+
+If I make the model more complex:
+```python
+>>> separability_matrix(m.Pix2Sky_TAN() & m.Linear1D(10) & m.Linear1D(5))
+array([[ True, True, False, False],
+[ True, True, False, False],
+[False, False, True, False],
+[False, False, False, True]])
+```
+
+The output matrix is again, as expected, the outputs and inputs to the linear models are separable and independent of each other.
+
+If however, I nest these compound models:
+```python
+>>> separability_matrix(m.Pix2Sky_TAN() & cm)
+array([[ True, True, False, False],
+[ True, True, False, False],
+[False, False, True, True],
+[False, False, True, True]])
+```
+Suddenly the inputs and outputs are no longer separable?
+
+This feels like a bug to me, but I might be missing something?
+
+
+Entities ranked by relevance (number of blocks):
+1. Linear1D (class) (103 blocks)
+2. astropy.modeling.separable (path) (20 blocks)
+3. separability_matrix (function) (18 blocks)
+"""
+
+# Comprehensive imports for all snippets
+import sys
+import os
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Union, Tuple
+
+# Domain-specific imports (uncomment as needed)
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from astropy.modeling import models as m
+# from astropy.modeling.separable import separability_matrix
+# from astropy import units as u
+# from astropy.coordinates import SkyCoord
+
+# ================================================================================
+# ENTITY RANKINGS AND METADATA
+# ================================================================================
+
+ENTITY_RANKINGS = [
+    (1, 'Linear1D (class)', 103),  # rank, entity, block_count
+    (2, 'astropy.modeling.separable (path)', 20),  # rank, entity, block_count
+    (3, 'separability_matrix (function)', 18),  # rank, entity, block_count
+]
+
+def get_entity_info():
+    """Get information about all entities and their rankings."""
+    return {
+        'total_entities': 3,
+        'project': 'astropy/astropy',
+        'commit': 'fa4e8d1cd279acf9b24560813c8652494ccd5922',
+        'rankings': ENTITY_RANKINGS
+    }
+
+# ================================================================================
+# RANK 1: Linear1D (class) (103 blocks)
+# ================================================================================
+
+def rank_01_Linear1D (class)_snippet_1():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1326-1380)
+    Relevance: 103 blocks
+    """
+            if isinstance(argument, Quantity):
+                argument = argument.value
+            arc_cos = np.arccos(argument) / TWOPI
+
+            return (arc_cos - phase) / frequency
+
+        @staticmethod
+        def fit_deriv(x, amplitude, frequency, phase):
+            """One dimensional ArcCosine model derivative."""
+            d_amplitude = x / (
+                TWOPI * frequency * amplitude**2 * np.sqrt(1 - (x / amplitude) ** 2)
+            )
+            d_frequency = (phase - (np.arccos(x / amplitude) / TWOPI)) / frequency**2
+            d_phase = -1 / frequency * np.ones(x.shape)
+            return [d_amplitude, d_frequency, d_phase]
+
+        def bounding_box(self):
+            """
+            Tuple defining the default ``bounding_box`` limits,
+            ``(x_low, x_high)``.
+            """
+            return -1 * self.amplitude, 1 * self.amplitude
+
+        @property
+        def inverse(self):
+            """One dimensional inverse of ArcCosine."""
+            return Cosine1D(
+                amplitude=self.amplitude, frequency=self.frequency, phase=self.phase
+            )
+
+
+    class ArcTangent1D(_InverseTrigonometric1D):
+        """
+        One dimensional ArcTangent model returning values between -pi/2 and
+        pi/2 only.
+
+        Parameters
+        ----------
+        amplitude : float
+            Oscillation amplitude for corresponding Tangent
+        frequency : float
+            Oscillation frequency for corresponding Tangent
+        phase : float
+            Oscillation phase for corresponding Tangent
+
+        See Also
+        --------
+        Tangent1D, ArcSine1D, ArcCosine1D
+
+
+        Notes
+        -----
+        Model formula:
+
+            .. math:: f(x) = ((arctan(x / A) / 2pi) - p) / f
+
+def rank_01_Linear1D (class)_snippet_2():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1352-1356)
+    Relevance: 103 blocks
+    """
+        return Cosine1D(
+                amplitude=self.amplitude, frequency=self.frequency, phase=self.phase
+            )
+
+def rank_01_Linear1D (class)_snippet_3():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1358-1364)
+    Relevance: 103 blocks
+    """
+    """
+        One dimensional ArcTangent model returning values between -pi/2 and
+        pi/2 only.
+
+        Parameters
+        ----------
+        amplitude : float
+
+def rank_01_Linear1D (class)_snippet_4():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1366-1370)
+    Relevance: 103 blocks
+    """
+    frequency : float
+            Oscillation frequency for corresponding Tangent
+        phase : float
+            Oscillation phase for corresponding Tangent
+
+def rank_01_Linear1D (class)_snippet_5():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1372-1376)
+    Relevance: 103 blocks
+    """
+    --------
+        Tangent1D, ArcSine1D, ArcCosine1D
+
+
+        Notes
+
+def rank_01_Linear1D (class)_snippet_6():
+    """
+    Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1378-1380)
+    Relevance: 103 blocks
+    """
+    Model formula:
+
+            .. math:: f(x) = ((arctan(x / A) / 2pi) - p) / f
+
+def run_all_Linear1D (class)_snippets():
+    """Run all snippets for entity: Linear1D (class)"""
+    print(f'Running 6 snippets for Linear1D (class)')
+    # rank_01_Linear1D (class)_snippet_1()  # Uncomment to run
+    # rank_01_Linear1D (class)_snippet_2()  # Uncomment to run
+    # rank_01_Linear1D (class)_snippet_3()  # Uncomment to run
+    # rank_01_Linear1D (class)_snippet_4()  # Uncomment to run
+    # rank_01_Linear1D (class)_snippet_5()  # Uncomment to run
+    # rank_01_Linear1D (class)_snippet_6()  # Uncomment to run
+    pass
+
+# ================================================================================
+# RANK 2: astropy.modeling.separable (path) (20 blocks)
+# ================================================================================
+
+def rank_02_astropy_modeling_separable (path)_snippet_1():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 26-62)
+    Relevance: 20 blocks
+    """
+        """
+        A separability test for the outputs of a transform.
+
+        Parameters
+        ----------
+        transform : `~astropy.modeling.core.Model`
+            A (compound) model.
+
+        Returns
+        -------
+        is_separable : ndarray
+            A boolean array with size ``transform.n_outputs`` where
+            each element indicates whether the output is independent
+            and the result of a separable transform.
+
+        Examples
+        --------
+        >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D
+        >>> is_separable(Shift(1) & Shift(2) | Scale(1) & Scale(2))
+            array([ True,  True]...)
+        >>> is_separable(Shift(1) & Shift(2) | Rotation2D(2))
+            array([False, False]...)
+        >>> is_separable(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) | \
+            Polynomial2D(1) & Polynomial2D(2))
+            array([False, False]...)
+        >>> is_separable(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))
+            array([ True,  True,  True,  True]...)
+
+        """
+        if transform.n_inputs == 1 and transform.n_outputs > 1:
+            is_separable = np.array([False] * transform.n_outputs).T
+            return is_separable
+        separable_matrix = _separable(transform)
+        is_separable = separable_matrix.sum(1)
+        is_separable = np.where(is_separable != 1, False, True)
+        return is_separable
+
+def rank_02_astropy_modeling_separable (path)_snippet_2():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 65-101)
+    Relevance: 20 blocks
+    """
+        """
+        Compute the correlation between outputs and inputs.
+
+        Parameters
+        ----------
+        transform : `~astropy.modeling.core.Model`
+            A (compound) model.
+
+        Returns
+        -------
+        separable_matrix : ndarray
+            A boolean correlation matrix of shape (n_outputs, n_inputs).
+            Indicates the dependence of outputs on inputs. For completely
+            independent outputs, the diagonal elements are True and
+            off-diagonal elements are False.
+
+        Examples
+        --------
+        >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D
+        >>> separability_matrix(Shift(1) & Shift(2) | Scale(1) & Scale(2))
+            array([[ True, False], [False,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Rotation2D(2))
+            array([[ True,  True], [ True,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) | \
+            Polynomial2D(1) & Polynomial2D(2))
+            array([[ True,  True], [ True,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))
+            array([[ True, False], [False,  True], [ True, False], [False,  True]]...)
+
+        """
+        if transform.n_inputs == 1 and transform.n_outputs > 1:
+            return np.ones((transform.n_outputs, transform.n_inputs), dtype=np.bool_)
+        separable_matrix = _separable(transform)
+        separable_matrix = np.where(separable_matrix != 0, True, False)
+        return separable_matrix
+
+def rank_02_astropy_modeling_separable (path)_snippet_3():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 104-126)
+    Relevance: 20 blocks
+    """
+        Compute the number of outputs of two models.
+
+        The two models are the left and right model to an operation in
+        the expression tree of a compound model.
+
+        Parameters
+        ----------
+        left, right : `astropy.modeling.Model` or ndarray
+            If input is of an array, it is the output of `coord_matrix`.
+
+        """
+        if isinstance(left, Model):
+            lnout = left.n_outputs
+        else:
+            lnout = left.shape[0]
+        if isinstance(right, Model):
+            rnout = right.n_outputs
+        else:
+            rnout = right.shape[0]
+        noutp = lnout + rnout
+        return noutp
+
+def run_all_astropy_modeling_separable (path)_snippets():
+    """Run all snippets for entity: astropy.modeling.separable (path)"""
+    print(f'Running 3 snippets for astropy.modeling.separable (path)')
+    # rank_02_astropy_modeling_separable (path)_snippet_1()  # Uncomment to run
+    # rank_02_astropy_modeling_separable (path)_snippet_2()  # Uncomment to run
+    # rank_02_astropy_modeling_separable (path)_snippet_3()  # Uncomment to run
+    pass
+
+# ================================================================================
+# RANK 3: separability_matrix (function) (18 blocks)
+# ================================================================================
+
+def rank_03_separability_matrix (function)_snippet_1():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 65-101)
+    Relevance: 18 blocks
+    """
+        """
+        Compute the correlation between outputs and inputs.
+
+        Parameters
+        ----------
+        transform : `~astropy.modeling.core.Model`
+            A (compound) model.
+
+        Returns
+        -------
+        separable_matrix : ndarray
+            A boolean correlation matrix of shape (n_outputs, n_inputs).
+            Indicates the dependence of outputs on inputs. For completely
+            independent outputs, the diagonal elements are True and
+            off-diagonal elements are False.
+
+        Examples
+        --------
+        >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D
+        >>> separability_matrix(Shift(1) & Shift(2) | Scale(1) & Scale(2))
+            array([[ True, False], [False,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Rotation2D(2))
+            array([[ True,  True], [ True,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) | \
+            Polynomial2D(1) & Polynomial2D(2))
+            array([[ True,  True], [ True,  True]]...)
+        >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))
+            array([[ True, False], [False,  True], [ True, False], [False,  True]]...)
+
+        """
+        if transform.n_inputs == 1 and transform.n_outputs > 1:
+            return np.ones((transform.n_outputs, transform.n_inputs), dtype=np.bool_)
+        separable_matrix = _separable(transform)
+        separable_matrix = np.where(separable_matrix != 0, True, False)
+        return separable_matrix
+
+def run_all_separability_matrix (function)_snippets():
+    """Run all snippets for entity: separability_matrix (function)"""
+    print(f'Running 1 snippets for separability_matrix (function)')
+    # rank_03_separability_matrix (function)_snippet_1()  # Uncomment to run
+    pass
+
+# ================================================================================
+# MAIN EXECUTION AND UTILITIES
+# ================================================================================
+
+def run_top_entities(top_n=3):
+    """Run snippets for top N most relevant entities."""
+    top_entities = ENTITY_RANKINGS[:top_n]
+    for rank, entity, block_count in top_entities:
+        print(f'=== Rank {rank}: {entity} ({block_count} blocks) ===')
+        entity_safe = entity.replace('.', '_').replace('-', '_')
+        func_name = f'run_all_{entity_safe}_snippets'
+        if func_name in globals():
+            globals()[func_name]()
+        print()
+
+def list_all_functions():
+    """List all available snippet functions."""
+    functions = [name for name in globals() if name.startswith('rank_')]
+    functions.sort()
+    print(f'Available snippet functions ({len(functions)} total):')
+    for func in functions:
+        print(f'  - {func}')
+    return functions
+
+if __name__ == '__main__':
+    print('Consolidated Code Snippets')
+    print('=' * 50)
+    
+    info = get_entity_info()
+    print(f'Project: {info["project"]}')
+    print(f'Total entities: {info["total_entities"]}')
+    print(f'Total snippets: 10')
+    print()
+    
+    print('Top 5 entities by relevance:')
+    for rank, entity, count in ENTITY_RANKINGS[:5]:
+        print(f'{rank}. {entity} ({count} blocks)')
+    print()
+    
+    print('Usage examples:')
+    print('  run_top_entities(3)      # Run top 3 entities')
+    print('  list_all_functions()     # List all snippet functions')
+    print('  run_all_Linear1D (class)_snippets()  # Linear1D (class)')
+    print('  run_all_astropy_modeling_separable (path)_snippets()  # astropy.modeling.separable (path)')
+    print('  run_all_separability_matrix (function)_snippets()  # separability_matrix (function)')
+    print()
+
+```
+
+Provide a complete analysis and patch.

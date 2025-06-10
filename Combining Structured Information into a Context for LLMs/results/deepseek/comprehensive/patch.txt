@@ -1,0 +1,191 @@
+        """
+
+        @staticmethod
+        def fit_deriv(x, amplitude, frequency, phase):
+            """One dimensional ArcTangent model derivative."""
+            d_amplitude = (2 * np.pi * x) / (amplitude * frequency**2 * np.sqrt(1 - (x / amplitude) ** 2))
+            d_frequency = (phase - (np.arctan(x / amplitude) / TWOPI)) / frequency**2
+            d_phase = -1 / frequency * np.ones(x.shape)
+            return [d_amplitude, d_frequency, d_phase]
+
+        def bounding_box(self):
+            """
+            Tuple defining the default ``bounding_box`` limits,
+            ``(x_low, x_high)``.
+            """
+            return -1 * self.amplitude, 1 * self.amplitude
+
+        @property
+        def inverse(self):
+            """One dimensional inverse of ArcTangent."""
+            return Tangent1D(
+                amplitude=self.amplitude, frequency=self.frequency, phase=self.phase
+            )
+
+# ================================================================================
+# RANK 2: astropy.modeling.separable (path) (20 blocks)
+# ================================================================================
+
+def rank_02_astropy_modeling_separable (path)_snippet_1():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 117-188)
+    Relevance: 20 blocks
+    """
+            self._input_models = []
+            for model in self._models:
+                if not isinstance(model, CompoundModel):
+                    self._input_models.extend(model.get_inputs())
+                else:
+                    self._input_models.extend(model.get_inputs())
+                    self._input_models.extend(model.get_outputs())
+            return self._input_models
+
+        def get_inputs(self):
+            """Return a list of all inputs to this model."""
+            return self._input_models
+
+        def get_outputs(self):
+            """Return a list of all outputs from this model."""
+            return self._output_models
+
+        def get_input_models(self):
+            """Return a list of all inputs to this model."""
+            return self._input_models
+
+        def get_output_models(self):
+            """Return a list of all outputs from this model."""
+            return self._output_models
+
+        def set_input_models(self, input_models):
+            """Set the inputs to this model."""
+            self._input_models = input_models
+
+        def set_output_models(self, output_models):
+            """Set the outputs from this model."""
+            self._output_models = output_models
+
+        def fit_deriv(self, x, y):
+            """Fit and compute the derivative of the model."""
+            self._model.fit(x, y)
+            return self._model.deriv(x)
+
+        def get_model(self):
+            """Return the underlying model."""
+            return self._model
+
+        def get_parameter_names(self):
+            """Return the names of the model parameters."""
+            return self._model.get_parameter_names()
+
+        def get_value(self, x):
+            """Return the model value at a given point."""
+            return self._model.evaluate(x)
+
+        def plot(self, x, yerr=None, xerr=None, ylabel=None, yticks=None, **kwargs):
+            """Plot the model."""
+            self._model.plot(x, yerr=yerr, xerr=xerr, ylabel=ylabel, yticks=yticks, **kwargs)
+
+        def set_model(self, model):
+            """Set the model to be fitted."""
+            self._model = model
+
+# ================================================================================
+# RANK 3: separability_matrix (function) (18 blocks)
+# ================================================================================
+
+def rank_03_separability_matrix (function)_snippet_1():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 211-228)
+    Relevance: 18 blocks
+    """
+            inputs = cm.get_inputs()
+            outputs = cm.get_outputs()
+            input_indices = [inputs.index(i) for i in inputs]
+            output_indices = [outputs.index(o) for o in outputs]
+            return [input_indices, output_indices]
+
+        def compute(self, x, y):
+            """Compute the separability matrix."""
+            return self.separable_matrix(x, y)
+
+        def separable_matrix(self, x, y):
+            """Compute the separability matrix."""
+            inputs = cm.get_inputs()
+            outputs = cm.get_outputs()
+            input_indices = [inputs.index(i) for i in x.flatten()]
+            output_indices = [outputs.index(o) for o in y.flatten()]
+            return [input_indices, output_indices]
+
+        def set_separable_matrix(self, separable_matrix):
+            """Set the separable matrix."""
+            self._separable_matrix = separable_matrix
+
+        def get_separable_matrix(self):
+            """Get the separable matrix."""
+            return self._separable_matrix
+
+        def fit_deriv(self, x, y):
+            """Fit and compute the derivative of the model."""
+            self._model.fit(x, y)
+            return self._model.deriv(x)
+
+        def get_model(self):
+            """Return the underlying model."""
+            return self._model
+
+        def get_parameter_names(self):
+            """Return the names of the model parameters."""
+            return self._model.get_parameter_names()
+
+        def get_value(self, x):
+            """Return the model value at a given point."""
+            return self._model.evaluate(x)
+
+        def plot(self, x, yerr=None, xerr=None, ylabel=None, yticks=None, **kwargs):
+            """Plot the model."""
+            self._model.plot(x, yerr=yerr, xerr=xerr, ylabel=ylabel, yticks=yticks, **kwargs)
+
+        def set_model(self, model):
+            """Set the model to be fitted."""
+            self._model = model
+
+# ================================================================================
+# END RANKINGS
+# ================================================================================
+```
+
+# Patch
+```diff
+diff --git a/astropy/modeling/separable.py b/astropy/modeling/separable.py
+index f0a49d9..0d53743 100644
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -202,7 +202,7 @@
+         """
+         Compute the separability matrix.
+
+-        inputs = cm.get_inputs()
+-        outputs = cm.get_outputs()
+-        input_indices = [inputs.index(i) for i in inputs]
+-        output_indices = [outputs.index(o) for o in outputs]
+-        return [input_indices, output_indices]
++        inputs = cm.get_inputs()
++        outputs = cm.get_outputs()
++        input_indices = [inputs.index(i) for i in x.flatten()]
++        output_indices = [outputs.index(o) for o in y.flatten()]
++        return [input_indices, output_indices]
+         """
+
+         def compute(self, x, y):
+             """Compute the separability matrix."""
+@@ -215,7 +215,7 @@
+             return self.separable_matrix(x, y)
+
+         def separable_matrix(self, x, y):
+-            inputs = cm.get_inputs()
+-            outputs = cm.get_outputs()
++            inputs = cm.get_inputs()
++            outputs = cm.get_outputs()
+             input_indices = [inputs.index(

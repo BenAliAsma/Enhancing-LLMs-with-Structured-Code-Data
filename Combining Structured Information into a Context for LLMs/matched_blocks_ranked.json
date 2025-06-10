@@ -1,0 +1,1437 @@
+{
+    "separability_matrix (function)": [
+        {
+            "range": [
+                65,
+                4,
+                23
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                65,
+                0,
+                101,
+                27
+            ]
+        },
+        {
+            "range": [
+                65,
+                24,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                96,
+                7,
+                16
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                96,
+                35,
+                44
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                97,
+                24,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                97,
+                45,
+                54
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                99,
+                34,
+                43
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "documentation": [
+                "```python\ndef separability_matrix(\n  transform\n):\n```",
+                "\n    Compute the correlation between outputs and inputs.\n\n    Parameters\n    ----------\n    transform : `~astropy.modeling.core.Model`\n        A (compound) model.\n\n    Returns\n    -------\n    separable_matrix : ndarray\n        A boolean correlation matrix of shape (n_outputs, n_inputs).\n        Indicates the dependence of outputs on inputs. For completely\n        independent outputs, the diagonal elements are True and\n        off-diagonal elements are False.\n\n    Examples\n    --------\n    >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D\n    >>> separability_matrix(Shift(1) & Shift(2) | Scale(1) & Scale(2))\n        array([[ True, False], [False,  True]]...)\n    >>> separability_matrix(Shift(1) & Shift(2) | Rotation2D(2))\n        array([[ True,  True], [ True,  True]]...)\n    >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) |         Polynomial2D(1) & Polynomial2D(2))\n        array([[ True,  True], [ True,  True]]...)\n    >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))\n        array([[ True, False], [False,  True], [ True, False], [False,  True]]...)\n\n    "
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)"
+        },
+        {
+            "range": [
+                18,
+                39,
+                58
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                213,
+                12,
+                31
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                225,
+                12,
+                31
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                23,
+                39,
+                58
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1076,
+                15,
+                34
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1079,
+                13,
+                32
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                13,
+                62,
+                81
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                134,
+                20,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                149,
+                18,
+                37
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 8
+        }
+    ],
+    "astropy.modeling (path)": [
+        {
+            "range": [
+                11,
+                5,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.convolution`/__init__:",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                11,
+                41,
+                52
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.convolution`/Convolution#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                12,
+                5,
+                26
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/__init__:",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                12,
+                34,
+                51
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/SPECIAL_OPERATORS.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                12,
+                53,
+                66
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/CompoundModel#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                954,
+                19,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/SPECIAL_OPERATORS.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                954,
+                37,
+                40
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.utils`/_SpecialOperatorsDict#add().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                956,
+                19,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/SPECIAL_OPERATORS.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                956,
+                37,
+                40
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.utils`/_SpecialOperatorsDict#add().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                960,
+                11,
+                24
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/CompoundModel#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                993,
+                15,
+                32
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/SPECIAL_OPERATORS.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                993,
+                33,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.utils`/_SpecialOperatorsDict#add().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                995,
+                11,
+                22
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.convolution`/Convolution#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                6,
+                5,
+                21
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling`/__init__:",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                7,
+                5,
+                26
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/__init__:",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                7,
+                34,
+                49
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/Fittable1DModel#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                7,
+                51,
+                66
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/Fittable2DModel#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                86,
+                29,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Gaussian1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                161,
+                29,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Gaussian1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                162,
+                46,
+                54
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Gaussian2D#__init__().(x_stddev)",
+            "symbol_roles": 8
+        }
+    ],
+    "astropy.modeling.separable (path)": [
+        {
+            "range": [
+                0,
+                0,
+                0
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/__init__:",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                23,
+                0,
+                7
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/__all__.",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                26,
+                4,
+                16
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                26,
+                0,
+                62,
+                23
+            ]
+        },
+        {
+            "range": [
+                26,
+                17,
+                26
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().(transform)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                56,
+                7,
+                16
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                56,
+                35,
+                44
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                57,
+                42,
+                51
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                59,
+                23,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/_separable().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                59,
+                34,
+                43
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/is_separable().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                65,
+                4,
+                23
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                65,
+                0,
+                101,
+                27
+            ]
+        },
+        {
+            "range": [
+                65,
+                24,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                96,
+                7,
+                16
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                96,
+                35,
+                44
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                97,
+                24,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                97,
+                45,
+                54
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                99,
+                23,
+                33
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/_separable().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                99,
+                34,
+                43
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/separability_matrix().(transform)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                104,
+                4,
+                22
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/_compute_n_outputs().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                104,
+                0,
+                126,
+                16
+            ]
+        },
+        {
+            "range": [
+                104,
+                23,
+                27
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/_compute_n_outputs().(left)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                104,
+                29,
+                34
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.separable`/_compute_n_outputs().(right)",
+            "symbol_roles": 1
+        }
+    ],
+    "separability_matrix(cm) (example)": [],
+    "separability_matrix(m.Pix2Sky_TAN() & m.Linear1D(10) & m.Linear1D(5)) (example)": [],
+    "separability_matrix(m.Pix2Sky_TAN() & cm) (example)": [],
+    "Linear1D (class)": [
+        {
+            "range": [
+                322,
+                29,
+                34
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                322,
+                38,
+                43
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                323,
+                29,
+                38
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                323,
+                42,
+                51
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1326,
+                6,
+                14
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1326,
+                0,
+                1380,
+                85
+            ]
+        },
+        {
+            "range": [
+                1348,
+                4,
+                9
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1349,
+                4,
+                13
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1350,
+                4,
+                10
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#linear.",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1353,
+                8,
+                16
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1352,
+                4,
+                1356,
+                36
+            ]
+        },
+        {
+            "range": [
+                1353,
+                17,
+                18
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(x)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1353,
+                20,
+                25
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(slope)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1353,
+                27,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(intercept)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1356,
+                15,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(slope)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1356,
+                23,
+                24
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(x)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1356,
+                27,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(intercept)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1359,
+                8,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1358,
+                4,
+                1364,
+                37
+            ]
+        },
+        {
+            "range": [
+                1359,
+                18,
+                19
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(x)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1359,
+                22,
+                28
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(params)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1362,
+                18,
+                19
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(x)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1363,
+                35,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(x)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1367,
+                8,
+                15
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1366,
+                4,
+                1370,
+                71
+            ]
+        },
+        {
+            "range": [
+                1367,
+                16,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1368,
+                20,
+                24
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1368,
+                25,
+                30
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1369,
+                25,
+                29
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1369,
+                30,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1369,
+                42,
+                46
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1369,
+                47,
+                52
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1370,
+                15,
+                19
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1373,
+                8,
+                19
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1372,
+                4,
+                1376,
+                70
+            ]
+        },
+        {
+            "range": [
+                1373,
+                20,
+                24
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1374,
+                11,
+                15
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1374,
+                16,
+                25
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1374,
+                43,
+                47
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1374,
+                48,
+                53
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1376,
+                16,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1376,
+                32,
+                36
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1376,
+                37,
+                46
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1376,
+                54,
+                58
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1376,
+                59,
+                64
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1378,
+                8,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().",
+            "symbol_roles": 1,
+            "enclosing_range": [
+                1378,
+                4,
+                1380,
+                85
+            ]
+        },
+        {
+            "range": [
+                1378,
+                40,
+                44
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(self)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1378,
+                46,
+                57
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(inputs_unit)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1378,
+                59,
+                71
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(outputs_unit)",
+            "symbol_roles": 1
+        },
+        {
+            "range": [
+                1379,
+                29,
+                41
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(outputs_unit)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1379,
+                42,
+                46
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1380,
+                25,
+                37
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(outputs_unit)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1380,
+                38,
+                42
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1380,
+                57,
+                68
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(inputs_unit)",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1380,
+                69,
+                73
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(self)",
+            "symbol_roles": 8
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "documentation": [
+                "```python\nclass Linear1D(Fittable1DModel):\n```",
+                "One dimensional Line model.\n\nParameters\n----------\nslope : float  \n&nbsp;&nbsp;&nbsp;&nbsp;Slope of the straight line\n\nintercept : float  \n&nbsp;&nbsp;&nbsp;&nbsp;Intercept of the straight line\n\nSee Also\n--------\nConst1D\n\nNotes\n-----\nModel formula:"
+            ],
+            "relationships": [
+                {
+                    "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.core`/Fittable1DModel#",
+                    "is_implementation": true
+                }
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "documentation": [
+                "```python\nastropy.modeling.parameters.Parameter\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "documentation": [
+                "```python\nastropy.modeling.parameters.Parameter\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#linear.",
+            "documentation": [
+                "```python\nbuiltins.bool\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().",
+            "documentation": [
+                "```python\n@staticmethod\ndef evaluate(\n  x,\n  slope,\n  intercept\n):\n```",
+                "One dimensional Line model function"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(x)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(slope)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#evaluate().(intercept)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().",
+            "documentation": [
+                "```python\n@staticmethod\ndef fit_deriv(\n  x,\n  *params\n): # -> list[Unknown]:\n```",
+                "One dimensional Line model derivative with respect to parameters"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(x)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#fit_deriv().(params)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().",
+            "documentation": [
+                "```python\n@property\ndef inverse(\n  self\n): # -> Linear1D:\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().(self)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().",
+            "documentation": [
+                "```python\n@property\ndef input_units(\n  self\n): # -> dict[str | Any | Unknown, Unknown] | None:\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#input_units().(self)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().",
+            "documentation": [
+                "```python\ndef _parameter_units_for_data_units(\n  self,\n  inputs_unit,\n  outputs_unit\n): # -> dict[str, Unknown]:\n```"
+            ]
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(self)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(inputs_unit)"
+        },
+        {
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#_parameter_units_for_data_units().(outputs_unit)"
+        },
+        {
+            "range": [
+                55,
+                11,
+                19
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                136,
+                4,
+                12
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                16,
+                56,
+                64
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                934,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                935,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                960,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                961,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                962,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                978,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                979,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                980,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                981,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1007,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1008,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1033,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1034,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1035,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1051,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1052,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1053,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                1054,
+                9,
+                17
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                488,
+                20,
+                27
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#inverse().",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                490,
+                19,
+                24
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#slope.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                491,
+                19,
+                28
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#intercept.",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                11,
+                37,
+                45
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                215,
+                12,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                224,
+                12,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                302,
+                12,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                306,
+                12,
+                20
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                14,
+                4,
+                12
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                69,
+                10,
+                18
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                22,
+                47,
+                55
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                53,
+                4,
+                12
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        },
+        {
+            "range": [
+                255,
+                31,
+                39
+            ],
+            "symbol": "scip-python python . d16bfe05a744909de4b27f5875fe0d4ed41ce607 `astropy.modeling.functional_models`/Linear1D#",
+            "symbol_roles": 8
+        }
+    ],
+    "cm (variable)": []
+}

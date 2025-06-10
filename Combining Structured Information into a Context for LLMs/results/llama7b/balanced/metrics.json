@@ -1,0 +1,10 @@
+{
+  "model": "microsoft/DialoGPT-small",
+  "strategy": "balanced",
+  "input_tokens": 1010,
+  "output_tokens": 3,
+  "generation_time": 3.3570730686187744,
+  "tokens_per_second": 0.893635598236863,
+  "context_length": 2630,
+  "success": true
+}

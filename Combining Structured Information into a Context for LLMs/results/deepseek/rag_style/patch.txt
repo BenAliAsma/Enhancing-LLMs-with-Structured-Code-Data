@@ -1,0 +1,198 @@
+ Rank 1 | Entity: Linear1D (class)
+    File: astropy/modeling/functional_models.py (Lines 1368-1372)
+    Relevance: 103 blocks
+    """
+            return self.amplitude * np.ones_like(x)
+
+# ================================================================================
+# RANK 2: astropy.modeling.separable (path) (20 blocks)
+# ================================================================================
+
+def rank_02_astropy_modeling_separable (path)_snippet_1():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 946-990)
+    Relevance: 20 blocks
+    """
+        return self.separable_model.evaluate(self.input_data)
+
+def rank_02_astropy_modeling_separable (path)_snippet_2():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 992-1006)
+    Relevance: 20 blocks
+    """
+        return self.separable_model.input_data
+
+def rank_02_astropy_modeling_separable (path)_snippet_3():
+    """
+    Rank 2 | Entity: astropy.modeling.separable (path)
+    File: astropy/modeling/separable.py (Lines 1008-1022)
+    Relevance: 20 blocks
+    """
+        return self.separable_model.output_data
+
+# ================================================================================
+# RANK 3: separability_matrix (function) (18 blocks)
+# ================================================================================
+
+def rank_03_separability_matrix (function)_snippet_1():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 754-768)
+    Relevance: 18 blocks
+    """
+        return np.array(
+            [
+                [True, False]
+                if isinstance(model, Linear1D)
+                else [False, True]
+                for model in models
+            ],
+            dtype=bool,
+        )
+
+def rank_03_separability_matrix (function)_snippet_2():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 770-784)
+    Relevance: 18 blocks
+    """
+        return [
+            True if isinstance(model, Linear1D) else False
+            for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_3():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 786-790)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_4():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 792-806)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_5():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 808-822)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_6():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 824-838)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_7():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 839-853)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_8():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 855-869)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_9():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 871-885)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_10():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 887-901)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_11():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 903-917)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_12():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 919-933)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_13():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 935-949)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_14():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 951-965)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_15():
+    """
+    Rank 3 | Entity: separability_matrix (function)
+    File: astropy/modeling/separable.py (Lines 967-981)
+    Relevance: 18 blocks
+    """
+        return [
+            isinstance(model, Linear1D) for model in models
+        ]
+
+def rank_03_separability_matrix (function)_snippet_16():
+    """
+    Rank 3 | Entity:

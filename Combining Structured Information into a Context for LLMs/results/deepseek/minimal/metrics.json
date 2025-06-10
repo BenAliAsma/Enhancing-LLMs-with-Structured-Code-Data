@@ -1,0 +1,10 @@
+{
+  "model": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "strategy": "minimal",
+  "input_tokens": 813,
+  "output_tokens": 1286,
+  "generation_time": 933.5475597381592,
+  "tokens_per_second": 1.3775409582353753,
+  "context_length": 2043,
+  "success": true
+}
