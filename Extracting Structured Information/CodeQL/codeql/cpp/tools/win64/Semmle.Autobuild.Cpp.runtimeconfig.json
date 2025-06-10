@@ -1,12 +1,3 @@
-{
-	"runtimeOptions": {
-		"includedFrameworks": [
-			{
-				"name": "Microsoft.NETCore.App.Runtime.win-x64",
-				"version": "9.0.0"
-			}
-		],
-		"rollForward": "Minor",
-		"tfm": "net9.0"
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1cfa5839a22bf057875ba9b075f89098a96435b8347c1cae3ddc7791e6d4395
+size 199

@@ -1,11 +1,3 @@
-{
-    "dockerfile_lines": [],
-    "graphs": {
-      "ollama_deep_researcher": "./src/assistant/graph.py:graph"
-    },
-    "python_version": "3.11",
-    "env": "./.env",
-    "dependencies": [
-      "."
-    ]
-  }
+version https://git-lfs.github.com/spec/v1
+oid sha256:4afb0a8f6868c0c0419d37d24e19b02fe804157d671222e8119eeed48558a5e1
+size 220
