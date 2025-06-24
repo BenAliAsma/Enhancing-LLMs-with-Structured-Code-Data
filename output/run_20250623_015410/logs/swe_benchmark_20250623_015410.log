@@ -1,0 +1,25 @@
+2025-06-23 01:54:10,332 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_015410/logs/swe_benchmark_20250623_015410.log
+2025-06-23 01:54:14,834 - swe_benchmark - INFO - generate.py:395 - ✓ Created mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:14,834 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:54:14,835 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:15,925 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:16,885 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:17,876 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:20,896 - swe_benchmark - INFO - generate.py:395 - ✓ Created mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:20,896 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:54:20,897 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:21,874 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:22,827 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:23,792 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:26,843 - swe_benchmark - INFO - generate.py:395 - ✓ Created mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:26,843 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:54:26,844 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:27,835 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:28,848 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:29,856 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:54:33,253 - swe_benchmark - INFO - generate.py:395 - ✓ Created mixtral8x7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:33,253 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:54:33,253 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:34,213 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:35,174 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.7_temp with 4bit quantization
+2025-06-23 01:54:36,148 - swe_benchmark - INFO - generate.py:334 - Using mixtral8x7B_0.7_temp with 4bit quantization

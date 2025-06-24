@@ -26,6 +26,12 @@ Le script `extract_metadata.py` parcourt récursivement les fichiers `.py` du pr
 python extract_metadata.py
 ```
 
+Le script `visualisation.py` permet de visualizer les métadonnées du projet:
+
+```bash
+python visualisation.py
+```
+
 ## Structure du fichier JSON généré
 
 Le fichier `project_metadata_astropy.json` contient :

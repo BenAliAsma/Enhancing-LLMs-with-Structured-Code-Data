@@ -1,0 +1,27 @@
+2025-06-23 03:19:34,991 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_031934/logs/swe_benchmark_20250623_031934.log
+2025-06-23 03:28:43,260 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 03:28:43,260 - swe_benchmark - INFO - generate.py:396 -   - Load time: 546.27s
+2025-06-23 03:28:43,260 - swe_benchmark - INFO - generate.py:398 -   - Model size: 8.11GB
+2025-06-23 03:28:43,260 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 03:28:46,602 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 03:29:00,991 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 03:30:29,843 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 03:32:09,908 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 03:32:09,908 - swe_benchmark - INFO - generate.py:396 -   - Load time: 10.57s
+2025-06-23 03:32:09,908 - swe_benchmark - INFO - generate.py:398 -   - Model size: 8.11GB
+2025-06-23 03:32:09,908 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 03:32:19,783 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 03:32:34,453 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 03:34:04,225 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 04:11:45,189 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_32B_0.3_temp with 4bit quantization
+2025-06-23 04:11:45,189 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 04:11:45,189 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.3_temp with 4bit quantization
+2025-06-23 04:11:46,273 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.3_temp with 4bit quantization
+2025-06-23 04:11:47,296 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.3_temp with 4bit quantization
+2025-06-23 04:11:48,333 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.3_temp with 4bit quantization
+2025-06-23 12:46:46,729 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_32B_0.7_temp with 4bit quantization
+2025-06-23 12:46:46,729 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 12:46:46,729 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.7_temp with 4bit quantization
+2025-06-23 12:46:47,877 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.7_temp with 4bit quantization
+2025-06-23 12:46:49,008 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.7_temp with 4bit quantization
+2025-06-23 12:46:50,172 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_32B_0.7_temp with 4bit quantization

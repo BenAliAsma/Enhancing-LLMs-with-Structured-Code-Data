@@ -1,0 +1,15 @@
+2025-06-23 13:44:01,092 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_134401/logs/swe_benchmark_20250623_134401.log
+2025-06-23 13:50:09,270 - swe_benchmark - INFO - generate.py:395 - ✓ Created magicoder6.7B_0.3_temp with 8bit quantization
+2025-06-23 13:50:09,270 - swe_benchmark - INFO - generate.py:396 -   - Load time: 366.16s
+2025-06-23 13:50:09,271 - swe_benchmark - INFO - generate.py:398 -   - Model size: 6.53GB
+2025-06-23 13:50:09,271 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.3_temp with 8bit quantization
+2025-06-23 13:51:24,100 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.3_temp with 8bit quantization
+2025-06-23 13:53:31,375 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.3_temp with 8bit quantization
+2025-06-23 13:55:40,589 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.3_temp with 8bit quantization
+2025-06-23 13:58:03,483 - swe_benchmark - INFO - generate.py:395 - ✓ Created magicoder6.7B_0.7_temp with 8bit quantization
+2025-06-23 13:58:03,483 - swe_benchmark - INFO - generate.py:396 -   - Load time: 13.32s
+2025-06-23 13:58:03,483 - swe_benchmark - INFO - generate.py:398 -   - Model size: 6.53GB
+2025-06-23 13:58:03,483 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.7_temp with 8bit quantization
+2025-06-23 13:59:19,162 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.7_temp with 8bit quantization
+2025-06-23 14:01:28,073 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.7_temp with 8bit quantization
+2025-06-23 14:03:39,174 - swe_benchmark - INFO - generate.py:334 - Using magicoder6.7B_0.7_temp with 8bit quantization

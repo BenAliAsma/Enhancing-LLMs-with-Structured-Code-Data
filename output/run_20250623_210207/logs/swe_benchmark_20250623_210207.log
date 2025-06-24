@@ -1,0 +1,15 @@
+2025-06-23 21:02:07,441 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_210207/logs/swe_benchmark_20250623_210207.log
+2025-06-23 21:21:23,320 - swe_benchmark - INFO - generate.py:395 - ✓ Created opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:21:23,323 - swe_benchmark - INFO - generate.py:396 -   - Load time: 1153.83s
+2025-06-23 21:21:23,324 - swe_benchmark - INFO - generate.py:398 -   - Model size: 6.53GB
+2025-06-23 21:21:23,324 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:22:38,314 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:24:45,898 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:26:55,094 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:29:16,771 - swe_benchmark - INFO - generate.py:395 - ✓ Created opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+2025-06-23 21:29:16,771 - swe_benchmark - INFO - generate.py:396 -   - Load time: 12.17s
+2025-06-23 21:29:16,772 - swe_benchmark - INFO - generate.py:398 -   - Model size: 6.53GB
+2025-06-23 21:29:16,772 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+2025-06-23 21:30:32,061 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+2025-06-23 21:32:41,543 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+2025-06-23 21:34:51,953 - swe_benchmark - INFO - generate.py:334 - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization

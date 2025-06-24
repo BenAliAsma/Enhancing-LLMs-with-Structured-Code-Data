@@ -1,0 +1,13 @@
+2025-06-23 01:58:04,529 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_015804/logs/swe_benchmark_20250623_015804.log
+2025-06-23 01:58:11,282 - swe_benchmark - INFO - generate.py:395 - ✓ Created mistral7B_0.3_temp with 4bit quantization
+2025-06-23 01:58:11,282 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:58:11,282 - swe_benchmark - ERROR - generate.py:588 - Failed to process model mistral7B_0.3_temp: Model processing failed: [Errno 28] No space left on device
+2025-06-23 01:58:14,206 - swe_benchmark - INFO - generate.py:395 - ✓ Created mistral7B_0.7_temp with 4bit quantization
+2025-06-23 01:58:14,206 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:58:14,206 - swe_benchmark - ERROR - generate.py:588 - Failed to process model mistral7B_0.7_temp: Model processing failed: [Errno 28] No space left on device
+2025-06-23 01:58:16,021 - swe_benchmark - INFO - generate.py:395 - ✓ Created mixtral8x7B_0.3_temp with 4bit quantization
+2025-06-23 01:58:16,021 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:58:16,021 - swe_benchmark - ERROR - generate.py:588 - Failed to process model mixtral8x7B_0.3_temp: Model processing failed: [Errno 28] No space left on device
+2025-06-23 01:58:17,875 - swe_benchmark - INFO - generate.py:395 - ✓ Created mixtral8x7B_0.7_temp with 4bit quantization
+2025-06-23 01:58:17,875 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 01:58:17,875 - swe_benchmark - ERROR - generate.py:588 - Failed to process model mixtral8x7B_0.7_temp: Model processing failed: [Errno 28] No space left on device

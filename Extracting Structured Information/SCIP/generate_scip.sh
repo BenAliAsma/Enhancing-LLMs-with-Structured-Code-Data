@@ -11,51 +11,51 @@ fi
 
 REPO_URL="$1"
 COMMIT_HASH="$2"
-WORKSPACE_DIR="./scip_workspace"
+WORKSPACE_DIR="/fast/scip_workspace"   
 REPO_NAME=$(basename "$REPO_URL" .git)
 REPO_DIR="$WORKSPACE_DIR/$REPO_NAME"
 SCIP_DIR="$WORKSPACE_DIR/scip"
 
-
 echo "Configuration de l'espace de travail dans $WORKSPACE_DIR..."
 mkdir -p "$WORKSPACE_DIR"
 
-
-echo "Mise à jour et installation des dépendances système..."
-sudo apt update
-sudo apt install -y python3 python3-pip python3-venv git build-essential curl golang npm jq
-sudo npm install -g n
-sudo n stable
 echo "Création de l'environnement virtuel..."
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv "$WORKSPACE_DIR/.venv"
+source "$WORKSPACE_DIR/.venv/bin/activate"
 
 echo "Installation de scip-python via npm..."
 scip-python --version
 
 echo "Clonage et compilation de scip..."
+# Remove existing scip directory if it exists
+if [ -d "$SCIP_DIR" ]; then
+    echo "Suppression de l'ancien répertoire scip..."
+    rm -rf "$SCIP_DIR"
+fi
 git clone https://github.com/sourcegraph/scip.git --depth=1 "$SCIP_DIR"
 cd "$SCIP_DIR"
 go build ./cmd/scip
 cd - >/dev/null
 
 echo "Clonage du dépôt cible sans checkout..."
+# Remove existing repository directory if it exists
+if [ -d "$REPO_DIR" ]; then
+    echo "Suppression de l'ancien répertoire du projet..."
+    rm -rf "$REPO_DIR"
+fi
 git clone --no-checkout "$REPO_URL" "$REPO_DIR"
 cd "$REPO_DIR"
 echo "Checkout vers le commit $COMMIT_HASH"
 git checkout "$COMMIT_HASH"
 
-
-
 echo "Installation des dépendances Python..."
-#pip install -e .[test] || pip install -r requirements.txt
 pip install pytest
 
 echo "Indexation du projet avec scip-python..."
 NODE_OPTIONS="--max-old-space-size=8192" scip-python index . --output index.scip
 
 echo "Génération du fichier JSON brut..."
-~/scip_workspace/scip/scip print --json index.scip > raw_snapshot.json
+"$SCIP_DIR/scip" print --json index.scip > raw_snapshot.json
 
 echo "Formatage du JSON..."
 python3 - <<EOF

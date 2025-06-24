@@ -1,0 +1,3 @@
+[submodule "astropy"]
+	path = astropy
+	url = https://github.com/astropy/astropy

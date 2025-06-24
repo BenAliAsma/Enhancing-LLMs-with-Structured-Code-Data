@@ -3,6 +3,15 @@ import os
 import ast
 from pathlib import Path
 from collections import defaultdict
+from ranking_entities import updated_entities
+
+# Extract relevant function names from updated_entities
+relevant_function_names = set(
+    e.text.split("(")[0].strip()  # Strip parentheses if it's an example call
+    for e in updated_entities
+    if e.label in {"function", "class"}  # You can expand to "example" if needed
+)
+
 
 class AstropyCallHierarchyAnalyzer:
     def __init__(self, project_path="astropy"):
@@ -58,17 +67,21 @@ class AstropyCallHierarchyAnalyzer:
         return ".".join(parts) if parts else ""
 
     def _build_all_hierarchy(self):
-        """Build all call hierarchy chains"""
-        # Find all possible call chains
+        """Build call hierarchies for only relevant functions from updated_entities"""
         visited_chains = set()
 
         for func in self.function_definitions:
+            # Check if it's a relevant function
+            if not any(rel_name in func for rel_name in relevant_function_names):
+                continue
+
             chains = self._get_call_chains_from_function(func, max_depth=5)
             for chain in chains:
                 chain_str = " -> ".join(chain)
                 if len(chain) > 1 and chain_str not in visited_chains:
                     self.all_hierarchy.append(chain_str)
                     visited_chains.add(chain_str)
+
 
     def _get_call_chains_from_function(self, start_func, max_depth=5, current_path=None, visited=None):
         """Get all call chains starting from a function"""
@@ -112,8 +125,11 @@ class AstropyCallHierarchyAnalyzer:
         print(f"\nTotal hierarchies found: {len(self.all_hierarchy)}")
 
     def get_all_hierarchy(self):
-        """Return the all_hierarchy list for external access"""
-        return self.all_hierarchy
+        """Return all_hierarchy list (filtered by relevant functions)"""
+        return [
+            h for h in self.all_hierarchy
+            if any(rfn in h for rfn in relevant_function_names)
+        ]
 
 
 class CallHierarchyVisitor(ast.NodeVisitor):
@@ -246,7 +262,7 @@ def main():
 
     print(f"\nVariable 'call_hierarchy' contains {len(call_hierarchy)} call chains")
     
-    return analyzer, call_hierarchy
+    return call_hierarchy
 
 
 # Global variables that can be accessed from other files
@@ -267,7 +283,8 @@ def get_all_hierarchy():
         analyzer = get_analyzer()
         all_hierarchy = analyzer.get_all_hierarchy()
     return all_hierarchy
+all_hierarchy=get_all_hierarchy()
 
 
 if __name__ == "__main__":
-    analyzer_instance, all_hierarchy = main()
+    all_hierarchy = main()

@@ -176,9 +176,6 @@ class CodeSnippetExtractor:
             f.write(f"**Version:** {version}\n")
             f.write(f"**Date:** {date}\n\n")
             
-            if problem_stmt:
-                f.write(f"**Problem Statement:**\n{problem_stmt}\n\n")
-            
             f.write("---\n\n")
             
             for i, (path, rng, snippet) in enumerate(snippets):
@@ -197,8 +194,6 @@ class CodeSnippetExtractor:
             f.write(f"Commit: {commit}\n")
             f.write(f"Version: {version}\n")
             f.write(f"Date: {date}\n")
-            if problem_stmt:
-                f.write(f"\nProblem Statement:\n{problem_stmt}\n")
             f.write('"""\n\n')
             
             # Add imports that might be commonly needed
@@ -289,8 +284,6 @@ class CodeSnippetExtractor:
             f.write(f"**Version:** {version}\n")
             f.write(f"**Date:** {date}\n\n")
             
-            if problem_stmt:
-                f.write(f"**Problem Statement:**\n{problem_stmt}\n\n")
             
             f.write("---\n\n")
             f.write("## Entity Rankings\n\n")
@@ -331,8 +324,6 @@ class CodeSnippetExtractor:
             f.write(f"Commit: {commit}\n")
             f.write(f"Version: {version}\n")
             f.write(f"Date: {date}\n")
-            if problem_stmt:
-                f.write(f"\nProblem Statement:\n{problem_stmt}\n")
             f.write(f"\nEntities ranked by relevance (number of blocks):\n")
             for rank, (entity, blocks) in enumerate(ranked_entities, 1):
                 f.write(f"{rank}. {entity} ({len(blocks)} blocks)\n")

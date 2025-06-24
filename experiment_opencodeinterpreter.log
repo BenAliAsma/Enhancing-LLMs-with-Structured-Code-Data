@@ -1,0 +1,223 @@
+nohup: les entrées sont ignorées
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 7772.99it/s]
+/home/abenali/.local/lib/python3.11/site-packages/transformers/convert_slow_tokenizer.py:564: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Testing improved modular entity extraction...
+============================================================
+Entity                    | Type       | Source  
+----------------------------------------------------------------------
+Linear1D                  | class      | regex    
+Pix2Sky_TAN               | class      | regex    
+separability_matrix(cm)   | example    | regex    
+separability_matrix(m.Pi  | example    | regex    
+separability_matrix(m.Pi  | example    | regex    
+separability_matrix       | function   | gliner   
+astropy.modeling          | path       | regex    
+astropy.modeling.separab  | path       | regex    
+cm                        | variable   | regex    
+
+ Summary:
+Total entities extracted: 9
+Regex entities: 15
+GLiNER entities: 5
+Agreement: 1 entities
+Jaccard Index: 0.111
+Visualizations saved: ['improved_hybrid_distribution.png', 'improved_hybrid_analysis.png']
+Current working directory: /home/abenali/Enhancing-LLMs-with-Structured-Code-Data
+Starting astropy call hierarchy analysis...
+Found 961 Python files to analyze
+Progress: 0/961 files analyzed
+Progress: 100/961 files analyzed
+Progress: 200/961 files analyzed
+Progress: 300/961 files analyzed
+Progress: 400/961 files analyzed
+Progress: 500/961 files analyzed
+Progress: 600/961 files analyzed
+Progress: 700/961 files analyzed
+Progress: 800/961 files analyzed
+Progress: 900/961 files analyzed
+Building call hierarchy chains...
+Analysis complete!
+================================================================================
+SWE Benchmark Multi-Strategy Patch Generator (Quantized)
+================================================================================
+Validating dependencies...
+✓ All dependencies validated
+2025-06-23 21:02:07,441 - INFO - Logging initialized. Log file: output/run_20250623_210207/logs/swe_benchmark_20250623_210207.log
+INFO:swe_benchmark:Logging initialized. Log file: output/run_20250623_210207/logs/swe_benchmark_20250623_210207.log
+✓ Output directory: output/run_20250623_210207
+Initializing components...
+✓ Loaded matched blocks data with 8 entries
+✓ Loaded code snippets from /home/abenali/Enhancing-LLMs-with-Structured-Code-Data/Combining Structured Information into a Context for LLMs/outputs/all_snippets_consolidated.md
+✓ Components initialized
+
+Converting entities to proper format...
+Converting entities to dictionaries...
+
+✓ Successfully processed 9 entities
+
+Loading structured data...
+Loading structured data...
+Loading files: 0/3 (0.0%) - ETA: calculating...
+⚠ Large file detected: /fast/scip_workspace/astropy/formatted_snapshot.json (172.4MB)
+Loading files: 1/3 (33.3%) - ETA: 0.0sLoading files: 2/3 (66.7%) - ETA: 0.0sLoading files: 3/3 (100.0%) - ETA: 0.0sINFO:src.llm_models:Available GPU memory: 11.89 GB
+INFO:src.llm_models:Medium memory detected, using 8-bit quantization
+INFO:src.llm_models:Loading tokenizer for opencodeinterpreter6.7B_0.3_temp...
+/home/abenali/.local/lib/python3.11/site-packages/transformers/models/auto/tokenization_auto.py:902: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+INFO:src.llm_models:Using 8bit quantization
+INFO:src.llm_models:Loading model opencodeinterpreter6.7B_0.3_temp with 8bit strategy...
+/home/abenali/.local/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py:476: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+
+✓ Loaded structured data with 3 valid components
+
+Building contexts for all strategies...
+✓ Built contexts for 4 strategies
+
+Testing 8 model-strategy combinations with quantization...
+
+==================================================
+Testing Model 1/2: opencodeinterpreter6.7B_0.3_temp
+==================================================
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:   0%|          | 0/2 [04:56<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.71s/it]
+INFO:src.llm_models:✓ Gradient checkpointing enabled
+INFO:src.llm_models:✓ Model compilation enabled
+INFO:src.llm_models:✓ Model loaded successfully in 1153.83s
+INFO:src.llm_models:✓ Model size: 6.53GB
+2025-06-23 21:21:23,320 - INFO - ✓ Created opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:swe_benchmark:✓ Created opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+2025-06-23 21:21:23,323 - INFO -   - Load time: 1153.83s
+INFO:swe_benchmark:  - Load time: 1153.83s
+2025-06-23 21:21:23,324 - INFO -   - Model size: 6.53GB
+INFO:swe_benchmark:  - Model size: 6.53GB
+✓ Created quantized model: opencodeinterpreter6.7B_0.3_temp
+Testing combinations: 0/8 (0.0%) - ETA: calculating...
+Strategy 1/4: minimal
+------------------------------
+2025-06-23 21:21:23,324 - INFO - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+✓ Generated patch (1367 chars) in 75.0s [8bit]
+Testing combinations: 1/8 (12.5%) - ETA: 143.4m
+Strategy 2/4: balanced
+------------------------------
+2025-06-23 21:22:38,314 - INFO - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+✓ Generated patch (986 chars) in 127.6s [8bit]
+Testing combinations: 2/8 (25.0%) - ETA: 67.8m
+Strategy 3/4: comprehensive
+------------------------------
+2025-06-23 21:24:45,898 - INFO - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+✓ Generated patch (758 chars) in 129.2s [8bit]
+Testing combinations: 3/8 (37.5%) - ETA: 41.3m
+Strategy 4/4: rag_style
+------------------------------
+2025-06-23 21:26:55,094 - INFO - Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.3_temp with 8bit quantization
+INFO:src.llm_models:Available GPU memory: 11.89 GB
+INFO:src.llm_models:Medium memory detected, using 8-bit quantization
+INFO:src.llm_models:Loading tokenizer for opencodeinterpreter6.7B_0.7_temp...
+INFO:src.llm_models:Using 8bit quantization
+INFO:src.llm_models:Loading model opencodeinterpreter6.7B_0.7_temp with 8bit strategy...
+✓ Generated patch (1235 chars) in 128.9s [8bit]
+
+==================================================
+Testing Model 2/2: opencodeinterpreter6.7B_0.7_temp
+==================================================
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.50s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  4.71s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.13s/it]
+INFO:src.llm_models:✓ Gradient checkpointing enabled
+INFO:src.llm_models:✓ Model compilation enabled
+INFO:src.llm_models:✓ Model loaded successfully in 12.17s
+INFO:src.llm_models:✓ Model size: 6.53GB
+2025-06-23 21:29:16,771 - INFO - ✓ Created opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+INFO:swe_benchmark:✓ Created opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+2025-06-23 21:29:16,771 - INFO -   - Load time: 12.17s
+INFO:swe_benchmark:  - Load time: 12.17s
+2025-06-23 21:29:16,772 - INFO -   - Model size: 6.53GB
+INFO:swe_benchmark:  - Model size: 6.53GB
+✓ Created quantized model: opencodeinterpreter6.7B_0.7_temp
+Testing combinations: 4/8 (50.0%) - ETA: 27.1m
+Strategy 1/4: minimal
+------------------------------
+2025-06-23 21:29:16,772 - INFO - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+✓ Generated patch (1393 chars) in 75.3s [8bit]
+Testing combinations: 5/8 (62.5%) - ETA: 17.0m
+Strategy 2/4: balanced
+------------------------------
+2025-06-23 21:30:32,061 - INFO - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+✓ Generated patch (1213 chars) in 129.5s [8bit]
+Testing combinations: 6/8 (75.0%) - ETA: 10.2m
+Strategy 3/4: comprehensive
+------------------------------
+2025-06-23 21:32:41,543 - INFO - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+✓ Generated patch (762 chars) in 130.4s [8bit]
+Testing combinations: 7/8 (87.5%) - ETA: 4.7m
+Strategy 4/4: rag_style
+------------------------------
+2025-06-23 21:34:51,953 - INFO - Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+INFO:swe_benchmark:Using opencodeinterpreter6.7B_0.7_temp with 8bit quantization
+✓ Generated patch (1247 chars) in 129.8s [8bit]
+Testing combinations: 8/8 (100.0%) - ETA: 0.0s
+✓ Completed all 8 combinations
+
+==================================================
+Analyzing Results
+==================================================
+Validating patches using git apply...
+Validating patch for opencodeinterpreter6.7B_0.3_temp - minimal
+  Result: INVALID
+  Error: Invalid patch format: error: astropy/modeling/separable.py: Aucun fichier ou dossier de ce nom
+
+Validating patch for opencodeinterpreter6.7B_0.3_temp - balanced
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+Validating patch for opencodeinterpreter6.7B_0.3_temp - comprehensive
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+Validating patch for opencodeinterpreter6.7B_0.3_temp - rag_style
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+Validating patch for opencodeinterpreter6.7B_0.7_temp - minimal
+  Result: INVALID
+  Error: Invalid patch format: error: patch corrompu à la ligne 24
+
+Validating patch for opencodeinterpreter6.7B_0.7_temp - balanced
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+Validating patch for opencodeinterpreter6.7B_0.7_temp - comprehensive
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+Validating patch for opencodeinterpreter6.7B_0.7_temp - rag_style
+  Result: INVALID
+  Error: Invalid patch format: error: entrée non reconnue
+
+✓ Results analysis completed
+
+==================================================
+Saving Results
+==================================================
+Saving results...
+Saving: 0/5 (0.0%) - ETA: calculating...Saving: 1/5 (20.0%) - ETA: 0.0sSaving: 2/5 (40.0%) - ETA: 0.0sSaving: 3/5 (60.0%) - ETA: 0.0sSaving: 4/5 (80.0%) - ETA: 0.0sSaving: 5/5 (100.0%) - ETA: 0.0s
+✓ Results saved to output/run_20250623_210207
+
+==================================================
+EXECUTION COMPLETE!
+==================================================
+Results saved to: output/run_20250623_210207
+Total execution time: 35.5 minutes
+Combinations tested: 8/8
+Successful patches: 0
+Success rate: 0.0%
+Quantization strategies used:
+  - 8bit: 8 combinations

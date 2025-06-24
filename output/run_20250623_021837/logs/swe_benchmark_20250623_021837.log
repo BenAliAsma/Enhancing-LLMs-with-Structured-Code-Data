@@ -1,0 +1,5 @@
+2025-06-23 02:18:37,717 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_021837/logs/swe_benchmark_20250623_021837.log
+2025-06-23 02:18:53,002 - swe_benchmark - INFO - generate.py:395 - ✓ Created mistral7B_0.3_temp with 8bit quantization
+2025-06-23 02:18:53,002 - swe_benchmark - INFO - generate.py:396 -   - Load time: 13.25s
+2025-06-23 02:18:53,002 - swe_benchmark - INFO - generate.py:398 -   - Model size: 7.01GB
+2025-06-23 02:18:53,002 - swe_benchmark - INFO - generate.py:334 - Using mistral7B_0.3_temp with 8bit quantization

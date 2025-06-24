@@ -1,0 +1,25 @@
+2025-06-23 12:44:08,176 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_124408/logs/swe_benchmark_20250623_124408.log
+2025-06-23 12:44:15,719 - swe_benchmark - INFO - generate.py:395 - ✓ Created codet5p_2B_0.3_temp with 4bit quantization
+2025-06-23 12:44:15,719 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 12:44:15,719 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.3_temp with 4bit quantization
+2025-06-23 12:44:16,782 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.3_temp with 4bit quantization
+2025-06-23 12:44:17,721 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.3_temp with 4bit quantization
+2025-06-23 12:44:18,671 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.3_temp with 4bit quantization
+2025-06-23 12:44:22,258 - swe_benchmark - INFO - generate.py:395 - ✓ Created codet5p_2B_0.7_temp with 4bit quantization
+2025-06-23 12:44:22,258 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 12:44:22,258 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.7_temp with 4bit quantization
+2025-06-23 12:44:23,238 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.7_temp with 4bit quantization
+2025-06-23 12:44:24,182 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.7_temp with 4bit quantization
+2025-06-23 12:44:25,135 - swe_benchmark - INFO - generate.py:334 - Using codet5p_2B_0.7_temp with 4bit quantization
+2025-06-23 12:44:31,885 - swe_benchmark - INFO - generate.py:395 - ✓ Created codet5p_6B_0.3_temp with 4bit quantization
+2025-06-23 12:44:31,885 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 12:44:31,885 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.3_temp with 4bit quantization
+2025-06-23 12:44:32,839 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.3_temp with 4bit quantization
+2025-06-23 12:44:33,802 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.3_temp with 4bit quantization
+2025-06-23 12:44:34,754 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.3_temp with 4bit quantization
+2025-06-23 12:44:38,285 - swe_benchmark - INFO - generate.py:395 - ✓ Created codet5p_6B_0.7_temp with 4bit quantization
+2025-06-23 12:44:38,285 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 12:44:38,285 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.7_temp with 4bit quantization
+2025-06-23 12:44:39,240 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.7_temp with 4bit quantization
+2025-06-23 12:44:40,183 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.7_temp with 4bit quantization
+2025-06-23 12:44:41,146 - swe_benchmark - INFO - generate.py:334 - Using codet5p_6B_0.7_temp with 4bit quantization

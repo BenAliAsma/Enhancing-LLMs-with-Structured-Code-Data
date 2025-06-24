@@ -1,0 +1,15 @@
+2025-06-23 10:08:16,943 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_100816/logs/swe_benchmark_20250623_100816.log
+2025-06-23 10:08:31,902 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 10:08:31,902 - swe_benchmark - INFO - generate.py:396 -   - Load time: 12.96s
+2025-06-23 10:08:31,902 - swe_benchmark - INFO - generate.py:398 -   - Model size: 8.11GB
+2025-06-23 10:08:31,902 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 10:08:43,900 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 10:08:58,658 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 10:10:27,317 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.3_temp with 8bit quantization
+2025-06-23 10:12:07,718 - swe_benchmark - INFO - generate.py:395 - ✓ Created qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 10:12:07,718 - swe_benchmark - INFO - generate.py:396 -   - Load time: 10.89s
+2025-06-23 10:12:07,719 - swe_benchmark - INFO - generate.py:398 -   - Model size: 8.11GB
+2025-06-23 10:12:07,719 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 10:12:23,300 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 10:12:33,894 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization
+2025-06-23 10:13:54,454 - swe_benchmark - INFO - generate.py:334 - Using qwen2.5_coder_7B_0.7_temp with 8bit quantization

@@ -1,0 +1,13 @@
+2025-06-23 13:00:25,913 - swe_benchmark - INFO - utils.py:70 - Logging initialized. Log file: output/run_20250623_130025/logs/swe_benchmark_20250623_130025.log
+2025-06-23 13:20:31,275 - swe_benchmark - INFO - generate.py:395 - ✓ Created phind_codellama34B_0.3_temp with 4bit quantization
+2025-06-23 13:20:31,275 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 13:20:31,276 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.3_temp with 4bit quantization
+2025-06-23 13:20:32,395 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.3_temp with 4bit quantization
+2025-06-23 13:20:33,349 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.3_temp with 4bit quantization
+2025-06-23 13:20:34,324 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.3_temp with 4bit quantization
+2025-06-23 13:20:43,369 - swe_benchmark - INFO - generate.py:395 - ✓ Created phind_codellama34B_0.7_temp with 4bit quantization
+2025-06-23 13:20:43,369 - swe_benchmark - INFO - generate.py:396 -   - Load time: 0.00s
+2025-06-23 13:20:43,369 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.7_temp with 4bit quantization
+2025-06-23 13:20:44,383 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.7_temp with 4bit quantization
+2025-06-23 13:20:45,336 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.7_temp with 4bit quantization
+2025-06-23 13:20:46,408 - swe_benchmark - INFO - generate.py:334 - Using phind_codellama34B_0.7_temp with 4bit quantization
