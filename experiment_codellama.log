@@ -188,33 +188,6 @@ Testing combinations: 8/8 (100.0%) - ETA: 0.0s
 Analyzing Results
 ==================================================
 Validating patches using git apply...
-Validating patch for codellama7B_0.3_temp - balanced
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.3_temp - comprehensive
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.3_temp - rag_style
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.7_temp - minimal
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.7_temp - balanced
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.7_temp - comprehensive
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
-
-Validating patch for codellama7B_0.7_temp - rag_style
-  Result: INVALID
-  Error: Invalid patch format: error: entrée non reconnue
 
 ✓ Results analysis completed
 
